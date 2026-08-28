@@ -1,0 +1,18 @@
+media:
+  input: src/assets/img
+  output: /assets/img
+  extensions: [jpg, jpeg, png, webp, svg]
+
+content:
+  - name: settings
+    label: Continut site
+    type: file
+    path: src/_data/site.json
+    format: json
+    fields:
+      - { name: name, label: Nume, type: string }
+      - { name: email, label: Email, type: string }
+      - { name: phone, label: Telefon, type: string }
+      - { name: phoneRaw, label: Telefon (format tel:), type: string }
+      - { name: address, label: Adresa, type: string }
+      - { name: url, label: URL site, type: string }

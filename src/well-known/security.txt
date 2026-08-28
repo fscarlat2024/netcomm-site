@@ -1,0 +1,3 @@
+Contact: mailto:suport@netcomm.ro
+Preferred-Languages: ro, en
+Canonical: https://netcomm.ro/.well-known/security.txt

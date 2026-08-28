@@ -1,0 +1,160 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{{ '/index.html' if lang == 'ro' else '/en/index.html' }}"
+layout: base.njk
+---
+{% from "icons.njk" import icon %}
+{% set c = site[lang] %}
+{% set home = "/" if lang == "ro" else "/en/" %}
+
+<section class="hero" id="top">
+  <div class="hero-bg" style="background-image:url('{{ site.heroImage }}')"></div>
+  <div class="hero-veil"></div>
+  <div class="wrap hero-in reveal">
+    <span class="badge">{{ icon("spark") }} {{ c.badge }}</span>
+    <h1>{{ c.heroTitle }}</h1>
+    <p class="lead">{{ c.heroLead }}</p>
+    <div class="hero-cta">
+      <a href="{{ home }}#contact" class="btn btn-primary btn-lg">{{ c.heroCta }} {{ icon("arrow") }}</a>
+      <a href="{{ home }}#servicii" class="btn btn-ghost btn-lg">{{ c.heroCta2 }}</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stat-strip reveal">
+      {% for s in site.stats %}
+      <div class="stat"><b>{{ s.num }}</b><span>{{ s[lang] }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="servicii">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">{{ c.servicesEyebrow }}</span>
+      <h2>{{ c.servicesTitle }}</h2>
+      <p class="sub">{{ c.servicesLead }}</p>
+    </div>
+    <div class="grid-3">
+      {% for s in site.services %}
+      <article class="card reveal">
+        <div class="card-ic">{{ icon(s.icon) }}</div>
+        <h3>{{ s[lang].title }}</h3>
+        <p>{{ s[lang].desc }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section band-dark" id="securitate">
+  <div class="wrap split">
+    <div class="split-media reveal">
+      <img src="/assets/img/photos/cyber.jpg" alt="Cybersecurity - protectia datelor" loading="lazy" decoding="async">
+      <div class="split-media badge-float">{{ icon("shield") }} NIS2 &middot; GDPR</div>
+    </div>
+    <div class="split-text reveal">
+      <span class="eyebrow eyebrow-on-dark">{{ c.cyberEyebrow }}</span>
+      <h2>{{ c.cyberTitle }}</h2>
+      <p class="sub">{{ c.cyberLead }}</p>
+      <ul class="checklist">
+        {% for p in c.cyberPoints %}
+        <li>{{ icon("check") }} {{ p }}</li>
+        {% endfor %}
+      </ul>
+      <a href="{{ home }}#contact" class="btn btn-cyan">{{ c.heroCta }} {{ icon("arrow") }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="de-ce">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">{{ c.whyEyebrow }}</span>
+      <h2>{{ c.whyTitle }}</h2>
+      <p class="sub">{{ c.whyLead }}</p>
+    </div>
+    <div class="grid-4">
+      {% for w in site.why %}
+      <article class="why reveal">
+        <div class="why-ic">{{ icon(w.icon) }}</div>
+        <h3>{{ w[lang].title }}</h3>
+        <p>{{ w[lang].desc }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="highlights reveal">
+      {% for h in site.highlights %}
+      <div class="hl"><b>{{ h.num }}</b><span>{{ h[lang] }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section band-soft" id="tehnologii">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">{{ c.techEyebrow }}</span>
+      <h2>{{ c.techTitle }}</h2>
+      <p class="sub">{{ c.techLead }}</p>
+    </div>
+  </div>
+  <div class="marquee reveal" aria-hidden="false">
+    <div class="marquee-track">
+      {% for tItem in site.tech %}<span class="chip">{{ tItem }}</span>{% endfor %}
+      {% for tItem in site.tech %}<span class="chip" aria-hidden="true">{{ tItem }}</span>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="abonamente">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">{{ c.pricingEyebrow }}</span>
+      <h2>{{ c.pricingTitle }}</h2>
+      <p class="sub">{{ c.pricingLead }}</p>
+    </div>
+    <div class="grid-3 plans">
+      {% for pl in site.pricing %}
+      <article class="plan reveal{% if pl.popular %} plan-pop{% endif %}">
+        {% if pl.popular %}<span class="plan-tag">{{ "CEL MAI ALES" if lang == "ro" else "MOST CHOSEN" }}</span>{% endif %}
+        <h3>{{ pl.name }}</h3>
+        <p class="plan-tagline">{{ pl[lang].tagline }}</p>
+        <ul>
+          {% for f in pl[lang].features %}
+          <li>{{ icon("check") }} {{ f }}</li>
+          {% endfor %}
+        </ul>
+        <a href="{{ home }}#contact" class="btn {% if pl.popular %}btn-primary{% else %}btn-outline{% endif %} btn-block">{{ c.pricingCta }}</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section band-dark contact" id="contact">
+  <div class="contact-bg" style="background-image:url('/assets/img/photos/datacenter.jpg')"></div>
+  <div class="contact-veil"></div>
+  <div class="wrap contact-in reveal">
+    <span class="eyebrow eyebrow-on-dark">{{ c.contactEyebrow }}</span>
+    <h2>{{ c.contactTitle }}</h2>
+    <p class="sub">{{ c.contactLead }}</p>
+    <div class="contact-cards">
+      <a class="ccard" href="mailto:{{ site.email }}">
+        <div class="ccard-ic">{{ icon("mail") }}</div>
+        <b>{{ c.contactEmail }}</b><span>{{ site.email }}</span>
+      </a>
+      <a class="ccard" href="tel:{{ site.phoneRaw }}">
+        <div class="ccard-ic">{{ icon("phone") }}</div>
+        <b>{{ c.contactPhone }}</b><span>{{ site.phone }}</span>
+      </a>
+      <div class="ccard ccard-static">
+        <div class="ccard-ic">{{ icon("pin") }}</div>
+        <b>Bucuresti</b><span>{{ site.address }}</span>
+      </div>
+    </div>
+  </div>
+</section>

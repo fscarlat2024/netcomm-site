@@ -1,0 +1,14 @@
+{
+  "name": "netcomm-site",
+  "version": "1.0.0",
+  "description": "Site de prezentare NCS - Net Communications System: cybersecurity si servicii IT enterprise.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

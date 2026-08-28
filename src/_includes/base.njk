@@ -1,0 +1,105 @@
+{% set t = i18n[lang] %}
+{% set c = site[lang] %}
+{% set home = "/" if lang == "ro" else "/en/" %}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ c.metaTitle }}</title>
+  <meta name="description" content="{{ c.metaDesc }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="alternate" hreflang="ro" href="{{ site.url }}/">
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ c.metaTitle }}">
+  <meta property="og:description" content="{{ c.metaDesc }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:locale" content="{{ 'ro_RO' if lang == 'ro' else 'en_US' }}">
+  <meta name="theme-color" content="#065A82">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ c.metaTitle }}">
+  <meta name="twitter:description" content="{{ c.metaDesc }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.ogImage }}">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23065A82'/%3E%3Cpath d='M9 22V10l14 12V10' fill='none' stroke='%2306B6D4' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.brandName }}",
+    "alternateName": "NCS",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/assets/img/brand/ncs-color.png",
+    "email": "{{ site.email }}",
+    "telephone": "{{ site.phoneRaw }}",
+    "description": "{{ c.metaDesc }}",
+    "address": { "@type": "PostalAddress", "streetAddress": "Str. Samuil Vulcan nr. 12", "addressLocality": "Bucuresti", "addressCountry": "RO" },
+    "areaServed": "RO",
+    "sameAs": ["{{ site.url }}"]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">{{ t.skip }}</a>
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a href="{{ home }}" class="brand" aria-label="NCS - Net Communications System">
+        <img src="/assets/img/brand/ncs-color.png" alt="NCS - Net Communications System" class="brand-logo brand-logo-dark">
+        <img src="/assets/img/brand/ncs-invert.png" alt="" aria-hidden="true" class="brand-logo brand-logo-light">
+      </a>
+      <nav class="nav-links" id="navlinks">
+        <a href="{{ home }}#servicii">{{ t.nav_services }}</a>
+        <a href="{{ home }}#securitate">{{ t.nav_security }}</a>
+        <a href="{{ home }}#de-ce" class="hide-md">{{ t.nav_why }}</a>
+        <a href="{{ home }}#tehnologii" class="hide-md">{{ t.nav_tech }}</a>
+        <a href="{{ home }}#abonamente">{{ t.nav_pricing }}</a>
+        <span class="lang-switch">
+          <a href="/"{% if lang == "ro" %} class="on"{% endif %}>RO</a>
+          <a href="/en/"{% if lang == "en" %} class="on"{% endif %}>EN</a>
+        </span>
+        <a href="{{ home }}#contact" class="btn btn-primary nav-cta">{{ t.nav_cta }}</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Meniu" aria-expanded="false" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-in">
+      <div class="foot-brand">
+        <img src="/assets/img/brand/ncs-invert.png" alt="NCS" class="foot-logo">
+        <p>{{ c.metaDesc }}</p>
+      </div>
+      <div class="foot-col">
+        <h4>{{ t.nav_services }}</h4>
+        <a href="{{ home }}#servicii">{{ t.nav_services }}</a>
+        <a href="{{ home }}#securitate">{{ t.nav_security }}</a>
+        <a href="{{ home }}#abonamente">{{ t.nav_pricing }}</a>
+      </div>
+      <div class="foot-col">
+        <h4>{{ t.nav_contact }}</h4>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="tel:{{ site.phoneRaw }}">{{ site.phone }}</a>
+        <span>{{ site.address }}</span>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>&copy; {{ '2026' }} {{ site.brandName }}. {{ c.rights }}</span>
+      <span>netcomm.ro</span>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
