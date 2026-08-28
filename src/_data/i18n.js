@@ -1,4 +1,4 @@
-// UI micro-strings per limba (nav, butoane comune).
+// UI micro-strings per limba (nav, butoane comune, formular).
 module.exports = {
   ro: {
     nav_services: "Servicii",
@@ -9,7 +9,21 @@ module.exports = {
     nav_contact: "Contact",
     nav_cta: "Consultatie gratuita",
     learn_more: "Afla mai mult",
-    skip: "Sari la continut"
+    skip: "Sari la continut",
+    form_title: "Solicita o consultatie gratuita",
+    form_sub: "Completeaza formularul si te contactam in cel mai scurt timp. Fara obligatii.",
+    form_name: "Nume si prenume",
+    form_company: "Companie",
+    form_email: "Email",
+    form_phone: "Telefon",
+    form_interest: "Ce te intereseaza",
+    form_msg: "Cum te putem ajuta?",
+    form_send: "Trimite solicitarea",
+    form_sending: "Se deschide email-ul...",
+    form_close: "Inchide",
+    form_req: "Camp obligatoriu",
+    form_note: "Datele tale sunt folosite doar ca sa te contactam. Nu le partajam.",
+    form_opts: ["Consultatie generala IT", "Cybersecurity", "Conformitate NIS2", "Retea Fortinet", "Microsoft 365 / Cloud", "Abonament IT lunar"]
   },
   en: {
     nav_services: "Services",
@@ -20,6 +34,20 @@ module.exports = {
     nav_contact: "Contact",
     nav_cta: "Free consultation",
     learn_more: "Learn more",
-    skip: "Skip to content"
+    skip: "Skip to content",
+    form_title: "Request a free consultation",
+    form_sub: "Fill in the form and we'll get back to you shortly. No obligations.",
+    form_name: "Full name",
+    form_company: "Company",
+    form_email: "Email",
+    form_phone: "Phone",
+    form_interest: "What are you interested in",
+    form_msg: "How can we help?",
+    form_send: "Send request",
+    form_sending: "Opening your email...",
+    form_close: "Close",
+    form_req: "Required field",
+    form_note: "Your details are used only to contact you. We don't share them.",
+    form_opts: ["General IT consultation", "Cybersecurity", "NIS2 compliance", "Fortinet network", "Microsoft 365 / Cloud", "Monthly IT plan"]
   }
 };

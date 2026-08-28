@@ -219,6 +219,29 @@ svg{width:100%;height:100%}
 .faq-a{padding:0 24px 24px;color:var(--body);font-size:.98rem;line-height:1.62}
 .faq-a p{max-width:700px}
 
+/* ===== Modal formular ===== */
+.modal{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal[hidden]{display:none}
+.modal-backdrop{position:absolute;inset:0;background:rgba(8,14,26,.62);backdrop-filter:blur(4px);animation:mfade .2s ease}
+.modal-card{position:relative;background:#fff;border-radius:var(--radius);max-width:560px;width:100%;max-height:92vh;overflow:auto;padding:34px 32px;box-shadow:var(--shadow-lg);animation:mpop .26s cubic-bezier(.2,.8,.3,1)}
+@keyframes mfade{from{opacity:0}}
+@keyframes mpop{from{opacity:0;transform:translateY(16px) scale(.98)}}
+.modal-x{position:absolute;top:14px;right:16px;background:none;border:0;font-size:1.9rem;line-height:1;color:var(--muted);cursor:pointer;width:36px;height:36px;border-radius:9px;transition:background .15s,color .15s}
+.modal-x:hover{background:var(--bg-soft);color:var(--ink)}
+.modal-card h3{font-size:1.5rem;margin-bottom:8px;padding-right:34px}
+.modal-sub{color:var(--muted);font-size:.95rem;margin-bottom:22px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fgrid .field{margin-bottom:14px}
+.field{display:block;margin-bottom:14px}
+.field>span{display:block;font-family:var(--disp);font-weight:600;font-size:.82rem;color:var(--ink);margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;font-family:var(--sans);font-size:.95rem;color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:11px 13px;transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--brand2);box-shadow:0 0 0 3px rgba(62,124,192,.14)}
+.field input.bad{border-color:#d9534f;box-shadow:0 0 0 3px rgba(217,83,79,.12)}
+.field textarea{resize:vertical;min-height:76px}
+.modal-send{margin-top:6px}
+.modal-note{text-align:center;font-size:.8rem;color:var(--muted);margin-top:14px}
+@media(max-width:520px){.modal .fgrid{grid-template-columns:1fr}.modal-card{padding:28px 22px}}
+
 /* ===== NIS2 checker ===== */
 .nav-nis2{color:var(--ice)!important;font-weight:700!important;letter-spacing:.02em}
 .nav.scrolled .nav-nis2{color:var(--brand2)!important}
