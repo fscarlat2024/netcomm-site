@@ -44,6 +44,16 @@
     "sameAs": ["{{ site.url }}"]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for f in site.faq %}{ "@type": "Question", "name": {{ f['q_' ~ lang] | dump | safe }}, "acceptedAnswer": { "@type": "Answer", "text": {{ f['a_' ~ lang] | dump | safe }} } }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">{{ t.skip }}</a>

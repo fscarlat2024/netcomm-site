@@ -31,6 +31,29 @@ layout: base.njk
   </div>
 </section>
 
+<section class="section band-soft" id="despre">
+  <div class="wrap about">
+    <div class="about-text reveal">
+      <span class="eyebrow">{{ c.aboutEyebrow }}</span>
+      <h2>{{ c.aboutTitle }}</h2>
+      <p>{{ c.aboutP1 }}</p>
+      <p>{{ c.aboutP2 }}</p>
+    </div>
+    <div class="about-points reveal">
+      <ul class="pointlist">
+        {% for p in c.aboutPoints %}
+        <li>{{ icon("check") }} <span>{{ p }}</span></li>
+        {% endfor %}
+      </ul>
+      <div class="about-mini">
+        {% for h in site.highlights %}
+        <div class="am"><b>{{ h.num }}</b><span>{{ h[lang] }}</span></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="servicii">
   <div class="wrap">
     <div class="head reveal">
@@ -60,9 +83,12 @@ layout: base.njk
       <span class="eyebrow eyebrow-on-dark">{{ c.cyberEyebrow }}</span>
       <h2>{{ c.cyberTitle }}</h2>
       <p class="sub">{{ c.cyberLead }}</p>
-      <ul class="checklist">
+      <ul class="cyberlist">
         {% for p in c.cyberPoints %}
-        <li>{{ icon("check") }} {{ p }}</li>
+        <li>
+          <span class="cl-ic">{{ icon("check") }}</span>
+          <span><b>{{ p.title }}</b>{{ p.desc }}</span>
+        </li>
         {% endfor %}
       </ul>
       <a href="{{ home }}#contact" class="btn btn-cyan">{{ c.heroCta }} {{ icon("arrow") }}</a>
@@ -70,7 +96,26 @@ layout: base.njk
   </div>
 </section>
 
-<section class="section" id="de-ce">
+<section class="section" id="proces">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">{{ c.processEyebrow }}</span>
+      <h2>{{ c.processTitle }}</h2>
+      <p class="sub">{{ c.processLead }}</p>
+    </div>
+    <div class="grid-4 steps">
+      {% for st in site.process %}
+      <article class="step reveal">
+        <div class="step-top"><span class="step-num">{{ st.num }}</span><span class="step-ic">{{ icon(st.icon) }}</span></div>
+        <h3>{{ st[lang].title }}</h3>
+        <p>{{ st[lang].desc }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section band-soft" id="de-ce">
   <div class="wrap">
     <div class="head reveal">
       <span class="eyebrow">{{ c.whyEyebrow }}</span>
@@ -86,15 +131,10 @@ layout: base.njk
       </article>
       {% endfor %}
     </div>
-    <div class="highlights reveal">
-      {% for h in site.highlights %}
-      <div class="hl"><b>{{ h.num }}</b><span>{{ h[lang] }}</span></div>
-      {% endfor %}
-    </div>
   </div>
 </section>
 
-<section class="section band-soft" id="tehnologii">
+<section class="section" id="tehnologii">
   <div class="wrap">
     <div class="head reveal">
       <span class="eyebrow">{{ c.techEyebrow }}</span>
@@ -102,7 +142,7 @@ layout: base.njk
       <p class="sub">{{ c.techLead }}</p>
     </div>
   </div>
-  <div class="marquee reveal" aria-hidden="false">
+  <div class="marquee reveal">
     <div class="marquee-track">
       {% for tItem in site.tech %}<span class="chip">{{ tItem }}</span>{% endfor %}
       {% for tItem in site.tech %}<span class="chip" aria-hidden="true">{{ tItem }}</span>{% endfor %}
@@ -110,7 +150,7 @@ layout: base.njk
   </div>
 </section>
 
-<section class="section" id="abonamente">
+<section class="section band-soft" id="abonamente">
   <div class="wrap">
     <div class="head reveal">
       <span class="eyebrow">{{ c.pricingEyebrow }}</span>
@@ -130,6 +170,24 @@ layout: base.njk
         </ul>
         <a href="{{ home }}#contact" class="btn {% if pl.popular %}btn-primary{% else %}btn-outline{% endif %} btn-block">{{ c.pricingCta }}</a>
       </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="intrebari">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">{{ c.faqEyebrow }}</span>
+      <h2>{{ c.faqTitle }}</h2>
+      <p class="sub">{{ c.faqLead }}</p>
+    </div>
+    <div class="faq reveal">
+      {% for f in site.faq %}
+      <details class="faq-item"{% if loop.first %} open{% endif %}>
+        <summary>{{ f['q_' ~ lang] }}<span class="faq-plus">{{ icon("arrow") }}</span></summary>
+        <div class="faq-a"><p>{{ f['a_' ~ lang] }}</p></div>
+      </details>
       {% endfor %}
     </div>
   </div>
