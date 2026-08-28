@@ -3,3 +3,7 @@ _site/
 .DS_Store
 *.log
 .env
+
+_palettes.html
+preview*.png
+palettes.png
