@@ -96,6 +96,60 @@ layout: base.njk
   </div>
 </section>
 
+{% set n = site.nis2[lang] %}
+{% set nis2cfg = { email: site.email, subject: n.emailSubject, body: n.emailBody, gapsTitle: n.gapsTitle, levels: n.levels, tHigh: 80, tMid: 50 } %}
+<section class="section band-dark nis2" id="nis2">
+  <div class="wrap nis2-grid">
+    <div class="nis2-intro reveal">
+      <span class="eyebrow eyebrow-on-dark">{{ n.eyebrow }}</span>
+      <h2>{{ n.title }}</h2>
+      <p class="sub">{{ n.lead }}</p>
+      <div class="guarantee">
+        <div class="guarantee-head"><span class="g-ic">{{ icon("shield") }}</span><b>{{ n.guaranteeTitle }}</b></div>
+        <p>{{ n.guaranteeText }}</p>
+        <ul>
+          {% for gp in n.guaranteePoints %}<li>{{ icon("check") }} {{ gp }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="nis2-card reveal" id="nis2Checker" data-cfg="{{ nis2cfg | dump | urlencode }}">
+      <div class="nis2-quiz">
+        <p class="nis2-hint">{{ n.checkIntro }}</p>
+        {% for q in site.nis2.questions %}
+        <div class="q" data-idx="{{ loop.index0 }}" data-gap="{{ q['gap_' ~ lang] }}">
+          <span class="q-txt">{{ q['q_' ~ lang] }}</span>
+          <div class="q-opts" role="group">
+            {% for opt in n.opts %}
+            <button type="button" class="q-opt" data-v="{{ 2 - loop.index0 }}">{{ opt }}</button>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+        <button type="button" class="btn btn-cyan btn-block nis2-calc" id="nis2Calc">{{ n.calcBtn }} {{ icon("arrow") }}</button>
+      </div>
+
+      <div class="nis2-result" id="nis2Result" hidden>
+        <span class="nis2-rtitle">{{ n.resultTitle }}</span>
+        <div class="nis2-gauge">
+          <div class="nis2-score" id="nis2Score">0%</div>
+          <div class="nis2-bar"><span id="nis2Fill"></span></div>
+        </div>
+        <div class="nis2-level"><b id="nis2LevelTitle"></b><p id="nis2LevelMsg"></p></div>
+        <div class="nis2-gaps" id="nis2Gaps" hidden>
+          <b id="nis2GapsTitle"></b>
+          <ul id="nis2GapsList"></ul>
+        </div>
+        <div class="nis2-cta">
+          <a class="btn btn-primary btn-block" id="nis2Cta" href="#contact">{{ n.cta }} {{ icon("arrow") }}</a>
+          <a class="btn btn-ghost btn-block" href="{{ home }}#contact">{{ n.ctaAlt }}</a>
+        </div>
+        <button type="button" class="nis2-redo" id="nis2Redo">&larr; {{ n.calcBtn }}</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="proces">
   <div class="wrap">
     <div class="head reveal">

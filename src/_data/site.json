@@ -119,6 +119,78 @@
     "contactPhone": "Call now",
     "rights": "All rights reserved."
   },
+  "nis2": {
+    "ro": {
+      "eyebrow": "Diferenta NCS",
+      "title": "Esti pregatit pentru NIS2? Afla in 2 minute",
+      "lead": "NIS2 este obligatorie legal in Romania. Majoritatea firmelor nu stiu cat de expuse sunt. Raspunde la 8 intrebari si primesti scorul tau de conformitate, gratuit - fara date personale.",
+      "guaranteeTitle": "Garantia NCS",
+      "guaranteeText": "Nu doar 'te ajutam cu NIS2'. Iti livram documentatia de conformitate completa, pregatita pentru audit - masuri tehnice, politici si dovezi. Iar daca la control lipseste ceva ce trebuia sa acoperim, o rezolvam pe cheltuiala noastra.",
+      "guaranteePoints": [
+        "Evaluare si plan de conformitate personalizat",
+        "Implementare tehnica: Fortinet + Microsoft 365 Defender + Intune",
+        "Documentatie si politici pregatite pentru audit"
+      ],
+      "checkIntro": "Bifeaza unde te afli la fiecare masura:",
+      "opts": ["Da", "Partial", "Nu"],
+      "calcBtn": "Vezi scorul meu NIS2",
+      "resultTitle": "Scorul tau de pregatire NIS2",
+      "levels": {
+        "high": { "title": "Bine pozitionat", "msg": "Ai o baza solida de securitate. Mai raman de aliniat cateva masuri si documentatia formala pentru conformitate deplina NIS2." },
+        "mid": { "title": "Partial pregatit", "msg": "Ai cateva masuri, dar exista goluri importante. Fara un plan clar, riscul unui incident sau al unei neconformitati este ridicat." },
+        "low": { "title": "Risc ridicat", "msg": "Esti expus. Lipsesc masuri esentiale cerute de NIS2 - e nevoie de un plan de conformitate cat mai rapid." }
+      },
+      "gapsTitle": "De imbunatatit prioritar:",
+      "cta": "Primeste raportul complet + plan de conformitate",
+      "ctaAlt": "Programeaza o consultatie gratuita",
+      "emailSubject": "Evaluare NIS2 - scor {score}%",
+      "emailBody": "Buna ziua,\n\nAm completat evaluarea NIS2 de pe site si am obtinut un scor de {score}% ({level}).\n\nGoluri identificate:\n{gaps}\n\nAs dori raportul complet de securitate si un plan de conformitate NIS2. Va rog sa ma contactati.\n\nMultumesc!"
+    },
+    "en": {
+      "eyebrow": "The NCS difference",
+      "title": "Are you NIS2-ready? Find out in 2 minutes",
+      "lead": "NIS2 is a legal requirement in Romania. Most companies don't know how exposed they are. Answer 8 questions and get your compliance score, free - no personal data required.",
+      "guaranteeTitle": "The NCS guarantee",
+      "guaranteeText": "Not just 'we help with NIS2'. We deliver complete, audit-ready compliance documentation - technical measures, policies and evidence. And if an inspection finds something we should have covered, we fix it at our own cost.",
+      "guaranteePoints": [
+        "Assessment and a tailored compliance plan",
+        "Technical implementation: Fortinet + Microsoft 365 Defender + Intune",
+        "Audit-ready documentation and policies"
+      ],
+      "checkIntro": "Mark where you stand on each measure:",
+      "opts": ["Yes", "Partial", "No"],
+      "calcBtn": "See my NIS2 score",
+      "resultTitle": "Your NIS2 readiness score",
+      "levels": {
+        "high": { "title": "Well positioned", "msg": "You have a solid security baseline. A few measures and the formal documentation remain to reach full NIS2 compliance." },
+        "mid": { "title": "Partially ready", "msg": "You have some measures in place, but there are significant gaps. Without a clear plan, the risk of an incident or non-compliance is high." },
+        "low": { "title": "High risk", "msg": "You are exposed. Essential NIS2 measures are missing - a compliance plan is needed as soon as possible." }
+      },
+      "gapsTitle": "Priorities to improve:",
+      "cta": "Get the full report + compliance plan",
+      "ctaAlt": "Book a free consultation",
+      "emailSubject": "NIS2 assessment - score {score}%",
+      "emailBody": "Hello,\n\nI completed the NIS2 assessment on your site and scored {score}% ({level}).\n\nGaps identified:\n{gaps}\n\nI would like the full security report and a NIS2 compliance plan. Please get in touch.\n\nThank you!"
+    },
+    "questions": [
+      { "q_ro": "Autentificare multi-factor (MFA) pe toate conturile", "q_en": "Multi-factor authentication (MFA) on all accounts",
+        "gap_ro": "Activarea MFA pe toate conturile - cea mai eficienta masura anti-phishing.", "gap_en": "Enable MFA on all accounts - the most effective anti-phishing measure." },
+      { "q_ro": "Backup automat, testat, cu o copie imutabila sau offline", "q_en": "Automated, tested backup with an immutable or offline copy",
+        "gap_ro": "Backup cu copie imutabila (anti-ransomware) si testare periodica a restaurarii.", "gap_en": "Backup with an immutable copy (anti-ransomware) and periodic restore testing." },
+      { "q_ro": "Firewall next-gen cu segmentarea retelei (VLAN/Zero Trust)", "q_en": "Next-gen firewall with network segmentation (VLAN/Zero Trust)",
+        "gap_ro": "Firewall Fortinet cu segmentare, ca un atac sa nu se raspandeasca in toata reteaua.", "gap_en": "A Fortinet firewall with segmentation, so an attack can't spread across the whole network." },
+      { "q_ro": "Plan de raspuns la incident si o persoana responsabila", "q_en": "An incident response plan and a responsible person",
+        "gap_ro": "Un plan clar de raspuns la incident si un responsabil desemnat - cerinta NIS2.", "gap_en": "A clear incident response plan and a designated owner - a NIS2 requirement." },
+      { "q_ro": "Management de patch-uri si vulnerabilitati", "q_en": "Patch and vulnerability management",
+        "gap_ro": "Actualizari la timp si scanari de vulnerabilitati cu remediere prioritizata.", "gap_en": "Timely updates and vulnerability scans with prioritized remediation." },
+      { "q_ro": "Control acces: least privilege, conturi de admin separate", "q_en": "Access control: least privilege, separate admin accounts",
+        "gap_ro": "Drepturi minime necesare si conturi de administrator separate de cele zilnice.", "gap_en": "Least-privilege rights and admin accounts kept separate from daily-use ones." },
+      { "q_ro": "Logare si monitorizare centralizata cu alertare", "q_en": "Centralized logging and monitoring with alerting",
+        "gap_ro": "Colectare centralizata de loguri si alertare (SIEM), ca sa detectezi la timp.", "gap_en": "Centralized log collection and alerting (SIEM), so you detect threats in time." },
+      { "q_ro": "Politici de securitate documentate si training angajati", "q_en": "Documented security policies and staff training",
+        "gap_ro": "Politici scrise si instruirea angajatilor - obligatorii pentru conformitate NIS2.", "gap_en": "Written policies and staff training - mandatory for NIS2 compliance." }
+    ]
+  },
   "services": [
     { "icon": "digitize",
       "ro": { "title": "Digitizarea proceselor", "desc": "Transformam fluxurile manuale si documentele pe hartie in procese digitale automatizate. Reducem timpii de lucru, eliminam erorile umane si crestem productivitatea, cu integrare completa in ecosistemul Microsoft 365." },
