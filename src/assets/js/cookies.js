@@ -44,5 +44,8 @@
   // Initializare
   var c = get();
   if (c === 'accepted') { loadGA(); }
-  else if (c !== 'rejected') { banner.hidden = false; }
+  else if (c !== 'rejected') {
+    banner.hidden = false;
+    requestAnimationFrame(function () { banner.classList.add('show'); });
+  }
 })();
