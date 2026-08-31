@@ -31,9 +31,18 @@
   if (modal) {
     var form = document.getElementById('consultForm');
     var lastFocus = null;
+    var fbody = modal.querySelector('.form-body');
+    var fsuccess = modal.querySelector('.form-success');
+    var ferr = document.getElementById('formErr');
+    function resetModal() {
+      if (fbody) fbody.hidden = false;
+      if (fsuccess) fsuccess.hidden = true;
+      if (ferr) { ferr.hidden = true; ferr.textContent = ''; }
+    }
     function openModal(e) {
       if (e) e.preventDefault();
       lastFocus = document.activeElement;
+      resetModal();
       modal.hidden = false;
       document.body.style.overflow = 'hidden';
       var f = form.querySelector('input,select,textarea');
@@ -54,16 +63,10 @@
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && !modal.hidden) closeModal();
     });
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var reqMsg = form.getAttribute('data-req') || 'Required';
-      var ok = true;
-      form.querySelectorAll('[required]').forEach(function (inp) {
-        var bad = !inp.value.trim() || (inp.type === 'email' && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(inp.value));
-        inp.classList.toggle('bad', bad);
-        if (bad && ok) { inp.focus(); ok = false; }
-      });
-      if (!ok) return;
+    function showErr() {
+      if (ferr) { ferr.textContent = form.getAttribute('data-err') || 'Error'; ferr.hidden = false; }
+    }
+    function sendMailto() {
       var d = new FormData(form);
       var email = form.getAttribute('data-email');
       var subject = (form.getAttribute('data-subject') || 'Consultatie') + (d.get('company') ? ' - ' + d.get('company') : '');
@@ -75,7 +78,38 @@
         'Interes: ' + (d.get('interest') || '-') + '\n\n' +
         'Mesaj:\n' + (d.get('message') || '-') + '\n';
       window.location.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      form.querySelector('.modal-send').textContent = form.querySelector('.modal-send').textContent;
+    }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = true;
+      form.querySelectorAll('[required]').forEach(function (inp) {
+        var bad = !inp.value.trim() || (inp.type === 'email' && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(inp.value));
+        inp.classList.toggle('bad', bad);
+        if (bad && ok) { inp.focus(); ok = false; }
+      });
+      if (!ok) return;
+      if (ferr) ferr.hidden = true;
+
+      var key = form.getAttribute('data-web3key');
+      if (!key) { sendMailto(); return; }
+
+      var btn = form.querySelector('.modal-send');
+      var orig = btn.textContent;
+      btn.disabled = true; btn.textContent = '...';
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      }).then(function (r) { return r.json(); }).then(function (j) {
+        btn.disabled = false; btn.textContent = orig;
+        if (j && j.success) {
+          form.reset();
+          if (fbody) fbody.hidden = true;
+          if (fsuccess) fsuccess.hidden = false;
+        } else { showErr(); }
+      }).catch(function () {
+        btn.disabled = false; btn.textContent = orig; showErr();
+      });
     });
     form.querySelectorAll('input').forEach(function (inp) {
       inp.addEventListener('input', function () { inp.classList.remove('bad'); });

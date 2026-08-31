@@ -115,24 +115,37 @@
     <div class="modal-backdrop" data-close></div>
     <div class="modal-card" role="document">
       <button class="modal-x" type="button" data-close aria-label="{{ t.form_close }}">&times;</button>
-      <h3 id="cmTitle">{{ t.form_title }}</h3>
-      <p class="modal-sub">{{ t.form_sub }}</p>
-      <form id="consultForm" novalidate data-email="{{ site.email }}" data-subject="{{ t.form_title }}" data-req="{{ t.form_req }}">
-        <div class="fgrid">
-          <label class="field"><span>{{ t.form_name }} *</span><input type="text" name="name" required autocomplete="name"></label>
-          <label class="field"><span>{{ t.form_company }}</span><input type="text" name="company" autocomplete="organization"></label>
-          <label class="field"><span>{{ t.form_email }} *</span><input type="email" name="email" required autocomplete="email"></label>
-          <label class="field"><span>{{ t.form_phone }}</span><input type="tel" name="phone" autocomplete="tel"></label>
-        </div>
-        <label class="field"><span>{{ t.form_interest }}</span>
-          <select name="interest">
-            {% for o in t.form_opts %}<option>{{ o }}</option>{% endfor %}
-          </select>
-        </label>
-        <label class="field"><span>{{ t.form_msg }}</span><textarea name="message" rows="3"></textarea></label>
-        <button type="submit" class="btn btn-primary btn-block modal-send">{{ t.form_send }}</button>
-        <p class="modal-note">{{ t.form_note }}</p>
-      </form>
+      <div class="form-body">
+        <h3 id="cmTitle">{{ t.form_title }}</h3>
+        <p class="modal-sub">{{ t.form_sub }}</p>
+        <form id="consultForm" novalidate data-email="{{ site.email }}" data-web3key="{{ site.web3formsKey }}" data-subject="{{ t.form_title }}" data-req="{{ t.form_req }}" data-err="{{ t.form_error }}">
+          <input type="hidden" name="access_key" value="{{ site.web3formsKey }}">
+          <input type="hidden" name="subject" value="{{ t.form_title }} - netcomm.ro">
+          <input type="hidden" name="from_name" value="netcomm.ro">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="fgrid">
+            <label class="field"><span>{{ t.form_name }} *</span><input type="text" name="name" required autocomplete="name"></label>
+            <label class="field"><span>{{ t.form_company }}</span><input type="text" name="company" autocomplete="organization"></label>
+            <label class="field"><span>{{ t.form_email }} *</span><input type="email" name="email" required autocomplete="email"></label>
+            <label class="field"><span>{{ t.form_phone }}</span><input type="tel" name="phone" autocomplete="tel"></label>
+          </div>
+          <label class="field"><span>{{ t.form_interest }}</span>
+            <select name="interest">
+              {% for o in t.form_opts %}<option>{{ o }}</option>{% endfor %}
+            </select>
+          </label>
+          <label class="field"><span>{{ t.form_msg }}</span><textarea name="message" rows="3"></textarea></label>
+          <button type="submit" class="btn btn-primary btn-block modal-send">{{ t.form_send }}</button>
+          <p class="modal-err" id="formErr" hidden></p>
+          <p class="modal-note">{{ t.form_note }}</p>
+        </form>
+      </div>
+      <div class="form-success" hidden>
+        <div class="fs-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></div>
+        <h3>{{ t.form_success_title }}</h3>
+        <p>{{ t.form_success_msg }}</p>
+        <button type="button" class="btn btn-primary" data-close>{{ t.form_close }}</button>
+      </div>
     </div>
   </div>
 
