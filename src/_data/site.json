@@ -8,6 +8,37 @@
   "address": "Str. Samuil Vulcan nr. 12, Bucuresti",
   "url": "https://netcomm.ro",
   "web3formsKey": "459c6d34-f5f3-48db-83c6-2f9d27e26bbf",
+  "gaId": "",
+  "cookies": {
+    "ro": {
+      "banner": "Folosim cookie-uri pentru buna functionare a site-ului si, cu acordul tau, pentru a analiza traficul (Google Analytics). Poti accepta sau refuza.",
+      "accept": "Accept",
+      "reject": "Refuz",
+      "more": "Politica de cookies",
+      "policyTitle": "Politica de cookies",
+      "policyIntro": "Acest site foloseste cookie-uri si tehnologii similare pentru a functiona corect si, cu acordul tau, pentru a intelege cum este folosit site-ul.",
+      "sections": [
+        { "h": "Strict necesare", "p": "Retin doar preferinta ta privind cookie-urile (accept sau refuz). Fara ele, banner-ul ar aparea la fiecare vizita. Nu te identifica personal si sunt mereu active." },
+        { "h": "Analiza (optionale)", "p": "Folosim Google Analytics pentru a vedea, anonim si agregat, ce pagini sunt vizitate si cum putem imbunatati site-ul. Se activeaza DOAR daca apesi Accept. Adresa IP este anonimizata." }
+      ],
+      "policyChange": "Iti poti schimba oricand alegerea:",
+      "contact": "Pentru intrebari despre datele tale: suport@netcomm.ro."
+    },
+    "en": {
+      "banner": "We use cookies for the site to work properly and, with your consent, to analyze traffic (Google Analytics). You can accept or decline.",
+      "accept": "Accept",
+      "reject": "Decline",
+      "more": "Cookie policy",
+      "policyTitle": "Cookie policy",
+      "policyIntro": "This site uses cookies and similar technologies to work correctly and, with your consent, to understand how the site is used.",
+      "sections": [
+        { "h": "Strictly necessary", "p": "We only store your cookie preference (accept or decline). Without it, the banner would appear on every visit. It does not identify you personally and is always active." },
+        { "h": "Analytics (optional)", "p": "We use Google Analytics to see, anonymously and in aggregate, which pages are visited and how we can improve the site. It activates ONLY if you click Accept. Your IP address is anonymized." }
+      ],
+      "policyChange": "You can change your choice at any time:",
+      "contact": "For questions about your data: suport@netcomm.ro."
+    }
+  },
   "heroImage": "/assets/img/photos/hero.jpg",
   "ogImage": "/assets/img/photos/datacenter.jpg",
   "stats": [

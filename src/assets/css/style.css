@@ -248,6 +248,26 @@ svg{width:100%;height:100%}
 .form-success .fs-ic svg{width:32px;height:32px}
 .form-success h3{font-size:1.5rem;margin-bottom:8px}
 .form-success>p{color:var(--muted);font-size:.98rem;margin-bottom:22px;max-width:360px;margin-left:auto;margin-right:auto}
+
+/* ===== Cookie banner + policy ===== */
+.cookie-banner{position:fixed;left:0;right:0;bottom:0;z-index:250;padding:15px 20px;background:rgba(11,18,32,.97);backdrop-filter:blur(10px);border-top:1px solid rgba(143,184,230,.2);box-shadow:0 -12px 40px -20px rgba(0,0,0,.6)}
+.cookie-banner[hidden]{display:none}
+.cookie-in{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:space-between}
+.cookie-txt{font-size:.88rem;color:var(--dark-muted);max-width:760px;line-height:1.5}
+.cookie-txt a{color:var(--ice);text-decoration:underline}
+.cookie-actions{display:flex;gap:10px;flex-shrink:0}
+.cookie-actions .btn{padding:.58em 1.3em;font-size:.88rem}
+.btn-reject{background:transparent;color:#fff;border-color:rgba(255,255,255,.32)}
+.btn-reject:hover{background:rgba(255,255,255,.1)}
+.cookie-policy .cp-sec{margin-bottom:16px}
+.cookie-policy .cp-sec b{font-family:var(--disp);font-size:.98rem;color:var(--ink);display:block;margin-bottom:4px}
+.cookie-policy .cp-sec p{font-size:.92rem;color:var(--body);line-height:1.55}
+.cookie-policy .cp-change{font-family:var(--disp);font-weight:600;font-size:.9rem;color:var(--ink);margin:18px 0 12px}
+.cookie-policy .cp-actions{display:flex;gap:10px}
+.cookie-policy .cp-actions .btn{flex:1;justify-content:center}
+.foot-links a{color:var(--dark-muted);text-decoration:underline}
+.foot-links a:hover{color:var(--ice)}
+@media(max-width:640px){.cookie-in{flex-direction:column;align-items:stretch;gap:14px}.cookie-actions .btn{flex:1;justify-content:center}}
 @media(max-width:520px){.modal .fgrid{grid-template-columns:1fr}.modal-card{padding:28px 22px}}
 
 /* ===== NIS2 checker ===== */

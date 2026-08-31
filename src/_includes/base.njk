@@ -1,5 +1,6 @@
 {% set t = i18n[lang] %}
 {% set c = site[lang] %}
+{% set ck = site.cookies[lang] %}
 {% set home = "/" if lang == "ro" else "/en/" %}
 <!doctype html>
 <html lang="{{ lang }}">
@@ -107,7 +108,7 @@
     </div>
     <div class="wrap foot-bottom">
       <span>&copy; {{ '2026' }} {{ site.brandName }}. {{ c.rights }}</span>
-      <span>netcomm.ro</span>
+      <span class="foot-links"><a href="#" data-cookie-policy>{{ ck.policyTitle }}</a> &middot; netcomm.ro</span>
     </div>
   </footer>
 
@@ -149,7 +150,38 @@
     </div>
   </div>
 
+  <div class="cookie-banner" id="cookieBanner" data-ga="{{ site.gaId }}" hidden>
+    <div class="cookie-in">
+      <p class="cookie-txt">{{ ck.banner }} <a href="#" data-cookie-policy>{{ ck.more }}</a></p>
+      <div class="cookie-actions">
+        <button type="button" class="btn btn-reject" data-reject>{{ ck.reject }}</button>
+        <button type="button" class="btn btn-primary" data-accept>{{ ck.accept }}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="cookieModal" hidden role="dialog" aria-modal="true" aria-labelledby="ckTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="document">
+      <button class="modal-x" type="button" data-close aria-label="{{ ck.accept }}">&times;</button>
+      <h3 id="ckTitle">{{ ck.policyTitle }}</h3>
+      <p class="modal-sub">{{ ck.policyIntro }}</p>
+      <div class="cookie-policy">
+        {% for s in ck.sections %}
+        <div class="cp-sec"><b>{{ s.h }}</b><p>{{ s.p }}</p></div>
+        {% endfor %}
+        <p class="cp-change">{{ ck.policyChange }}</p>
+        <div class="cp-actions">
+          <button type="button" class="btn btn-outline" data-reject>{{ ck.reject }}</button>
+          <button type="button" class="btn btn-primary" data-accept>{{ ck.accept }}</button>
+        </div>
+        <p class="modal-note">{{ ck.contact }}</p>
+      </div>
+    </div>
+  </div>
+
   <script src="/assets/js/main.js?v={{ build }}" defer></script>
   <script src="/assets/js/nis2.js?v={{ build }}" defer></script>
+  <script src="/assets/js/cookies.js?v={{ build }}" defer></script>
 </body>
 </html>
