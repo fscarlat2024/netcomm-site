@@ -8,6 +8,7 @@
 
   var rows = [].slice.call(root.querySelectorAll('.q'));
   var answers = {};
+  var lastMsg = '';
 
   rows.forEach(function (row) {
     var idx = row.getAttribute('data-idx');
@@ -61,17 +62,12 @@
       gapsBox.hidden = true;
     }
 
-    // mailto pre-completat cu scorul + goluri
-    var subject = cfg.subject.replace('{score}', pct);
+    // pregateste mesajul pentru formular (scor + goluri) -> deschide modalul la click
     var gapText = gaps.length ? gaps.map(function (g) { return '- ' + g; }).join('\n') : '-';
-    var body = cfg.body
+    lastMsg = cfg.body
       .replace('{score}', pct)
       .replace('{level}', lvl.title)
       .replace('{gaps}', gapText);
-    document.getElementById('nis2Cta').setAttribute(
-      'href',
-      'mailto:' + cfg.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body)
-    );
 
     quiz.hidden = true;
     result.hidden = false;
@@ -84,5 +80,14 @@
     quiz.hidden = false;
     document.getElementById('nis2Fill').style.width = '0%';
     quiz.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+
+  // "Primeste raportul complet" -> deschide formularul pre-completat cu scorul + golurile
+  var cta = document.getElementById('nis2Cta');
+  if (cta) cta.addEventListener('click', function (e) {
+    if (window.ncsOpenConsult) {
+      e.preventDefault();
+      window.ncsOpenConsult(lastMsg, cfg.interest);
+    }
   });
 })();

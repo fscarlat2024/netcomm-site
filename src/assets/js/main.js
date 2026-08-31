@@ -53,6 +53,15 @@
       document.body.style.overflow = '';
       if (lastFocus) lastFocus.focus();
     }
+    // deschidere programatica (ex. din checkerul NIS2), cu pre-completare
+    window.ncsOpenConsult = function (message, interest) {
+      openModal();
+      if (message) { var m = form.querySelector('[name="message"]'); if (m) m.value = message; }
+      if (interest) {
+        var s = form.querySelector('[name="interest"]');
+        if (s) { for (var i = 0; i < s.options.length; i++) { if (s.options[i].value === interest || s.options[i].text === interest) { s.selectedIndex = i; break; } } }
+      }
+    };
     // orice buton care duce spre #contact deschide formularul (mai putin CTA-ul NIS2 care e mailto)
     document.querySelectorAll('a.btn[href$="#contact"]:not(#nis2Cta), a.nav-cta').forEach(function (a) {
       a.addEventListener('click', openModal);

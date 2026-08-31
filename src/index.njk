@@ -97,7 +97,7 @@ layout: base.njk
 </section>
 
 {% set n = site.nis2[lang] %}
-{% set nis2cfg = { email: site.email, subject: n.emailSubject, body: n.emailBody, gapsTitle: n.gapsTitle, levels: n.levels, tHigh: 80, tMid: 50 } %}
+{% set nis2cfg = { email: site.email, subject: n.emailSubject, body: n.emailBody, gapsTitle: n.gapsTitle, levels: n.levels, interest: i18n[lang].form_opts[2], tHigh: 80, tMid: 50 } %}
 <section class="section band-dark nis2" id="nis2">
   <div class="wrap nis2-grid">
     <div class="nis2-intro reveal">
