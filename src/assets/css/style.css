@@ -298,6 +298,13 @@ svg{width:100%;height:100%}
 .guarantee ul{list-style:none;margin-top:15px;display:grid;gap:9px}
 .guarantee li{display:flex;gap:10px;align-items:flex-start;color:var(--dark-ink);font-size:.92rem}
 .guarantee li svg{width:19px;height:19px;flex-shrink:0;color:var(--ice);margin-top:2px}
+.nis2-reqs{margin-top:28px}
+.nis2-reqs-title{font-family:var(--disp);font-size:1.02rem;color:#fff;margin-bottom:16px}
+.nis2-reqs ul{list-style:none;display:grid;gap:15px}
+.nis2-reqs li{display:flex;gap:14px;align-items:flex-start}
+.nis2-reqs .rq-n{flex-shrink:0;width:26px;height:26px;border-radius:8px;background:rgba(143,184,230,.14);color:var(--ice);font-family:var(--disp);font-weight:700;font-size:.82rem;display:grid;place-items:center;margin-top:1px}
+.nis2-reqs .rq-t{font-size:.92rem;color:var(--dark-muted);line-height:1.5}
+.nis2-reqs .rq-t b{display:block;font-family:var(--disp);color:#fff;font-size:.98rem;font-weight:600;margin-bottom:2px}
 .nis2-card{background:#fff;border-radius:var(--radius);padding:26px 26px 28px;box-shadow:var(--shadow-lg);color:var(--ink)}
 .nis2-hint{font-family:var(--disp);font-weight:600;font-size:.9rem;color:var(--muted);margin-bottom:14px}
 .q{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}

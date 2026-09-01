@@ -124,6 +124,12 @@ layout: base.njk
           {% for gp in n.guaranteePoints %}<li>{{ icon("check") }} {{ gp }}</li>{% endfor %}
         </ul>
       </div>
+      <div class="nis2-reqs">
+        <h3 class="nis2-reqs-title">{{ n.reqTitle }}</h3>
+        <ul>
+          {% for r in n.reqs %}<li><span class="rq-n">{{ loop.index }}</span><span class="rq-t"><b>{{ r.t }}</b>{{ r.d }}</span></li>{% endfor %}
+        </ul>
+      </div>
     </div>
 
     <div class="nis2-card reveal" id="nis2Checker" data-cfg="{{ nis2cfg | dump | urlencode }}">

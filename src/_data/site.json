@@ -167,6 +167,14 @@
         "Implementare tehnică și hardening: Fortinet + Microsoft 365 Defender + Intune",
         "Documentație și politici pregătite pentru audit"
       ],
+      "reqTitle": "Cerințe cheie NIS2 la nivel de endpoint",
+      "reqs": [
+        { "t": "Control acces", "d": "Fără drepturi de admin local, MFA, model clar de roluri și PAM pentru accesele critice." },
+        { "t": "Configurări securizate (hardening)", "d": "Servicii inutile dezactivate, firewall restrictiv și politici de hardening CIS/BSI." },
+        { "t": "Logging & monitorizare", "d": "Jurnalizare centralizată și soluții EDR pentru documentarea evenimentelor pe endpoint." },
+        { "t": "Criptare & integritate", "d": "BitLocker, TPM și Secure Boot pentru protecția datelor împotriva manipulării." },
+        { "t": "Verificare continuă", "d": "Testarea periodică a eficacității măsurilor - obligatoriu conform NIS2." }
+      ],
       "checkIntro": "Bifați unde vă aflați la fiecare măsură:",
       "opts": ["Da", "Parțial", "Nu"],
       "calcBtn": "Vezi scorul meu NIS2",
@@ -192,6 +200,14 @@
         "Assessment and a tailored compliance plan",
         "Technical implementation and hardening: Fortinet + Microsoft 365 Defender + Intune",
         "Audit-ready documentation and policies"
+      ],
+      "reqTitle": "Key NIS2 requirements at endpoint level",
+      "reqs": [
+        { "t": "Access control", "d": "No local admin rights, MFA, a clear role model and PAM for critical access." },
+        { "t": "Secure configuration (hardening)", "d": "Unnecessary services disabled, restrictive firewall and CIS/BSI hardening policies." },
+        { "t": "Logging & monitoring", "d": "Central log storage and EDR solutions to document endpoint events." },
+        { "t": "Encryption & integrity", "d": "BitLocker, TPM and Secure Boot to protect data from manipulation." },
+        { "t": "Continuous review", "d": "Regular testing and proof of the measures' effectiveness - mandatory under NIS2." }
       ],
       "checkIntro": "Mark where you stand on each measure:",
       "opts": ["Yes", "Partial", "No"],
