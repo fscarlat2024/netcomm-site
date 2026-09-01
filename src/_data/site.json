@@ -273,7 +273,35 @@
       "cta": "Primiți raportul complet + plan de conformitate",
       "ctaAlt": "Programați o consultație gratuită",
       "emailSubject": "Evaluare NIS2 - scor {score}%",
-      "emailBody": "Bună ziua,\n\nAm completat evaluarea NIS2 de pe site și am obținut un scor de {score}% ({level}).\n\nGoluri identificate:\n{gaps}\n\nAș dori raportul complet de securitate și un plan de conformitate NIS2. Vă rog să mă contactați.\n\nMulțumesc!"
+      "emailBody": "Bună ziua,\n\nAm completat evaluarea NIS2 de pe site și am obținut un scor de {score}% ({level}).\n\nGoluri identificate:\n{gaps}\n\nAș dori raportul complet de securitate și un plan de conformitate NIS2. Vă rog să mă contactați.\n\nMulțumesc!",
+      "reqTitle2": "Cerințe cheie NIS2 la nivel de infrastructură",
+      "reqs2": [
+        {
+          "ic": "network",
+          "t": "Segmentare & Zero Trust",
+          "d": "Segmentare de rețea (VLAN) și firewall next-gen care limitează mișcarea laterală a unui atac în interior."
+        },
+        {
+          "ic": "server",
+          "t": "Redundanță & disponibilitate",
+          "d": "Echipamente în HA, legături ISP redundante și eliminarea punctelor unice de defectare (SPOF)."
+        },
+        {
+          "ic": "continuity",
+          "t": "Backup imutabil & DR",
+          "d": "Backup automat cu copie imutabilă/offline și plan de recuperare (DR/BCP) testat, cu RTO/RPO definite."
+        },
+        {
+          "ic": "security",
+          "t": "Management vulnerabilități",
+          "d": "Scanare și patching pe servere, firewall-uri și echipamente de rețea, cu remediere prioritizată."
+        },
+        {
+          "ic": "eye",
+          "t": "Monitorizare & detecție",
+          "d": "Logging centralizat (SIEM), detecție în rețea și alertare pentru răspuns rapid la incidente."
+        }
+      ]
     },
     "en": {
       "eyebrow": "The NCS difference",
@@ -340,7 +368,35 @@
       "cta": "Get the full report + compliance plan",
       "ctaAlt": "Book a free consultation",
       "emailSubject": "NIS2 assessment - score {score}%",
-      "emailBody": "Hello,\n\nI completed the NIS2 assessment on your site and scored {score}% ({level}).\n\nGaps identified:\n{gaps}\n\nI would like the full security report and a NIS2 compliance plan. Please get in touch.\n\nThank you!"
+      "emailBody": "Hello,\n\nI completed the NIS2 assessment on your site and scored {score}% ({level}).\n\nGaps identified:\n{gaps}\n\nI would like the full security report and a NIS2 compliance plan. Please get in touch.\n\nThank you!",
+      "reqTitle2": "Key NIS2 requirements at infrastructure level",
+      "reqs2": [
+        {
+          "ic": "network",
+          "t": "Segmentation & Zero Trust",
+          "d": "Network segmentation (VLAN) and a next-gen firewall that limit an attacker's lateral movement inside."
+        },
+        {
+          "ic": "server",
+          "t": "Redundancy & availability",
+          "d": "HA equipment, redundant ISP links and elimination of single points of failure (SPOF)."
+        },
+        {
+          "ic": "continuity",
+          "t": "Immutable backup & DR",
+          "d": "Automated backup with an immutable/offline copy and a tested DR/BCP plan, with defined RTO/RPO."
+        },
+        {
+          "ic": "security",
+          "t": "Vulnerability management",
+          "d": "Scanning and patching across servers, firewalls and network devices, with prioritized remediation."
+        },
+        {
+          "ic": "eye",
+          "t": "Monitoring & detection",
+          "d": "Centralized logging (SIEM), network detection and alerting for fast incident response."
+        }
+      ]
     },
     "questions": [
       {
