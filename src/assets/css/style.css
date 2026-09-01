@@ -179,6 +179,17 @@ svg{width:100%;height:100%}
 .foot-col a:hover{color:var(--ice)}
 .foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:26px;font-size:.84rem;flex-wrap:wrap;gap:10px}
 
+/* ===== Clients logo band ===== */
+.clients-band{padding:42px 0 38px;background:var(--bg);border-bottom:1px solid var(--line)}
+.clients-eyebrow{text-align:center;font-family:var(--disp);font-weight:700;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
+.logo-marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.logo-track{display:flex;align-items:center;gap:58px;width:max-content;animation:scroll 64s linear infinite}
+.logo-marquee:hover .logo-track{animation-play-state:paused}
+.logo-item{display:flex;align-items:center;justify-content:center;height:48px;flex:0 0 auto}
+.logo-item img{max-height:44px;width:auto;max-width:160px;object-fit:contain;filter:grayscale(1);opacity:.6;transition:filter .35s,opacity .35s}
+.logo-item img:hover{filter:grayscale(0);opacity:1}
+@media(max-width:640px){.logo-track{gap:40px}.logo-item{height:38px}.logo-item img{max-height:34px;max-width:130px}}
+
 /* ===== About ===== */
 .about{display:grid;grid-template-columns:1.12fr .88fr;gap:58px;align-items:center}
 .about-text .eyebrow{margin-bottom:14px}

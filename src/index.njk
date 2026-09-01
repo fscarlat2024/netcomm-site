@@ -32,6 +32,18 @@ layout: base.njk
   </div>
 </section>
 
+<section class="clients-band" id="clienti">
+  <div class="wrap">
+    <p class="clients-eyebrow reveal">{{ c.clientsEyebrow }}</p>
+  </div>
+  <div class="logo-marquee reveal">
+    <div class="logo-track">
+      {% for cl in site.clients %}<span class="logo-item"><img src="{{ cl.img }}" alt="{{ cl.alt }}" loading="lazy" decoding="async"></span>{% endfor %}
+      {% for cl in site.clients %}<span class="logo-item" aria-hidden="true"><img src="{{ cl.img }}" alt="" loading="lazy" decoding="async"></span>{% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="section band-soft" id="despre">
   <div class="wrap about">
     <div class="about-text reveal">
