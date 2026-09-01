@@ -18,8 +18,14 @@
       "policyTitle": "Politica de cookies",
       "policyIntro": "Acest site folosește cookie-uri și tehnologii similare pentru a funcționa corect și, cu acordul dumneavoastră, pentru a înțelege cum este utilizat.",
       "sections": [
-        { "h": "Strict necesare", "p": "Rețin doar preferința dumneavoastră privind cookie-urile (accept sau refuz). Fără ele, banner-ul ar apărea la fiecare vizită. Nu vă identifică personal și sunt mereu active." },
-        { "h": "Analiză (opționale)", "p": "Folosim Google Analytics pentru a vedea, anonim și agregat, ce pagini sunt vizitate și cum putem îmbunătăți site-ul. Se activează DOAR dacă apăsați Accept. Adresa IP este anonimizată." }
+        {
+          "h": "Strict necesare",
+          "p": "Rețin doar preferința dumneavoastră privind cookie-urile (accept sau refuz). Fără ele, banner-ul ar apărea la fiecare vizită. Nu vă identifică personal și sunt mereu active."
+        },
+        {
+          "h": "Analiză (opționale)",
+          "p": "Folosim Google Analytics pentru a vedea, anonim și agregat, ce pagini sunt vizitate și cum putem îmbunătăți site-ul. Se activează DOAR dacă apăsați Accept. Adresa IP este anonimizată."
+        }
       ],
       "policyChange": "Vă puteți schimba oricând alegerea:",
       "contact": "Pentru întrebări despre datele dumneavoastră: suport@netcomm.ro."
@@ -32,8 +38,14 @@
       "policyTitle": "Cookie policy",
       "policyIntro": "This site uses cookies and similar technologies to work correctly and, with your consent, to understand how the site is used.",
       "sections": [
-        { "h": "Strictly necessary", "p": "We only store your cookie preference (accept or decline). Without it, the banner would appear on every visit. It does not identify you personally and is always active." },
-        { "h": "Analytics (optional)", "p": "We use Google Analytics to see, anonymously and in aggregate, which pages are visited and how we can improve the site. It activates ONLY if you click Accept. Your IP address is anonymized." }
+        {
+          "h": "Strictly necessary",
+          "p": "We only store your cookie preference (accept or decline). Without it, the banner would appear on every visit. It does not identify you personally and is always active."
+        },
+        {
+          "h": "Analytics (optional)",
+          "p": "We use Google Analytics to see, anonymously and in aggregate, which pages are visited and how we can improve the site. It activates ONLY if you click Accept. Your IP address is anonymized."
+        }
       ],
       "policyChange": "You can change your choice at any time:",
       "contact": "For questions about your data: suport@netcomm.ro."
@@ -42,10 +54,26 @@
   "heroImage": "/assets/img/photos/hero.jpg",
   "ogImage": "/assets/img/photos/datacenter.jpg",
   "stats": [
-    { "num": "100+", "ro": "Clienți activi", "en": "Active clients" },
-    { "num": "99.9%", "ro": "Uptime garantat", "en": "Guaranteed uptime" },
-    { "num": "10+", "ro": "Ani de experiență", "en": "Years of experience" },
-    { "num": "24/7", "ro": "Suport și monitorizare", "en": "Support & monitoring" }
+    {
+      "num": "100+",
+      "ro": "Clienți activi",
+      "en": "Active clients"
+    },
+    {
+      "num": "99.9%",
+      "ro": "Uptime garantat",
+      "en": "Guaranteed uptime"
+    },
+    {
+      "num": "10+",
+      "ro": "Ani de experiență",
+      "en": "Years of experience"
+    },
+    {
+      "num": "24/7",
+      "ro": "Suport și monitorizare",
+      "en": "Support & monitoring"
+    }
   ],
   "ro": {
     "metaTitle": "NCS - Net Communications System | Cybersecurity & Servicii IT enterprise",
@@ -73,10 +101,22 @@
     "cyberTitle": "Securitate proiectată din temelie",
     "cyberLead": "Protejăm datele, utilizatorii și infrastructura companiei dumneavoastră printr-o abordare pe mai multe straturi. Nu adăugăm securitatea la final - o integrăm în fiecare soluție, de la rețea până la endpoint.",
     "cyberPoints": [
-      { "title": "Firewall & rețea", "desc": "Fortinet next-gen cu IPS/IDS, segmentare VLAN și politici Zero Trust care limitează răspândirea unui atac în interiorul rețelei." },
-      { "title": "Endpoint & email", "desc": "Microsoft 365 Defender XDR pentru protecție anti-malware, anti-phishing și detecție comportamentală pe fiecare dispozitiv și cont." },
-      { "title": "Audit & vulnerabilități", "desc": "Scanări periodice, hardening conform bunelor practici și management de vulnerabilități, cu plan de remediere prioritizat." },
-      { "title": "Conformitate NIS2 & GDPR", "desc": "Politici, măsuri tehnice și documentație pentru cerințele legale - cu rapoarte pregătite pentru audit și control." }
+      {
+        "title": "Firewall & rețea",
+        "desc": "Fortinet next-gen cu IPS/IDS, segmentare VLAN și politici Zero Trust care limitează răspândirea unui atac în interiorul rețelei."
+      },
+      {
+        "title": "Endpoint & email",
+        "desc": "Microsoft 365 Defender XDR pentru protecție anti-malware, anti-phishing și detecție comportamentală pe fiecare dispozitiv și cont."
+      },
+      {
+        "title": "Audit & vulnerabilități",
+        "desc": "Scanări periodice, hardening conform bunelor practici și management de vulnerabilități, cu plan de remediere prioritizat."
+      },
+      {
+        "title": "Conformitate NIS2 & GDPR",
+        "desc": "Politici, măsuri tehnice și documentație pentru cerințele legale - cu rapoarte pregătite pentru audit și control."
+      }
     ],
     "processEyebrow": "Cum lucrăm",
     "processTitle": "Un proces clar, de la prima discuție la operare",
@@ -127,10 +167,22 @@
     "cyberTitle": "Security engineered from the ground up",
     "cyberLead": "We protect your company's data, users and infrastructure through a multi-layered approach. We don't bolt security on at the end - we build it into every solution, from the network to the endpoint.",
     "cyberPoints": [
-      { "title": "Firewall & network", "desc": "Fortinet next-gen with IPS/IDS, VLAN segmentation and Zero Trust policies that limit how far an attack can spread inside the network." },
-      { "title": "Endpoint & email", "desc": "Microsoft 365 Defender XDR for anti-malware, anti-phishing and behavioural detection on every device and account." },
-      { "title": "Audit & vulnerabilities", "desc": "Periodic scans, hardening to best practice and vulnerability management, with a prioritized remediation plan." },
-      { "title": "NIS2 & GDPR compliance", "desc": "Policies, technical measures and documentation for legal requirements - with reports ready for audit and inspection." }
+      {
+        "title": "Firewall & network",
+        "desc": "Fortinet next-gen with IPS/IDS, VLAN segmentation and Zero Trust policies that limit how far an attack can spread inside the network."
+      },
+      {
+        "title": "Endpoint & email",
+        "desc": "Microsoft 365 Defender XDR for anti-malware, anti-phishing and behavioural detection on every device and account."
+      },
+      {
+        "title": "Audit & vulnerabilities",
+        "desc": "Periodic scans, hardening to best practice and vulnerability management, with a prioritized remediation plan."
+      },
+      {
+        "title": "NIS2 & GDPR compliance",
+        "desc": "Policies, technical measures and documentation for legal requirements - with reports ready for audit and inspection."
+      }
     ],
     "processEyebrow": "How we work",
     "processTitle": "A clear process, from first talk to daily operations",
@@ -169,20 +221,53 @@
       ],
       "reqTitle": "Cerințe cheie NIS2 la nivel de endpoint",
       "reqs": [
-        { "t": "Control acces", "d": "Fără drepturi de admin local, MFA, model clar de roluri și PAM pentru accesele critice." },
-        { "t": "Configurări securizate (hardening)", "d": "Servicii inutile dezactivate, firewall restrictiv și politici de hardening CIS/BSI." },
-        { "t": "Logging & monitorizare", "d": "Jurnalizare centralizată și soluții EDR pentru documentarea evenimentelor pe endpoint." },
-        { "t": "Criptare & integritate", "d": "BitLocker, TPM și Secure Boot pentru protecția datelor împotriva manipulării." },
-        { "t": "Verificare continuă", "d": "Testarea periodică a eficacității măsurilor - obligatoriu conform NIS2." }
+        {
+          "ic": "key",
+          "t": "Control acces",
+          "d": "Fără drepturi de admin local, MFA, model clar de roluri și PAM pentru accesele critice."
+        },
+        {
+          "ic": "security",
+          "t": "Configurări securizate (hardening)",
+          "d": "Servicii inutile dezactivate, firewall restrictiv și politici de hardening CIS/BSI."
+        },
+        {
+          "ic": "report",
+          "t": "Logging & monitorizare",
+          "d": "Jurnalizare centralizată și soluții EDR pentru documentarea evenimentelor pe endpoint."
+        },
+        {
+          "ic": "lock",
+          "t": "Criptare & integritate",
+          "d": "BitLocker, TPM și Secure Boot pentru protecția datelor împotriva manipulării."
+        },
+        {
+          "ic": "continuity",
+          "t": "Verificare continuă",
+          "d": "Testarea periodică a eficacității măsurilor - obligatoriu conform NIS2."
+        }
       ],
       "checkIntro": "Bifați unde vă aflați la fiecare măsură:",
-      "opts": ["Da", "Parțial", "Nu"],
+      "opts": [
+        "Da",
+        "Parțial",
+        "Nu"
+      ],
       "calcBtn": "Vezi scorul meu NIS2",
       "resultTitle": "Scorul dumneavoastră de pregătire NIS2",
       "levels": {
-        "high": { "title": "Bine poziționat", "msg": "Aveți o bază solidă de securitate. Mai rămân de aliniat câteva măsuri și documentația formală pentru conformitate NIS2 deplină." },
-        "mid": { "title": "Parțial pregătit", "msg": "Aveți câteva măsuri implementate, dar există goluri importante. Fără un plan clar, riscul unui incident sau al unei neconformități este ridicat." },
-        "low": { "title": "Risc ridicat", "msg": "Sunteți expus. Lipsesc măsuri esențiale cerute de NIS2 - este nevoie de un plan de conformitate cât mai rapid." }
+        "high": {
+          "title": "Bine poziționat",
+          "msg": "Aveți o bază solidă de securitate. Mai rămân de aliniat câteva măsuri și documentația formală pentru conformitate NIS2 deplină."
+        },
+        "mid": {
+          "title": "Parțial pregătit",
+          "msg": "Aveți câteva măsuri implementate, dar există goluri importante. Fără un plan clar, riscul unui incident sau al unei neconformități este ridicat."
+        },
+        "low": {
+          "title": "Risc ridicat",
+          "msg": "Sunteți expus. Lipsesc măsuri esențiale cerute de NIS2 - este nevoie de un plan de conformitate cât mai rapid."
+        }
       },
       "gapsTitle": "De îmbunătățit prioritar:",
       "cta": "Primiți raportul complet + plan de conformitate",
@@ -203,20 +288,53 @@
       ],
       "reqTitle": "Key NIS2 requirements at endpoint level",
       "reqs": [
-        { "t": "Access control", "d": "No local admin rights, MFA, a clear role model and PAM for critical access." },
-        { "t": "Secure configuration (hardening)", "d": "Unnecessary services disabled, restrictive firewall and CIS/BSI hardening policies." },
-        { "t": "Logging & monitoring", "d": "Central log storage and EDR solutions to document endpoint events." },
-        { "t": "Encryption & integrity", "d": "BitLocker, TPM and Secure Boot to protect data from manipulation." },
-        { "t": "Continuous review", "d": "Regular testing and proof of the measures' effectiveness - mandatory under NIS2." }
+        {
+          "ic": "key",
+          "t": "Access control",
+          "d": "No local admin rights, MFA, a clear role model and PAM for critical access."
+        },
+        {
+          "ic": "security",
+          "t": "Secure configuration (hardening)",
+          "d": "Unnecessary services disabled, restrictive firewall and CIS/BSI hardening policies."
+        },
+        {
+          "ic": "report",
+          "t": "Logging & monitoring",
+          "d": "Central log storage and EDR solutions to document endpoint events."
+        },
+        {
+          "ic": "lock",
+          "t": "Encryption & integrity",
+          "d": "BitLocker, TPM and Secure Boot to protect data from manipulation."
+        },
+        {
+          "ic": "continuity",
+          "t": "Continuous review",
+          "d": "Regular testing and proof of the measures' effectiveness - mandatory under NIS2."
+        }
       ],
       "checkIntro": "Mark where you stand on each measure:",
-      "opts": ["Yes", "Partial", "No"],
+      "opts": [
+        "Yes",
+        "Partial",
+        "No"
+      ],
       "calcBtn": "See my NIS2 score",
       "resultTitle": "Your NIS2 readiness score",
       "levels": {
-        "high": { "title": "Well positioned", "msg": "You have a solid security baseline. A few measures and the formal documentation remain to reach full NIS2 compliance." },
-        "mid": { "title": "Partially ready", "msg": "You have some measures in place, but there are significant gaps. Without a clear plan, the risk of an incident or non-compliance is high." },
-        "low": { "title": "High risk", "msg": "You are exposed. Essential NIS2 measures are missing - a compliance plan is needed as soon as possible." }
+        "high": {
+          "title": "Well positioned",
+          "msg": "You have a solid security baseline. A few measures and the formal documentation remain to reach full NIS2 compliance."
+        },
+        "mid": {
+          "title": "Partially ready",
+          "msg": "You have some measures in place, but there are significant gaps. Without a clear plan, the risk of an incident or non-compliance is high."
+        },
+        "low": {
+          "title": "High risk",
+          "msg": "You are exposed. Essential NIS2 measures are missing - a compliance plan is needed as soon as possible."
+        }
       },
       "gapsTitle": "Priorities to improve:",
       "cta": "Get the full report + compliance plan",
@@ -225,157 +343,495 @@
       "emailBody": "Hello,\n\nI completed the NIS2 assessment on your site and scored {score}% ({level}).\n\nGaps identified:\n{gaps}\n\nI would like the full security report and a NIS2 compliance plan. Please get in touch.\n\nThank you!"
     },
     "questions": [
-      { "q_ro": "Autentificare multi-factor (MFA) pe toate conturile", "q_en": "Multi-factor authentication (MFA) on all accounts",
-        "gap_ro": "Activarea MFA pe toate conturile - cea mai eficientă măsură anti-phishing.", "gap_en": "Enable MFA on all accounts - the most effective anti-phishing measure." },
-      { "q_ro": "Backup automat, testat, cu o copie imutabilă sau offline", "q_en": "Automated, tested backup with an immutable or offline copy",
-        "gap_ro": "Backup cu copie imutabilă (anti-ransomware) și testarea periodică a restaurării.", "gap_en": "Backup with an immutable copy (anti-ransomware) and periodic restore testing." },
-      { "q_ro": "Firewall next-gen cu segmentarea rețelei (VLAN/Zero Trust)", "q_en": "Next-gen firewall with network segmentation (VLAN/Zero Trust)",
-        "gap_ro": "Firewall Fortinet cu segmentare, astfel încât un atac să nu se răspândească în toată rețeaua.", "gap_en": "A Fortinet firewall with segmentation, so an attack can't spread across the whole network." },
-      { "q_ro": "Plan de răspuns la incident și o persoană responsabilă", "q_en": "An incident response plan and a responsible person",
-        "gap_ro": "Un plan clar de răspuns la incident și un responsabil desemnat - cerință NIS2.", "gap_en": "A clear incident response plan and a designated owner - a NIS2 requirement." },
-      { "q_ro": "Management de patch-uri și vulnerabilități", "q_en": "Patch and vulnerability management",
-        "gap_ro": "Actualizări la timp și scanări de vulnerabilități cu remediere prioritizată.", "gap_en": "Timely updates and vulnerability scans with prioritized remediation." },
-      { "q_ro": "Configurări securizate (hardening) pe servere și stații", "q_en": "Secure configuration (hardening) on servers and workstations",
-        "gap_ro": "Aplicarea unui standard de hardening (ex. CIS Benchmarks) pe servere, stații și echipamente de rețea, cu reducerea suprafeței de atac.", "gap_en": "Apply a hardening standard (e.g., CIS Benchmarks) to servers, workstations and network devices, reducing the attack surface." },
-      { "q_ro": "Control acces: least privilege, conturi de admin separate", "q_en": "Access control: least privilege, separate admin accounts",
-        "gap_ro": "Drepturi minime necesare și conturi de administrator separate de cele zilnice.", "gap_en": "Least-privilege rights and admin accounts kept separate from daily-use ones." },
-      { "q_ro": "Logare și monitorizare centralizată cu alertare", "q_en": "Centralized logging and monitoring with alerting",
-        "gap_ro": "Colectare centralizată de loguri și alertare (SIEM), pentru detecție la timp.", "gap_en": "Centralized log collection and alerting (SIEM), so you detect threats in time." },
-      { "q_ro": "Politici de securitate documentate și instruirea angajaților", "q_en": "Documented security policies and staff training",
-        "gap_ro": "Politici scrise și instruirea angajaților - obligatorii pentru conformitatea NIS2.", "gap_en": "Written policies and staff training - mandatory for NIS2 compliance." }
+      {
+        "q_ro": "Autentificare multi-factor (MFA) pe toate conturile",
+        "q_en": "Multi-factor authentication (MFA) on all accounts",
+        "gap_ro": "Activarea MFA pe toate conturile - cea mai eficientă măsură anti-phishing.",
+        "gap_en": "Enable MFA on all accounts - the most effective anti-phishing measure."
+      },
+      {
+        "q_ro": "Backup automat, testat, cu o copie imutabilă sau offline",
+        "q_en": "Automated, tested backup with an immutable or offline copy",
+        "gap_ro": "Backup cu copie imutabilă (anti-ransomware) și testarea periodică a restaurării.",
+        "gap_en": "Backup with an immutable copy (anti-ransomware) and periodic restore testing."
+      },
+      {
+        "q_ro": "Firewall next-gen cu segmentarea rețelei (VLAN/Zero Trust)",
+        "q_en": "Next-gen firewall with network segmentation (VLAN/Zero Trust)",
+        "gap_ro": "Firewall Fortinet cu segmentare, astfel încât un atac să nu se răspândească în toată rețeaua.",
+        "gap_en": "A Fortinet firewall with segmentation, so an attack can't spread across the whole network."
+      },
+      {
+        "q_ro": "Plan de răspuns la incident și o persoană responsabilă",
+        "q_en": "An incident response plan and a responsible person",
+        "gap_ro": "Un plan clar de răspuns la incident și un responsabil desemnat - cerință NIS2.",
+        "gap_en": "A clear incident response plan and a designated owner - a NIS2 requirement."
+      },
+      {
+        "q_ro": "Management de patch-uri și vulnerabilități",
+        "q_en": "Patch and vulnerability management",
+        "gap_ro": "Actualizări la timp și scanări de vulnerabilități cu remediere prioritizată.",
+        "gap_en": "Timely updates and vulnerability scans with prioritized remediation."
+      },
+      {
+        "q_ro": "Configurări securizate (hardening) pe servere și stații",
+        "q_en": "Secure configuration (hardening) on servers and workstations",
+        "gap_ro": "Aplicarea unui standard de hardening (ex. CIS Benchmarks) pe servere, stații și echipamente de rețea, cu reducerea suprafeței de atac.",
+        "gap_en": "Apply a hardening standard (e.g., CIS Benchmarks) to servers, workstations and network devices, reducing the attack surface."
+      },
+      {
+        "q_ro": "Control acces: least privilege, conturi de admin separate",
+        "q_en": "Access control: least privilege, separate admin accounts",
+        "gap_ro": "Drepturi minime necesare și conturi de administrator separate de cele zilnice.",
+        "gap_en": "Least-privilege rights and admin accounts kept separate from daily-use ones."
+      },
+      {
+        "q_ro": "Logare și monitorizare centralizată cu alertare",
+        "q_en": "Centralized logging and monitoring with alerting",
+        "gap_ro": "Colectare centralizată de loguri și alertare (SIEM), pentru detecție la timp.",
+        "gap_en": "Centralized log collection and alerting (SIEM), so you detect threats in time."
+      },
+      {
+        "q_ro": "Politici de securitate documentate și instruirea angajaților",
+        "q_en": "Documented security policies and staff training",
+        "gap_ro": "Politici scrise și instruirea angajaților - obligatorii pentru conformitatea NIS2.",
+        "gap_en": "Written policies and staff training - mandatory for NIS2 compliance."
+      }
     ]
   },
   "services": [
-    { "icon": "digitize",
-      "ro": { "title": "Digitizarea proceselor", "desc": "Transformăm fluxurile manuale și documentele pe hârtie în procese digitale automatizate. Reducem timpii de lucru, eliminăm erorile umane și creștem productivitatea, cu integrare completă în ecosistemul Microsoft 365." },
-      "en": { "title": "Process digitization", "desc": "We turn manual workflows and paper documents into automated digital processes. We cut turnaround times, remove human error and boost productivity, with full integration into the Microsoft 365 ecosystem." } },
-    { "icon": "strategy",
-      "ro": { "title": "Strategia IT a companiei", "desc": "Construim o foaie de parcurs IT pe 1-3 ani, aliniată cu obiectivele de business și bugetul companiei dumneavoastră. Prioritizăm investițiile, planificăm scalabilitatea și eliminăm costurile ascunse din infrastructura existentă." },
-      "en": { "title": "Company IT strategy", "desc": "We build a 1-3 year IT roadmap aligned with your business goals and budget. We prioritize investments, plan for scalability and remove the hidden costs in your existing infrastructure." } },
-    { "icon": "collab",
-      "ro": { "title": "Comunicare și colaborare", "desc": "Implementăm și administrăm Microsoft 365 - Teams, SharePoint și Exchange Online - pentru colaborare securizată de oriunde. Configurăm permisiuni, politici de partajare și backup, cu datele păstrate exclusiv în tenantul dumneavoastră." },
-      "en": { "title": "Communication & collaboration", "desc": "We deploy and manage Microsoft 365 - Teams, SharePoint and Exchange Online - for secure collaboration from anywhere. We set up permissions, sharing policies and backup, with data kept exclusively in your tenant." } },
-    { "icon": "projects",
-      "ro": { "title": "Management proiecte IT", "desc": "Coordonăm proiectele IT de la un capăt la altul: analiza cerințelor, planificare, implementare, testare și documentare. Livrăm la timp și în buget, cu un singur punct de contact și raportare la fiecare etapă." },
-      "en": { "title": "IT project management", "desc": "We coordinate IT projects end to end: requirements analysis, planning, implementation, testing and documentation. Delivered on time and on budget, with a single point of contact and reporting at every stage." } },
-    { "icon": "network",
-      "ro": { "title": "Arhitectură de rețea", "desc": "Proiectăm și implementăm rețele Fortinet de la zero sau optimizăm infrastructura existentă: segmentare VLAN, VPN site-to-site, firewall next-gen și politici Zero Trust. O rețea sigură, rapidă și pregătită pentru creștere." },
-      "en": { "title": "Network architecture", "desc": "We design and implement Fortinet networks from scratch or optimize your existing setup: VLAN segmentation, site-to-site VPN, next-gen firewall and Zero Trust policies. A secure, fast network ready to grow." } },
-    { "icon": "cloud",
-      "ro": { "title": "Soluții de migrare cloud", "desc": "Migrăm serverele, aplicațiile și datele către Microsoft Azure sau M365 cu downtime minim. Fiecare migrare include evaluare inițială, backup complet, testare și plan de rollback, pentru a nu pierde nicio informație." },
-      "en": { "title": "Cloud migration", "desc": "We migrate servers, applications and data to Microsoft Azure or M365 with minimal downtime. Every migration includes an initial assessment, full backup, testing and a rollback plan, so you never lose any data." } },
-    { "icon": "integration",
-      "ro": { "title": "Integrare de sistem", "desc": "Conectăm aplicațiile de business, ERP-urile și sistemele existente într-un ecosistem unitar. Eliminăm introducerea dublă a datelor și silozurile informaționale prin automatizări și integrări prin API." },
-      "en": { "title": "System integration", "desc": "We connect business applications, ERPs and existing systems into a unified ecosystem. We eliminate double data entry and information silos through automation and API integrations." } },
-    { "icon": "security",
-      "ro": { "title": "Cybersecurity", "desc": "Protecție pe mai multe straturi: firewall Fortinet cu IPS/IDS, Microsoft 365 Defender pentru endpoint și email, audit periodic de securitate și conformitate NIS2 și GDPR. Securitate proiectată, monitorizată și documentată." },
-      "en": { "title": "Cybersecurity", "desc": "Multi-layered protection: Fortinet firewall with IPS/IDS, Microsoft 365 Defender for endpoint and email, periodic security audits and NIS2 and GDPR compliance. Security that is engineered, monitored and documented." } },
-    { "icon": "continuity",
-      "ro": { "title": "Business Continuity & DR", "desc": "Planuri BCP/DRP testate în condiții reale, backup automatizat cu retenție configurabilă și proceduri clare de recuperare după incident. Ne asigurăm că afacerea revine rapid la normal, chiar și după un atac sau o defecțiune majoră." },
-      "en": { "title": "Business Continuity & DR", "desc": "Genuinely tested BCP/DRP plans, automated backup with configurable retention and clear recovery procedures after an incident. We make sure your business returns to normal fast, even after an attack or a major failure." } }
+    {
+      "icon": "digitize",
+      "ro": {
+        "title": "Digitizarea proceselor",
+        "desc": "Transformăm fluxurile manuale și documentele pe hârtie în procese digitale automatizate. Reducem timpii de lucru, eliminăm erorile umane și creștem productivitatea, cu integrare completă în ecosistemul Microsoft 365."
+      },
+      "en": {
+        "title": "Process digitization",
+        "desc": "We turn manual workflows and paper documents into automated digital processes. We cut turnaround times, remove human error and boost productivity, with full integration into the Microsoft 365 ecosystem."
+      }
+    },
+    {
+      "icon": "strategy",
+      "ro": {
+        "title": "Strategia IT a companiei",
+        "desc": "Construim o foaie de parcurs IT pe 1-3 ani, aliniată cu obiectivele de business și bugetul companiei dumneavoastră. Prioritizăm investițiile, planificăm scalabilitatea și eliminăm costurile ascunse din infrastructura existentă."
+      },
+      "en": {
+        "title": "Company IT strategy",
+        "desc": "We build a 1-3 year IT roadmap aligned with your business goals and budget. We prioritize investments, plan for scalability and remove the hidden costs in your existing infrastructure."
+      }
+    },
+    {
+      "icon": "collab",
+      "ro": {
+        "title": "Comunicare și colaborare",
+        "desc": "Implementăm și administrăm Microsoft 365 - Teams, SharePoint și Exchange Online - pentru colaborare securizată de oriunde. Configurăm permisiuni, politici de partajare și backup, cu datele păstrate exclusiv în tenantul dumneavoastră."
+      },
+      "en": {
+        "title": "Communication & collaboration",
+        "desc": "We deploy and manage Microsoft 365 - Teams, SharePoint and Exchange Online - for secure collaboration from anywhere. We set up permissions, sharing policies and backup, with data kept exclusively in your tenant."
+      }
+    },
+    {
+      "icon": "projects",
+      "ro": {
+        "title": "Management proiecte IT",
+        "desc": "Coordonăm proiectele IT de la un capăt la altul: analiza cerințelor, planificare, implementare, testare și documentare. Livrăm la timp și în buget, cu un singur punct de contact și raportare la fiecare etapă."
+      },
+      "en": {
+        "title": "IT project management",
+        "desc": "We coordinate IT projects end to end: requirements analysis, planning, implementation, testing and documentation. Delivered on time and on budget, with a single point of contact and reporting at every stage."
+      }
+    },
+    {
+      "icon": "network",
+      "ro": {
+        "title": "Arhitectură de rețea",
+        "desc": "Proiectăm și implementăm rețele Fortinet de la zero sau optimizăm infrastructura existentă: segmentare VLAN, VPN site-to-site, firewall next-gen și politici Zero Trust. O rețea sigură, rapidă și pregătită pentru creștere."
+      },
+      "en": {
+        "title": "Network architecture",
+        "desc": "We design and implement Fortinet networks from scratch or optimize your existing setup: VLAN segmentation, site-to-site VPN, next-gen firewall and Zero Trust policies. A secure, fast network ready to grow."
+      }
+    },
+    {
+      "icon": "cloud",
+      "ro": {
+        "title": "Soluții de migrare cloud",
+        "desc": "Migrăm serverele, aplicațiile și datele către Microsoft Azure sau M365 cu downtime minim. Fiecare migrare include evaluare inițială, backup complet, testare și plan de rollback, pentru a nu pierde nicio informație."
+      },
+      "en": {
+        "title": "Cloud migration",
+        "desc": "We migrate servers, applications and data to Microsoft Azure or M365 with minimal downtime. Every migration includes an initial assessment, full backup, testing and a rollback plan, so you never lose any data."
+      }
+    },
+    {
+      "icon": "integration",
+      "ro": {
+        "title": "Integrare de sistem",
+        "desc": "Conectăm aplicațiile de business, ERP-urile și sistemele existente într-un ecosistem unitar. Eliminăm introducerea dublă a datelor și silozurile informaționale prin automatizări și integrări prin API."
+      },
+      "en": {
+        "title": "System integration",
+        "desc": "We connect business applications, ERPs and existing systems into a unified ecosystem. We eliminate double data entry and information silos through automation and API integrations."
+      }
+    },
+    {
+      "icon": "security",
+      "ro": {
+        "title": "Cybersecurity",
+        "desc": "Protecție pe mai multe straturi: firewall Fortinet cu IPS/IDS, Microsoft 365 Defender pentru endpoint și email, audit periodic de securitate și conformitate NIS2 și GDPR. Securitate proiectată, monitorizată și documentată."
+      },
+      "en": {
+        "title": "Cybersecurity",
+        "desc": "Multi-layered protection: Fortinet firewall with IPS/IDS, Microsoft 365 Defender for endpoint and email, periodic security audits and NIS2 and GDPR compliance. Security that is engineered, monitored and documented."
+      }
+    },
+    {
+      "icon": "continuity",
+      "ro": {
+        "title": "Business Continuity & DR",
+        "desc": "Planuri BCP/DRP testate în condiții reale, backup automatizat cu retenție configurabilă și proceduri clare de recuperare după incident. Ne asigurăm că afacerea revine rapid la normal, chiar și după un atac sau o defecțiune majoră."
+      },
+      "en": {
+        "title": "Business Continuity & DR",
+        "desc": "Genuinely tested BCP/DRP plans, automated backup with configurable retention and clear recovery procedures after an incident. We make sure your business returns to normal fast, even after an attack or a major failure."
+      }
+    }
   ],
   "process": [
-    { "num": "01", "icon": "strategy",
-      "ro": { "title": "Evaluare & audit", "desc": "Analizăm infrastructura, aplicațiile și nivelul de securitate actual. Livrăm un raport clar, cu riscuri, priorități și recomandări concrete." },
-      "en": { "title": "Assessment & audit", "desc": "We analyze your infrastructure, applications and current security posture. We deliver a clear report with risks, priorities and concrete recommendations." } },
-    { "num": "02", "icon": "report",
-      "ro": { "title": "Strategie & propunere", "desc": "Construim un plan personalizat, cu soluții, buget și etape. Alegeți pachetul potrivit, fără costuri ascunse și fără angajamente inutile." },
-      "en": { "title": "Strategy & proposal", "desc": "We build a tailored plan with solutions, budget and stages. You choose the right package, with no hidden costs and no unnecessary commitments." } },
-    { "num": "03", "icon": "network",
-      "ro": { "title": "Implementare", "desc": "Configurăm, migrăm și securizăm - remote sau la sediu - cu impact minim asupra activității zilnice și comunicare la fiecare pas." },
-      "en": { "title": "Implementation", "desc": "We configure, migrate and secure - remotely or on-site - with minimal impact on your daily operations and communication at every step." } },
-    { "num": "04", "icon": "continuity",
-      "ro": { "title": "Monitorizare & suport", "desc": "Monitorizăm 24/7, intervenim proactiv înainte să apară problemele și trimitem rapoarte lunare. IT-ul rămâne mereu sub control." },
-      "en": { "title": "Monitoring & support", "desc": "We monitor 24/7, act proactively before issues arise and send monthly reports. Your IT stays under control at all times." } }
+    {
+      "num": "01",
+      "icon": "strategy",
+      "ro": {
+        "title": "Evaluare & audit",
+        "desc": "Analizăm infrastructura, aplicațiile și nivelul de securitate actual. Livrăm un raport clar, cu riscuri, priorități și recomandări concrete."
+      },
+      "en": {
+        "title": "Assessment & audit",
+        "desc": "We analyze your infrastructure, applications and current security posture. We deliver a clear report with risks, priorities and concrete recommendations."
+      }
+    },
+    {
+      "num": "02",
+      "icon": "report",
+      "ro": {
+        "title": "Strategie & propunere",
+        "desc": "Construim un plan personalizat, cu soluții, buget și etape. Alegeți pachetul potrivit, fără costuri ascunse și fără angajamente inutile."
+      },
+      "en": {
+        "title": "Strategy & proposal",
+        "desc": "We build a tailored plan with solutions, budget and stages. You choose the right package, with no hidden costs and no unnecessary commitments."
+      }
+    },
+    {
+      "num": "03",
+      "icon": "network",
+      "ro": {
+        "title": "Implementare",
+        "desc": "Configurăm, migrăm și securizăm - remote sau la sediu - cu impact minim asupra activității zilnice și comunicare la fiecare pas."
+      },
+      "en": {
+        "title": "Implementation",
+        "desc": "We configure, migrate and secure - remotely or on-site - with minimal impact on your daily operations and communication at every step."
+      }
+    },
+    {
+      "num": "04",
+      "icon": "continuity",
+      "ro": {
+        "title": "Monitorizare & suport",
+        "desc": "Monitorizăm 24/7, intervenim proactiv înainte să apară problemele și trimitem rapoarte lunare. IT-ul rămâne mereu sub control."
+      },
+      "en": {
+        "title": "Monitoring & support",
+        "desc": "We monitor 24/7, act proactively before issues arise and send monthly reports. Your IT stays under control at all times."
+      }
+    }
   ],
   "why": [
-    { "icon": "flex",
-      "ro": { "title": "Abonament lunar flexibil", "desc": "Serviciile se adaptează în funcție de nevoi - plătiți exact cât consumați, fără costuri ascunse." },
-      "en": { "title": "Flexible monthly plan", "desc": "Services are tailored to your needs - you pay exactly for what you use, with no hidden costs." } },
-    { "icon": "remote",
-      "ro": { "title": "Remote + Onsite", "desc": "Intervenții remote imediate sau vizite periodice la sediu - exact cât aveți nevoie." },
-      "en": { "title": "Remote + Onsite", "desc": "Immediate remote interventions or weekly on-site visits - exactly as much as you need." } },
-    { "icon": "shield",
-      "ro": { "title": "Securitate by design", "desc": "Fiecare soluție este proiectată cu securitatea în centru - Fortinet + M365 Defender." },
-      "en": { "title": "Security by design", "desc": "Every solution is designed with security at its core - Fortinet + M365 Defender." } },
-    { "icon": "report",
-      "ro": { "title": "Raportare și transparență", "desc": "Rapoarte lunare de activitate, disponibilitate și securitate - știți mereu ce se întâmplă cu IT-ul dumneavoastră." },
-      "en": { "title": "Reporting & transparency", "desc": "Monthly activity, availability and security reports - you always know what's happening with your IT." } }
+    {
+      "icon": "flex",
+      "ro": {
+        "title": "Abonament lunar flexibil",
+        "desc": "Serviciile se adaptează în funcție de nevoi - plătiți exact cât consumați, fără costuri ascunse."
+      },
+      "en": {
+        "title": "Flexible monthly plan",
+        "desc": "Services are tailored to your needs - you pay exactly for what you use, with no hidden costs."
+      }
+    },
+    {
+      "icon": "remote",
+      "ro": {
+        "title": "Remote + Onsite",
+        "desc": "Intervenții remote imediate sau vizite periodice la sediu - exact cât aveți nevoie."
+      },
+      "en": {
+        "title": "Remote + Onsite",
+        "desc": "Immediate remote interventions or weekly on-site visits - exactly as much as you need."
+      }
+    },
+    {
+      "icon": "shield",
+      "ro": {
+        "title": "Securitate by design",
+        "desc": "Fiecare soluție este proiectată cu securitatea în centru - Fortinet + M365 Defender."
+      },
+      "en": {
+        "title": "Security by design",
+        "desc": "Every solution is designed with security at its core - Fortinet + M365 Defender."
+      }
+    },
+    {
+      "icon": "report",
+      "ro": {
+        "title": "Raportare și transparență",
+        "desc": "Rapoarte lunare de activitate, disponibilitate și securitate - știți mereu ce se întâmplă cu IT-ul dumneavoastră."
+      },
+      "en": {
+        "title": "Reporting & transparency",
+        "desc": "Monthly activity, availability and security reports - you always know what's happening with your IT."
+      }
+    }
   ],
   "highlights": [
-    { "num": "10+", "ro": "ani în infrastructură IT", "en": "years in IT infrastructure" },
-    { "num": "24/7", "ro": "monitorizare activă", "en": "active monitoring" },
-    { "num": "NIS2", "ro": "conformitate asigurată", "en": "compliance assured" },
-    { "num": "M365", "ro": "Microsoft Partner", "en": "Microsoft Partner" }
+    {
+      "num": "10+",
+      "ro": "ani în infrastructură IT",
+      "en": "years in IT infrastructure"
+    },
+    {
+      "num": "24/7",
+      "ro": "monitorizare activă",
+      "en": "active monitoring"
+    },
+    {
+      "num": "NIS2",
+      "ro": "conformitate asigurată",
+      "en": "compliance assured"
+    },
+    {
+      "num": "M365",
+      "ro": "Microsoft Partner",
+      "en": "Microsoft Partner"
+    }
   ],
   "tech": [
-    "Fortinet", "Microsoft 365", "Azure", "Defender XDR", "Intune", "Entra ID",
-    "FortiGate", "FortiAnalyzer", "FortiEDR", "Exchange Online", "SharePoint", "Teams"
+    "Fortinet",
+    "Microsoft 365",
+    "Azure",
+    "Defender XDR",
+    "Intune",
+    "Entra ID",
+    "FortiGate",
+    "FortiAnalyzer",
+    "FortiEDR",
+    "Exchange Online",
+    "SharePoint",
+    "Teams"
   ],
   "clients": [
-    { "img": "/assets/img/clients/aj-brand.svg", "alt": "AJ Brand Energy" },
-    { "img": "/assets/img/clients/nepi-rockcastle.png", "alt": "NEPI Rockcastle" },
-    { "img": "/assets/img/clients/prime-kapital.png", "alt": "Prime Kapital" },
-    { "img": "/assets/img/clients/enayati.png", "alt": "Enayati Medical City" },
-    { "img": "/assets/img/clients/promenada.png", "alt": "Promenada" },
-    { "img": "/assets/img/clients/shopping-city-timisoara.png", "alt": "Shopping City Timișoara" },
-    { "img": "/assets/img/clients/shopping-city-deva.png", "alt": "Shopping City Deva" },
-    { "img": "/assets/img/clients/shopping-city-targu-jiu.png", "alt": "Shopping City Târgu Jiu" },
-    { "img": "/assets/img/clients/braila-mall.png", "alt": "Brăila Mall" },
-    { "img": "/assets/img/clients/vulcan-value-centre.png", "alt": "Vulcan Value Centre" },
-    { "img": "/assets/img/clients/fundatia-regina-maria.png", "alt": "Fundația Inovații Sociale Regina Maria" },
-    { "img": "/assets/img/clients/pkf.png", "alt": "PKF" },
-    { "img": "/assets/img/clients/exec-edu.png", "alt": "EXEC-EDU" },
-    { "img": "/assets/img/clients/qualitas.png", "alt": "Qualitas" },
-    { "img": "/assets/img/clients/concierge-medical.png", "alt": "Concierge Medical" },
-    { "img": "/assets/img/clients/pro-optica.png", "alt": "Pro Optica" },
-    { "img": "/assets/img/clients/sano.png", "alt": "Sano" },
-    { "img": "/assets/img/clients/andac.png", "alt": "Andac Urban Construct" },
-    { "img": "/assets/img/clients/egerom.png", "alt": "Egerom Production" },
-    { "img": "/assets/img/clients/global-proiect.png", "alt": "Global Proiect" },
-    { "img": "/assets/img/clients/v8.png", "alt": "v8" }
+    {
+      "img": "/assets/img/clients/aj-brand.svg",
+      "alt": "AJ Brand Energy"
+    },
+    {
+      "img": "/assets/img/clients/nepi-rockcastle.png",
+      "alt": "NEPI Rockcastle"
+    },
+    {
+      "img": "/assets/img/clients/prime-kapital.png",
+      "alt": "Prime Kapital"
+    },
+    {
+      "img": "/assets/img/clients/enayati.png",
+      "alt": "Enayati Medical City"
+    },
+    {
+      "img": "/assets/img/clients/promenada.png",
+      "alt": "Promenada"
+    },
+    {
+      "img": "/assets/img/clients/shopping-city-timisoara.png",
+      "alt": "Shopping City Timișoara"
+    },
+    {
+      "img": "/assets/img/clients/shopping-city-deva.png",
+      "alt": "Shopping City Deva"
+    },
+    {
+      "img": "/assets/img/clients/shopping-city-targu-jiu.png",
+      "alt": "Shopping City Târgu Jiu"
+    },
+    {
+      "img": "/assets/img/clients/braila-mall.png",
+      "alt": "Brăila Mall"
+    },
+    {
+      "img": "/assets/img/clients/vulcan-value-centre.png",
+      "alt": "Vulcan Value Centre"
+    },
+    {
+      "img": "/assets/img/clients/fundatia-regina-maria.png",
+      "alt": "Fundația Inovații Sociale Regina Maria"
+    },
+    {
+      "img": "/assets/img/clients/pkf.png",
+      "alt": "PKF"
+    },
+    {
+      "img": "/assets/img/clients/exec-edu.png",
+      "alt": "EXEC-EDU"
+    },
+    {
+      "img": "/assets/img/clients/qualitas.png",
+      "alt": "Qualitas"
+    },
+    {
+      "img": "/assets/img/clients/concierge-medical.png",
+      "alt": "Concierge Medical"
+    },
+    {
+      "img": "/assets/img/clients/pro-optica.png",
+      "alt": "Pro Optica"
+    },
+    {
+      "img": "/assets/img/clients/sano.png",
+      "alt": "Sano"
+    },
+    {
+      "img": "/assets/img/clients/andac.png",
+      "alt": "Andac Urban Construct"
+    },
+    {
+      "img": "/assets/img/clients/egerom.png",
+      "alt": "Egerom Production"
+    },
+    {
+      "img": "/assets/img/clients/global-proiect.png",
+      "alt": "Global Proiect"
+    },
+    {
+      "img": "/assets/img/clients/v8.png",
+      "alt": "v8"
+    }
   ],
   "pricing": [
-    { "name": "Essential", "popular": false,
-      "ro": { "tagline": "Pentru companiile mici care au nevoie de suport IT esențial, remote.",
-        "features": ["Suport remote helpdesk", "Monitorizare infrastructură", "Administrare Microsoft 365", "Backup săptămânal", "Raport lunar de activitate"] },
-      "en": { "tagline": "For small companies that need essential remote IT support.",
-        "features": ["Remote helpdesk support", "Infrastructure monitoring", "Microsoft 365 administration", "Weekly backup", "Monthly activity report"] } },
-    { "name": "Business", "popular": true,
-      "ro": { "tagline": "Pachetul complet pentru companii în creștere - remote + on-site săptămânal.",
-        "features": ["Suport remote + on-site săptămânal", "Administrare Fortinet completă", "Securitate M365 Defender", "Backup zilnic + testare restore", "Monitorizare 24/7 cu alerte", "Conformitate NIS2 asistată"] },
-      "en": { "tagline": "The complete package for growing companies - remote + weekly on-site.",
-        "features": ["Remote + weekly on-site support", "Full Fortinet administration", "M365 Defender security", "Daily backup + restore testing", "24/7 monitoring with alerts", "Assisted NIS2 compliance"] } },
-    { "name": "Enterprise", "popular": false,
-      "ro": { "tagline": "Soluție personalizată pentru organizații cu infrastructură complexă și cerințe avansate.",
-        "features": ["Toate serviciile Business", "CISO virtual dedicat", "Audit de securitate semestrial", "Plan BCP/DRP complet", "Instruire echipă IT", "SLA garantat"] },
-      "en": { "tagline": "A tailored solution for organizations with complex infrastructure and advanced requirements.",
-        "features": ["All Business services", "Dedicated virtual CISO", "Semi-annual security audit", "Complete BCP/DRP plan", "IT team training", "Guaranteed SLA"] } }
+    {
+      "name": "Essential",
+      "popular": false,
+      "ro": {
+        "tagline": "Pentru companiile mici care au nevoie de suport IT esențial, remote.",
+        "features": [
+          "Suport remote helpdesk",
+          "Monitorizare infrastructură",
+          "Administrare Microsoft 365",
+          "Backup săptămânal",
+          "Raport lunar de activitate"
+        ]
+      },
+      "en": {
+        "tagline": "For small companies that need essential remote IT support.",
+        "features": [
+          "Remote helpdesk support",
+          "Infrastructure monitoring",
+          "Microsoft 365 administration",
+          "Weekly backup",
+          "Monthly activity report"
+        ]
+      }
+    },
+    {
+      "name": "Business",
+      "popular": true,
+      "ro": {
+        "tagline": "Pachetul complet pentru companii în creștere - remote + on-site săptămânal.",
+        "features": [
+          "Suport remote + on-site săptămânal",
+          "Administrare Fortinet completă",
+          "Securitate M365 Defender",
+          "Backup zilnic + testare restore",
+          "Monitorizare 24/7 cu alerte",
+          "Conformitate NIS2 asistată"
+        ]
+      },
+      "en": {
+        "tagline": "The complete package for growing companies - remote + weekly on-site.",
+        "features": [
+          "Remote + weekly on-site support",
+          "Full Fortinet administration",
+          "M365 Defender security",
+          "Daily backup + restore testing",
+          "24/7 monitoring with alerts",
+          "Assisted NIS2 compliance"
+        ]
+      }
+    },
+    {
+      "name": "Enterprise",
+      "popular": false,
+      "ro": {
+        "tagline": "Soluție personalizată pentru organizații cu infrastructură complexă și cerințe avansate.",
+        "features": [
+          "Toate serviciile Business",
+          "CISO virtual dedicat",
+          "Audit de securitate semestrial",
+          "Plan BCP/DRP complet",
+          "Instruire echipă IT",
+          "SLA garantat"
+        ]
+      },
+      "en": {
+        "tagline": "A tailored solution for organizations with complex infrastructure and advanced requirements.",
+        "features": [
+          "All Business services",
+          "Dedicated virtual CISO",
+          "Semi-annual security audit",
+          "Complete BCP/DRP plan",
+          "IT team training",
+          "Guaranteed SLA"
+        ]
+      }
+    }
   ],
   "faq": [
-    { "q_ro": "Ce înseamnă IT ca serviciu (externalizare IT)?",
+    {
+      "q_ro": "Ce înseamnă IT ca serviciu (externalizare IT)?",
       "a_ro": "Preluăm administrarea completă a infrastructurii IT - suport, securitate, backup și monitorizare - pe baza unui abonament lunar. Beneficiați de o echipă specializată, fără costurile și complexitatea unui departament IT intern.",
       "q_en": "What does IT as a service (IT outsourcing) mean?",
-      "a_en": "We take over the full management of your IT infrastructure - support, security, backup and monitoring - on a monthly subscription. You get a specialized team without the cost and complexity of an in-house IT department." },
-    { "q_ro": "Ce presupune conformitatea NIS2 și pe cine afectează?",
+      "a_en": "We take over the full management of your IT infrastructure - support, security, backup and monitoring - on a monthly subscription. You get a specialized team without the cost and complexity of an in-house IT department."
+    },
+    {
+      "q_ro": "Ce presupune conformitatea NIS2 și pe cine afectează?",
       "a_ro": "NIS2 este directiva europeană de securitate cibernetică ce obligă entitățile esențiale și importante să implementeze măsuri tehnice și organizatorice. Vă ajutăm cu evaluarea aplicabilității, implementarea măsurilor și întreaga documentație necesară pentru conformitate.",
       "q_en": "What does NIS2 compliance involve and who does it affect?",
-      "a_en": "NIS2 is the European cybersecurity directive that requires essential and important entities to implement technical and organizational measures. We help you assess whether it applies, implement the measures and prepare all the documentation needed for compliance." },
-    { "q_ro": "Lucrați remote sau veniți la sediu?",
+      "a_en": "NIS2 is the European cybersecurity directive that requires essential and important entities to implement technical and organizational measures. We help you assess whether it applies, implement the measures and prepare all the documentation needed for compliance."
+    },
+    {
+      "q_ro": "Lucrați remote sau veniți la sediu?",
       "a_ro": "Ambele. Majoritatea intervențiilor le rezolvăm remote, imediat. Pentru pachetele Business și Enterprise includem și vizite periodice la sediu, în funcție de nevoile companiei.",
       "q_en": "Do you work remotely or come on-site?",
-      "a_en": "Both. Most interventions are handled remotely, immediately. For the Business and Enterprise plans we also include periodic on-site visits, depending on your company's needs." },
-    { "q_ro": "Cât durează să preluați infrastructura noastră?",
+      "a_en": "Both. Most interventions are handled remotely, immediately. For the Business and Enterprise plans we also include periodic on-site visits, depending on your company's needs."
+    },
+    {
+      "q_ro": "Cât durează să preluați infrastructura noastră?",
       "a_ro": "Onboarding-ul standard durează 1-2 săptămâni: audit, documentare, acces securizat și configurarea monitorizării. În acest timp preluăm treptat, fără întreruperi ale activității dumneavoastră.",
       "q_en": "How long does it take to take over our infrastructure?",
-      "a_en": "Standard onboarding takes 1-2 weeks: audit, documentation, secure access and monitoring setup. During this time we take over gradually, with no disruption to your operations." },
-    { "q_ro": "Unde sunt stocate datele noastre?",
+      "a_en": "Standard onboarding takes 1-2 weeks: audit, documentation, secure access and monitoring setup. During this time we take over gradually, with no disruption to your operations."
+    },
+    {
+      "q_ro": "Unde sunt stocate datele noastre?",
       "a_ro": "Datele rămân în tenantul și infrastructura dumneavoastră (Microsoft 365 / Azure sau on-premise). Nu mutăm datele în sisteme terțe și aplicăm backup cu retenție configurabilă și criptare.",
       "q_en": "Where is our data stored?",
-      "a_en": "Your data stays in your own tenant and infrastructure (Microsoft 365 / Azure or on-premise). We don't move data into third-party systems, and we apply backup with configurable retention and encryption." },
-    { "q_ro": "Ce echipamente și tehnologii folosiți?",
+      "a_en": "Your data stays in your own tenant and infrastructure (Microsoft 365 / Azure or on-premise). We don't move data into third-party systems, and we apply backup with configurable retention and encryption."
+    },
+    {
+      "q_ro": "Ce echipamente și tehnologii folosiți?",
       "a_ro": "Lucrăm cu Fortinet (FortiGate, FortiAnalyzer, FortiEDR) pentru rețea și securitate și cu stack-ul Microsoft (365, Azure, Defender, Intune, Entra ID) pentru productivitate și identitate. Toate sunt tehnologii enterprise consacrate.",
       "q_en": "What equipment and technologies do you use?",
-      "a_en": "We work with Fortinet (FortiGate, FortiAnalyzer, FortiEDR) for network and security, and the Microsoft stack (365, Azure, Defender, Intune, Entra ID) for productivity and identity. All are proven enterprise technologies." }
+      "a_en": "We work with Fortinet (FortiGate, FortiAnalyzer, FortiEDR) for network and security, and the Microsoft stack (365, Azure, Defender, Intune, Entra ID) for productivity and identity. All are proven enterprise technologies."
+    }
   ]
 }
