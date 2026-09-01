@@ -295,6 +295,7 @@
     "FortiGate", "FortiAnalyzer", "FortiEDR", "Exchange Online", "SharePoint", "Teams"
   ],
   "clients": [
+    { "img": "/assets/img/clients/aj-brand.svg", "alt": "AJ Brand Energy" },
     { "img": "/assets/img/clients/nepi-rockcastle.png", "alt": "NEPI Rockcastle" },
     { "img": "/assets/img/clients/prime-kapital.png", "alt": "Prime Kapital" },
     { "img": "/assets/img/clients/enayati.png", "alt": "Enayati Medical City" },
