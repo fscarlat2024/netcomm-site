@@ -164,7 +164,7 @@
       "guaranteeText": "Nu doar «vă ajutăm cu NIS2». Vă livrăm documentația de conformitate completă, pregătită pentru audit - măsuri tehnice, politici și dovezi. Iar dacă la un control lipsește ceva ce trebuia să acoperim, remediem pe cheltuiala noastră.",
       "guaranteePoints": [
         "Evaluare și plan de conformitate personalizat",
-        "Implementare tehnică: Fortinet + Microsoft 365 Defender + Intune",
+        "Implementare tehnică și hardening: Fortinet + Microsoft 365 Defender + Intune",
         "Documentație și politici pregătite pentru audit"
       ],
       "checkIntro": "Bifați unde vă aflați la fiecare măsură:",
@@ -190,7 +190,7 @@
       "guaranteeText": "Not just 'we help with NIS2'. We deliver complete, audit-ready compliance documentation - technical measures, policies and evidence. And if an inspection finds something we should have covered, we fix it at our own cost.",
       "guaranteePoints": [
         "Assessment and a tailored compliance plan",
-        "Technical implementation: Fortinet + Microsoft 365 Defender + Intune",
+        "Technical implementation and hardening: Fortinet + Microsoft 365 Defender + Intune",
         "Audit-ready documentation and policies"
       ],
       "checkIntro": "Mark where you stand on each measure:",
@@ -219,6 +219,8 @@
         "gap_ro": "Un plan clar de răspuns la incident și un responsabil desemnat - cerință NIS2.", "gap_en": "A clear incident response plan and a designated owner - a NIS2 requirement." },
       { "q_ro": "Management de patch-uri și vulnerabilități", "q_en": "Patch and vulnerability management",
         "gap_ro": "Actualizări la timp și scanări de vulnerabilități cu remediere prioritizată.", "gap_en": "Timely updates and vulnerability scans with prioritized remediation." },
+      { "q_ro": "Configurări securizate (hardening) pe servere și stații", "q_en": "Secure configuration (hardening) on servers and workstations",
+        "gap_ro": "Aplicarea unui standard de hardening (ex. CIS Benchmarks) pe servere, stații și echipamente de rețea, cu reducerea suprafeței de atac.", "gap_en": "Apply a hardening standard (e.g., CIS Benchmarks) to servers, workstations and network devices, reducing the attack surface." },
       { "q_ro": "Control acces: least privilege, conturi de admin separate", "q_en": "Access control: least privilege, separate admin accounts",
         "gap_ro": "Drepturi minime necesare și conturi de administrator separate de cele zilnice.", "gap_en": "Least-privilege rights and admin accounts kept separate from daily-use ones." },
       { "q_ro": "Logare și monitorizare centralizată cu alertare", "q_en": "Centralized logging and monitoring with alerting",
