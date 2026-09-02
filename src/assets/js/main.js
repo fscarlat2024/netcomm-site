@@ -38,7 +38,6 @@
       if (fbody) fbody.hidden = false;
       if (fsuccess) fsuccess.hidden = true;
       if (ferr) { ferr.hidden = true; ferr.textContent = ''; }
-      if (window.hcaptcha) { try { window.hcaptcha.reset(); } catch (e) {} }
     }
     function openModal(e) {
       if (e) e.preventDefault();
@@ -98,15 +97,6 @@
         if (bad && ok) { inp.focus(); ok = false; }
       });
       if (!ok) return;
-
-      var cap = form.querySelector('.h-captcha');
-      if (cap) {
-        var tok = form.querySelector('[name="h-captcha-response"]');
-        if (!tok || !tok.value) {
-          if (ferr) { ferr.textContent = form.getAttribute('data-captcha-msg') || 'Please complete the security check.'; ferr.hidden = false; }
-          return;
-        }
-      }
       if (ferr) ferr.hidden = true;
 
       var key = form.getAttribute('data-web3key');
@@ -123,7 +113,6 @@
         btn.disabled = false; btn.textContent = orig;
         if (j && j.success) {
           form.reset();
-          if (window.hcaptcha) { try { window.hcaptcha.reset(); } catch (e) {} }
           if (fbody) fbody.hidden = true;
           if (fsuccess) fsuccess.hidden = false;
         } else { showErr(); }

@@ -136,7 +136,6 @@
             </select>
           </label>
           <label class="field"><span>{{ t.form_msg }}</span><textarea name="message" rows="3"></textarea></label>
-          <div class="h-captcha" data-sitekey="2826a1ab-4b77-422c-9f4c-3fd7452da3ab"></div>
           <button type="submit" class="btn btn-primary btn-block modal-send">{{ t.form_send }}</button>
           <p class="modal-err" id="formErr" hidden></p>
           <p class="modal-note">{{ t.form_note }}</p>
@@ -181,7 +180,6 @@
     </div>
   </div>
 
-  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
   <script src="/assets/js/main.js?v={{ build }}" defer></script>
   <script src="/assets/js/nis2.js?v={{ build }}" defer></script>
   <script src="/assets/js/cookies.js?v={{ build }}" defer></script>
