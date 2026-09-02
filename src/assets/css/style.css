@@ -253,6 +253,7 @@ svg{width:100%;height:100%}
 .field textarea{resize:vertical;min-height:76px}
 .modal-send{margin-top:6px}
 .modal-send:disabled{opacity:.6;cursor:default;transform:none}
+.modal .h-captcha{margin:6px 0 4px;min-height:66px}
 .hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
 .modal-err{margin-top:12px;text-align:center;font-size:.86rem;color:#d9534f;background:rgba(217,83,79,.08);border:1px solid rgba(217,83,79,.25);border-radius:9px;padding:9px 12px}
 .modal-note{text-align:center;font-size:.8rem;color:var(--muted);margin-top:14px}

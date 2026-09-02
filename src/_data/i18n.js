@@ -26,7 +26,8 @@ module.exports = {
     form_opts: ["Consultație generală IT", "Cybersecurity", "Conformitate NIS2", "Rețea Fortinet", "Microsoft 365 / Cloud", "Abonament IT lunar"],
     form_success_title: "Mulțumim!",
     form_success_msg: "Solicitarea dumneavoastră a fost trimisă. Vă contactăm în cel mai scurt timp.",
-    form_error: "A apărut o eroare. Încercați din nou sau scrieți-ne direct la suport@netcomm.ro."
+    form_error: "A apărut o eroare. Încercați din nou sau scrieți-ne direct la suport@netcomm.ro.",
+    form_captcha: "Vă rugăm să bifați verificarea de securitate."
   },
   en: {
     nav_services: "Services",
@@ -54,6 +55,7 @@ module.exports = {
     form_opts: ["General IT consultation", "Cybersecurity", "NIS2 compliance", "Fortinet network", "Microsoft 365 / Cloud", "Monthly IT plan"],
     form_success_title: "Thank you!",
     form_success_msg: "Your request has been sent. We'll get back to you shortly.",
-    form_error: "Something went wrong. Please try again or email us at suport@netcomm.ro."
+    form_error: "Something went wrong. Please try again or email us at suport@netcomm.ro.",
+    form_captcha: "Please complete the security check."
   }
 };
