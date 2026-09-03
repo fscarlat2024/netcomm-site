@@ -22,8 +22,20 @@
     gtag('config', gaId, { anonymize_ip: true });
   }
 
+  function loadMetricool() {
+    if (window.__mcLoaded) return;
+    window.__mcLoaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://tracker.metricool.com/resources/be.js';
+    s.onload = function () { try { window.beTracker.t({ hash: 'f84e92844ea5924ab84a4d76e316dd76' }); } catch (e) {} };
+    document.head.appendChild(s);
+  }
+
+  function loadTrackers() { loadGA(); loadMetricool(); }
+
   function hideBanner() { banner.hidden = true; }
-  function accept() { set('accepted'); hideBanner(); loadGA(); }
+  function accept() { set('accepted'); hideBanner(); loadTrackers(); }
   function reject() { set('rejected'); hideBanner(); }
 
   banner.querySelectorAll('[data-accept]').forEach(function (b) { b.addEventListener('click', accept); });
@@ -43,7 +55,7 @@
 
   // Initializare
   var c = get();
-  if (c === 'accepted') { loadGA(); }
+  if (c === 'accepted') { loadTrackers(); }
   else if (c !== 'rejected') {
     banner.hidden = false;
     requestAnimationFrame(function () { banner.classList.add('show'); });

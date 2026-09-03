@@ -11,7 +11,7 @@
   "gaId": "G-CV46SRRNLV",
   "cookies": {
     "ro": {
-      "banner": "Folosim cookie-uri pentru buna funcționare a site-ului și, cu acordul dumneavoastră, pentru a analiza traficul (Google Analytics). Puteți accepta sau refuza.",
+      "banner": "Folosim cookie-uri pentru buna funcționare a site-ului și, cu acordul dumneavoastră, pentru a analiza traficul (Google Analytics și Metricool). Puteți accepta sau refuza.",
       "accept": "Accept",
       "reject": "Refuz",
       "more": "Politica de cookies",
@@ -24,14 +24,14 @@
         },
         {
           "h": "Analiză (opționale)",
-          "p": "Folosim Google Analytics pentru a vedea, anonim și agregat, ce pagini sunt vizitate și cum putem îmbunătăți site-ul. Se activează DOAR dacă apăsați Accept. Adresa IP este anonimizată."
+          "p": "Folosim Google Analytics și Metricool pentru a vedea, anonim și agregat, ce pagini sunt vizitate și cum putem îmbunătăți site-ul. Se activează DOAR dacă apăsați Accept. Adresa IP este anonimizată."
         }
       ],
       "policyChange": "Vă puteți schimba oricând alegerea:",
       "contact": "Pentru întrebări despre datele dumneavoastră: suport@netcomm.ro."
     },
     "en": {
-      "banner": "We use cookies for the site to work properly and, with your consent, to analyze traffic (Google Analytics). You can accept or decline.",
+      "banner": "We use cookies for the site to work properly and, with your consent, to analyze traffic (Google Analytics and Metricool). You can accept or decline.",
       "accept": "Accept",
       "reject": "Decline",
       "more": "Cookie policy",
@@ -44,7 +44,7 @@
         },
         {
           "h": "Analytics (optional)",
-          "p": "We use Google Analytics to see, anonymously and in aggregate, which pages are visited and how we can improve the site. It activates ONLY if you click Accept. Your IP address is anonymized."
+          "p": "We use Google Analytics and Metricool to see, anonymously and in aggregate, which pages are visited and how we can improve the site. It activates ONLY if you click Accept. Your IP address is anonymized."
         }
       ],
       "policyChange": "You can change your choice at any time:",
