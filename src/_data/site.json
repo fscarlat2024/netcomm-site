@@ -888,6 +888,24 @@
       "a_ro": "Lucrăm cu Fortinet (FortiGate, FortiAnalyzer, FortiEDR) pentru rețea și securitate și cu stack-ul Microsoft (365, Azure, Defender, Intune, Entra ID) pentru productivitate și identitate. Toate sunt tehnologii enterprise consacrate.",
       "q_en": "What equipment and technologies do you use?",
       "a_en": "We work with Fortinet (FortiGate, FortiAnalyzer, FortiEDR) for network and security, and the Microsoft stack (365, Azure, Defender, Intune, Entra ID) for productivity and identity. All are proven enterprise technologies."
+    },
+    {
+      "q_ro": "Sunt o companie mică. Chiar am nevoie de cybersecurity?",
+      "a_ro": "Da, și încă mai mult decât credeți. Companiile mici sunt cele mai vizate, tocmai pentru că au apărare mai slabă - peste jumătate din atacuri lovesc IMM-uri, iar un ransomware sau o fraudă pe email vă poate opri activitatea zile întregi. Nu vă trebuie soluții enterprise scumpe, ci măsurile potrivite dimensiunii dumneavoastră: MFA, backup, protecție endpoint și un firewall configurat corect. Le adaptăm la bugetul și nevoile reale.",
+      "q_en": "I'm a small company. Do I really need cybersecurity?",
+      "a_en": "Yes - more than you might think. Small companies are the most targeted, precisely because their defenses are weaker; over half of all attacks hit SMEs, and a single ransomware or email fraud can halt your business for days. You don't need expensive enterprise solutions, just the right measures for your size: MFA, backup, endpoint protection and a properly configured firewall. We tailor them to your real budget and needs."
+    },
+    {
+      "q_ro": "De ce aș avea nevoie de backup Veeam + cloud (Wasabi) când salvez pe un HDD extern?",
+      "a_ro": "Un HDD extern e mai bine decât nimic, dar are trei riscuri mari: dacă vă lovește un ransomware, un incendiu sau un furt, se pierde odată cu restul; copiile nu sunt testate (mulți află că backup-ul nu se restaurează abia când e prea târziu); și, fiind manual, se uită. O soluție Veeam + o copie în cloud (ex. Wasabi) înseamnă backup automat, cu o copie imutabilă în afara sediului (rezistentă la ransomware) și restaurare testată - regula 3-2-1. Diferența se vede exact în ziua în care chiar trebuie să recuperați datele.",
+      "q_en": "Why would I need Veeam + cloud backup (Wasabi) when I save to an external HDD?",
+      "a_en": "An external HDD is better than nothing, but it has three big risks: if ransomware, a fire or theft hits you, it's often lost along with everything else; the copies aren't tested (many find out their backup won't restore only when it's too late); and being manual, it gets forgotten. Veeam plus a cloud copy (e.g. Wasabi) means automated backup, with an immutable off-site copy (ransomware-resistant) and tested restore - the 3-2-1 rule. The difference shows exactly on the day you actually need your data back."
+    },
+    {
+      "q_ro": "Pot să închei un abonament doar remote, să vă conectați când am probleme?",
+      "a_ro": "Da. Pentru companiile mici avem varianta de suport remote: intervenim de la distanță când apare o problemă și monitorizăm de bază infrastructura. Există un abonament lunar minim (ca să vă putem garanta disponibilitatea și timpul de răspuns), dar este o soluție accesibilă, potrivită dacă nu aveți nevoie de vizite la sediu. Vă pregătim o ofertă în funcție de numărul de stații și de ce doriți acoperit.",
+      "q_en": "Can I get a remote-only subscription, where you connect when I have a problem?",
+      "a_en": "Yes. For small companies we offer remote support: we intervene remotely when an issue arises and provide basic infrastructure monitoring. There is a minimum monthly subscription (so we can guarantee availability and response time), but it's an affordable option, suited to you if you don't need on-site visits. We'll prepare a quote based on the number of workstations and what you want covered."
     }
   ]
 }
