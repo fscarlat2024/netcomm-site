@@ -103,7 +103,7 @@
       <nav class="nav-links" id="navlinks">
         <a href="{{ home }}#servicii">{{ t.nav_services }}</a>
         <a href="{{ home }}#securitate">{{ t.nav_security }}</a>
-        <a href="{{ home }}#nis2" class="nav-nis2">NIS2</a>
+        <a href="{{ '/nis2/' if lang == 'ro' else '/en/nis2/' }}" class="nav-nis2">NIS2</a>
         <a href="{{ home }}#de-ce" class="hide-md">{{ t.nav_why }}</a>
         <a href="{{ home }}#tehnologii" class="hide-md">{{ t.nav_tech }}</a>
         <a href="{{ home }}#abonamente">{{ t.nav_pricing }}</a>
