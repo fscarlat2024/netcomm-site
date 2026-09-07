@@ -125,6 +125,46 @@ pageId: nis2
   </div>
 </section>
 
+<section class="section" id="solutii">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">{{ np.eyebrow }}</span>
+      <h2>{{ np.solutionsTitle }}</h2>
+      <p class="sub">{{ np.solutionsLead }}</p>
+    </div>
+    <div class="nis2-map">
+      {% for m in np.measures %}
+      <article class="measure-card reveal">
+        <span class="m-badge">Art. 21 ({{ m.letter }})</span>
+        <b class="m-title">{{ m.t }}</b>
+        <p class="m-desc">{{ m.d }}</p>
+        <div class="m-tools">
+          {% for tool in m.tools %}<span class="tool-chip">{{ tool }}</span>{% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="platforms-wrap">
+      <div class="head reveal">
+        <span class="eyebrow">{{ np.eyebrow }}</span>
+        <h3 class="platforms-title">{{ np.platformsTitle }}</h3>
+        <p class="sub">{{ np.platformsLead }}</p>
+      </div>
+      <div class="platforms-grid">
+        {% for pf in np.platforms %}
+        <article class="platform-card reveal">
+          <div class="pf-ic">{{ icon("shield") }}</div>
+          <b class="pf-name">{{ pf.name }}</b>
+          <p class="pf-desc">{{ pf.d }}</p>
+          <p class="pf-when">{{ icon("check") }} {{ pf.when }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section band-soft" id="garantie">
   <div class="wrap nis2-guarantee-wrap reveal">
     <div class="guarantee guarantee-page">

@@ -966,7 +966,135 @@
       ],
       "closingTitle": "Nu știți de unde să începeți?",
       "closingText": "Începeți cu o evaluare onestă. Rulați checker-ul de mai sus sau discutați direct cu un specialist NCS — fără obligații.",
-      "closingCta": "Solicitați o evaluare NIS2"
+      "closingCta": "Solicitați o evaluare NIS2",
+      "solutionsTitle": "De la cerințe NIS2 la soluții concrete",
+      "solutionsLead": "Fiecare cerință NIS2 (Art. 21) are o soluție tehnică clară. Alegem stiva potrivită dimensiunii și bugetului dumneavoastră — Microsoft 365, Bitdefender, Coro, Fortinet sau o combinație.",
+      "measures": [
+        {
+          "letter": "a",
+          "t": "Analiza riscului și politici de securitate",
+          "d": "Identificarea riscurilor și politici scrise pentru sistemele informatice.",
+          "tools": [
+            "Evaluare de risc NCS",
+            "Microsoft Purview Compliance Manager"
+          ]
+        },
+        {
+          "letter": "b",
+          "t": "Managementul incidentelor",
+          "d": "Detecție, tratare și raportarea incidentelor în termenele legale (24–72h).",
+          "tools": [
+            "Microsoft Sentinel (SIEM/SOAR)",
+            "Bitdefender XDR / MDR",
+            "Coro"
+          ]
+        },
+        {
+          "letter": "c",
+          "t": "Continuitate, backup și DR",
+          "d": "Backup imutabil, plan de recuperare testat și gestionarea crizelor.",
+          "tools": [
+            "Veeam Backup",
+            "Wasabi (cloud imutabil)",
+            "Plan DR/BCP NCS"
+          ]
+        },
+        {
+          "letter": "d",
+          "t": "Securitatea lanțului de aprovizionare",
+          "d": "Evaluarea furnizorilor și acces controlat pentru terți.",
+          "tools": [
+            "Politici furnizori NCS",
+            "Entra Conditional Access",
+            "Segmentare Fortinet"
+          ]
+        },
+        {
+          "letter": "e",
+          "t": "Achiziție, dezvoltare, mentenanță și vulnerabilități",
+          "d": "Sisteme securizate pe tot ciclul de viață și patching la timp.",
+          "tools": [
+            "Intune / Bitdefender Patch",
+            "Scanare vulnerabilități",
+            "Coro"
+          ]
+        },
+        {
+          "letter": "f",
+          "t": "Evaluarea eficacității măsurilor",
+          "d": "Testarea și auditarea periodică a măsurilor implementate.",
+          "tools": [
+            "Audit periodic NCS",
+            "Dashboards Sentinel / GravityZone"
+          ]
+        },
+        {
+          "letter": "g",
+          "t": "Igienă cibernetică și training",
+          "d": "Bune practici și instruirea angajaților, inclusiv anti-phishing.",
+          "tools": [
+            "Simulări phishing (Defender / Coro)",
+            "Training angajați"
+          ]
+        },
+        {
+          "letter": "h",
+          "t": "Criptografie și criptare",
+          "d": "Protecția datelor în repaus și în tranzit.",
+          "tools": [
+            "BitLocker + TPM (Intune)",
+            "Criptare e-mail / Purview",
+            "TLS 1.2/1.3"
+          ]
+        },
+        {
+          "letter": "i",
+          "t": "Control acces, HR și inventar de active",
+          "d": "Least privilege, conturi de admin separate și inventar de echipamente.",
+          "tools": [
+            "Entra ID (RBAC, PIM)",
+            "Intune (inventar / compliance)"
+          ]
+        },
+        {
+          "letter": "j",
+          "t": "MFA și comunicații securizate",
+          "d": "Autentificare puternică și canale de comunicare protejate.",
+          "tools": [
+            "Entra MFA + Conditional Access",
+            "FortiAuthenticator (opțional)"
+          ]
+        }
+      ],
+      "platformsTitle": "Platformele cu care lucrăm",
+      "platformsLead": "Nu impunem un singur furnizor. Alegem instrumentul care se potrivește cel mai bine cu ce aveți deja și cu bugetul dumneavoastră.",
+      "platforms": [
+        {
+          "name": "Microsoft 365 Defender + Entra + Intune + Sentinel",
+          "d": "Identitate (MFA, Conditional Access, PIM), endpoint (Intune + Defender EDR), e-mail (Defender for Office 365), SIEM (Sentinel) și date (Purview).",
+          "when": "Ideal dacă folosiți deja Microsoft 365."
+        },
+        {
+          "name": "Bitdefender GravityZone",
+          "d": "Protecție endpoint, EDR/XDR, patch management și criptare, cu SOC gestionat opțional (MDR).",
+          "when": "Când vreți protecție puternică, administrată central."
+        },
+        {
+          "name": "Coro",
+          "d": "Platformă all-in-one, modulară: endpoint, e-mail, cloud, date și rețea, cu o singură consolă și un singur agent.",
+          "when": "Potrivită firmelor mici și medii care vor securitate solidă, fără complexitate."
+        },
+        {
+          "name": "Fortinet",
+          "d": "Firewall next-gen, segmentare de rețea, VPN și logging centralizat (FortiAnalyzer / FortiSIEM).",
+          "when": "Pentru securitate la nivel de rețea și segmentare NIS2."
+        },
+        {
+          "name": "Veeam + Wasabi",
+          "d": "Backup automat, imutabil, cu o copie în cloud și recuperare testată.",
+          "when": "Pentru backup și disaster recovery conforme NIS2."
+        }
+      ]
     },
     "en": {
       "metaTitle": "NIS2 Compliance in Romania: requirements, steps & free checker | NCS",
@@ -1025,7 +1153,135 @@
       ],
       "closingTitle": "Not sure where to start?",
       "closingText": "Start with an honest assessment. Run the checker above or talk directly to an NCS specialist — no obligations.",
-      "closingCta": "Request a NIS2 assessment"
+      "closingCta": "Request a NIS2 assessment",
+      "solutionsTitle": "From NIS2 requirements to concrete solutions",
+      "solutionsLead": "Every NIS2 requirement (Art. 21) has a clear technical solution. We choose the stack that fits your size and budget — Microsoft 365, Bitdefender, Coro, Fortinet or a combination.",
+      "measures": [
+        {
+          "letter": "a",
+          "t": "Risk analysis and security policies",
+          "d": "Identifying risks and written policies for information systems.",
+          "tools": [
+            "NCS risk assessment",
+            "Microsoft Purview Compliance Manager"
+          ]
+        },
+        {
+          "letter": "b",
+          "t": "Incident handling",
+          "d": "Detection, response and reporting of incidents within legal deadlines (24–72h).",
+          "tools": [
+            "Microsoft Sentinel (SIEM/SOAR)",
+            "Bitdefender XDR / MDR",
+            "Coro"
+          ]
+        },
+        {
+          "letter": "c",
+          "t": "Continuity, backup and DR",
+          "d": "Immutable backup, tested recovery plan and crisis management.",
+          "tools": [
+            "Veeam Backup",
+            "Wasabi (immutable cloud)",
+            "NCS DR/BCP plan"
+          ]
+        },
+        {
+          "letter": "d",
+          "t": "Supply chain security",
+          "d": "Supplier assessment and controlled access for third parties.",
+          "tools": [
+            "NCS supplier policies",
+            "Entra Conditional Access",
+            "Fortinet segmentation"
+          ]
+        },
+        {
+          "letter": "e",
+          "t": "Acquisition, development, maintenance and vulnerabilities",
+          "d": "Secure systems across the lifecycle and timely patching.",
+          "tools": [
+            "Intune / Bitdefender Patch",
+            "Vulnerability scanning",
+            "Coro"
+          ]
+        },
+        {
+          "letter": "f",
+          "t": "Assessing the effectiveness of measures",
+          "d": "Periodic testing and auditing of the measures in place.",
+          "tools": [
+            "Periodic NCS audit",
+            "Sentinel / GravityZone dashboards"
+          ]
+        },
+        {
+          "letter": "g",
+          "t": "Cyber hygiene and training",
+          "d": "Best practices and employee training, including anti-phishing.",
+          "tools": [
+            "Phishing simulations (Defender / Coro)",
+            "Employee training"
+          ]
+        },
+        {
+          "letter": "h",
+          "t": "Cryptography and encryption",
+          "d": "Protecting data at rest and in transit.",
+          "tools": [
+            "BitLocker + TPM (Intune)",
+            "Email encryption / Purview",
+            "TLS 1.2/1.3"
+          ]
+        },
+        {
+          "letter": "i",
+          "t": "Access control, HR and asset inventory",
+          "d": "Least privilege, separate admin accounts and device inventory.",
+          "tools": [
+            "Entra ID (RBAC, PIM)",
+            "Intune (inventory / compliance)"
+          ]
+        },
+        {
+          "letter": "j",
+          "t": "MFA and secure communications",
+          "d": "Strong authentication and protected communication channels.",
+          "tools": [
+            "Entra MFA + Conditional Access",
+            "FortiAuthenticator (optional)"
+          ]
+        }
+      ],
+      "platformsTitle": "The platforms we work with",
+      "platformsLead": "We don't force a single vendor. We choose the tool that best fits what you already have and your budget.",
+      "platforms": [
+        {
+          "name": "Microsoft 365 Defender + Entra + Intune + Sentinel",
+          "d": "Identity (MFA, Conditional Access, PIM), endpoint (Intune + Defender EDR), email (Defender for Office 365), SIEM (Sentinel) and data (Purview).",
+          "when": "Ideal if you already use Microsoft 365."
+        },
+        {
+          "name": "Bitdefender GravityZone",
+          "d": "Endpoint protection, EDR/XDR, patch management and encryption, with optional managed SOC (MDR).",
+          "when": "When you want strong, centrally managed protection."
+        },
+        {
+          "name": "Coro",
+          "d": "All-in-one, modular platform: endpoint, email, cloud, data and network, with a single console and a single agent.",
+          "when": "A good fit for small and mid-sized companies that want solid security without complexity."
+        },
+        {
+          "name": "Fortinet",
+          "d": "Next-gen firewall, network segmentation, VPN and centralized logging (FortiAnalyzer / FortiSIEM).",
+          "when": "For network-level security and NIS2 segmentation."
+        },
+        {
+          "name": "Veeam + Wasabi",
+          "d": "Automated, immutable backup with a cloud copy and tested recovery.",
+          "when": "For NIS2-compliant backup and disaster recovery."
+        }
+      ]
     }
   }
 }
