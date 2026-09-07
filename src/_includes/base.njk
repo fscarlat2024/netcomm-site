@@ -2,27 +2,38 @@
 {% set c = site[lang] %}
 {% set ck = site.cookies[lang] %}
 {% set home = "/" if lang == "ro" else "/en/" %}
+{% set metaTitle = c.metaTitle %}
+{% set metaDesc = c.metaDesc %}
+{% set hrefRo = "/" %}
+{% set hrefEn = "/en/" %}
+{% if pageId == "nis2" %}
+  {% set np = site.nis2page[lang] %}
+  {% set metaTitle = np.metaTitle %}
+  {% set metaDesc = np.metaDesc %}
+  {% set hrefRo = "/nis2/" %}
+  {% set hrefEn = "/en/nis2/" %}
+{% endif %}
 <!doctype html>
 <html lang="{{ lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ c.metaTitle }}</title>
-  <meta name="description" content="{{ c.metaDesc }}">
+  <title>{{ metaTitle }}</title>
+  <meta name="description" content="{{ metaDesc }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  <link rel="alternate" hreflang="ro" href="{{ site.url }}/">
-  <link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
-  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+  <link rel="alternate" hreflang="ro" href="{{ site.url }}{{ hrefRo }}">
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ hrefEn }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ hrefRo }}">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ c.metaTitle }}">
-  <meta property="og:description" content="{{ c.metaDesc }}">
+  <meta property="og:title" content="{{ metaTitle }}">
+  <meta property="og:description" content="{{ metaDesc }}">
   <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:locale" content="{{ 'ro_RO' if lang == 'ro' else 'en_US' }}">
   <meta name="theme-color" content="#0B1220">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ c.metaTitle }}">
-  <meta name="twitter:description" content="{{ c.metaDesc }}">
+  <meta name="twitter:title" content="{{ metaTitle }}">
+  <meta name="twitter:description" content="{{ metaDesc }}">
   <meta name="twitter:image" content="{{ site.url }}{{ site.ogImage }}">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1220'/%3E%3Cpath d='M9 22V10l14 12V10' fill='none' stroke='%238FB8E6' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,6 +56,30 @@
     "sameAs": ["{{ site.url }}"]
   }
   </script>
+  {% if pageId == "nis2" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for f in np.faq %}{ "@type": "Question", "name": {{ f.q | dump | safe }}, "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | dump | safe }} } }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "NIS2 compliance",
+    "provider": { "@type": "Organization", "name": {{ site.brandName | dump | safe }}, "url": "{{ site.url }}" },
+    "areaServed": "RO",
+    "name": {{ metaTitle | dump | safe }},
+    "description": {{ metaDesc | dump | safe }},
+    "url": "{{ site.url }}{{ page.url }}"
+  }
+  </script>
+  {% else %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -55,6 +90,7 @@
     ]
   }
   </script>
+  {% endif %}
 </head>
 <body>
   <a href="#main" class="skip-link">{{ t.skip }}</a>

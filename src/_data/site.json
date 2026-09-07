@@ -907,5 +907,125 @@
       "q_en": "Can I get a remote-only subscription, where you connect when I have a problem?",
       "a_en": "Yes. For small companies we offer remote support: we intervene remotely when an issue arises and provide basic infrastructure monitoring. There is a minimum monthly subscription (so we can guarantee availability and response time), but it's an affordable option, suited to you if you don't need on-site visits. We'll prepare a quote based on the number of workstations and what you want covered."
     }
-  ]
+  ],
+  "nis2page": {
+    "ro": {
+      "metaTitle": "Conformitate NIS2 România: cerințe, pași și checker gratuit | NCS",
+      "metaDesc": "Ce înseamnă NIS2 pentru compania dumneavoastră: cui se aplică, ce riscați și ce măsuri sunt obligatorii. Plus un checker gratuit de conformitate NIS2 în 2 minute.",
+      "eyebrow": "Conformitate NIS2",
+      "h1": "Conformitate NIS2 pentru compania dumneavoastră",
+      "lead": "NIS2 este deja lege în România. Vă explicăm, fără jargon, cui se aplică, ce riscați și ce aveți de făcut — și vă punem la dispoziție un checker gratuit ca să vedeți în 2 minute unde vă aflați.",
+      "ctaPrimary": "Verificați-vă conformitatea",
+      "ctaGhost": "Discutați cu un specialist",
+      "whatTitle": "Ce este NIS2?",
+      "whatText": "O directivă europeană de securitate cibernetică care obligă un număr mult mai mare de companii să își pună la punct securitatea IT — nu ca recomandare, ci ca obligație legală, cu termene și sancțiuni. Scopul: mai puține incidente și mai multă reziliență. Provocarea pentru companii: cerințele sunt concrete și trebuie dovedite.",
+      "whoTitle": "Cui se aplică?",
+      "whoText": "Companii medii și mari (de la aproximativ 50 de angajați sau 10 mil. EUR cifră de afaceri) din sectoare reglementate — energie, sănătate, transport, apă, producție, infrastructură digitală, servicii IT și altele. Chiar dacă nu sunteți „entitate esențială”, puteți fi „importantă”. Iar dacă sunteți furnizor pentru o companie vizată, vi se cere conformitate pe lanțul de aprovizionare.",
+      "risksTitle": "Ce riscați dacă ignorați?",
+      "risks": [
+        {
+          "ic": "shield",
+          "t": "Amenzi semnificative",
+          "d": "Până la milioane de euro sau un procent din cifra de afaceri anuală, în funcție de tipul entității."
+        },
+        {
+          "ic": "key",
+          "t": "Răspunderea conducerii",
+          "d": "Responsabilitatea revine managementului companiei, nu doar „omului de la IT”. Este o decizie de business."
+        },
+        {
+          "ic": "eye",
+          "t": "Raportare în 24–72h",
+          "d": "Incidentele majore trebuie semnalate în 24 de ore și notificate complet în 72 de ore de la constatare."
+        }
+      ],
+      "checkTitle": "Checker gratuit de conformitate NIS2",
+      "checkLead": "9 întrebări, 2 minute, fără date personale. Primiți un scor și golurile prioritare de acoperit.",
+      "faqTitle": "Întrebări frecvente despre NIS2",
+      "faq": [
+        {
+          "q": "NIS2 este obligatorie și pentru firmele mici?",
+          "a": "NIS2 vizează în principal companiile medii și mari din sectoarele reglementate. Însă firmele mici pot fi prinse indirect, ca furnizori ai unei companii vizate care le cere conformitate pe lanțul de aprovizionare. În plus, măsurile NIS2 sunt oricum bune practici de securitate pentru orice organizație."
+        },
+        {
+          "q": "Care este termenul de conformitate?",
+          "a": "Directiva este deja în vigoare și transpusă în legislația națională. Recomandarea este să începeți evaluarea și implementarea acum — conformitatea NIS2 nu se rezolvă peste noapte, iar cerințele din partea partenerilor și ale autorităților apar deja."
+        },
+        {
+          "q": "Ce se întâmplă dacă nu ne conformăm?",
+          "a": "Riscați amenzi semnificative (până la milioane de euro sau un procent din cifra de afaceri), răspunderea directă a conducerii și obligația de a raporta incidentele în 24–72 de ore. Dincolo de sancțiuni, lipsa măsurilor înseamnă risc real de incident de securitate."
+        },
+        {
+          "q": "Cât durează și cât costă o implementare NIS2?",
+          "a": "Depinde de punctul de plecare. De regulă, o implementare inițială se desfășoară pe câteva luni, în etape: evaluare, măsuri prioritare (MFA, backup, hardening), apoi maturizare (segmentare, monitorizare, documentație). Cel mai bine începeți cu o evaluare onestă a situației actuale."
+        },
+        {
+          "q": "Cu ce ne poate ajuta NCS?",
+          "a": "Facem evaluarea de conformitate, implementăm măsurile tehnice (Microsoft 365, Fortinet, backup, protecție endpoint), pregătim documentația și politicile cerute și vă însoțim la controale. Practic, preluăm atât partea tehnică, cât și cea „de hârtie”, cap-coadă."
+        }
+      ],
+      "closingTitle": "Nu știți de unde să începeți?",
+      "closingText": "Începeți cu o evaluare onestă. Rulați checker-ul de mai sus sau discutați direct cu un specialist NCS — fără obligații.",
+      "closingCta": "Solicitați o evaluare NIS2"
+    },
+    "en": {
+      "metaTitle": "NIS2 Compliance in Romania: requirements, steps & free checker | NCS",
+      "metaDesc": "What NIS2 means for your company: who it applies to, what you risk and which measures are mandatory. Plus a free NIS2 compliance checker in 2 minutes.",
+      "eyebrow": "NIS2 Compliance",
+      "h1": "NIS2 compliance for your company",
+      "lead": "NIS2 is already law in Romania. We explain, without jargon, who it applies to, what you risk and what you need to do — and we give you a free checker to see where you stand in 2 minutes.",
+      "ctaPrimary": "Check your compliance",
+      "ctaGhost": "Talk to a specialist",
+      "whatTitle": "What is NIS2?",
+      "whatText": "A European cybersecurity directive that requires a much larger number of companies to get their IT security in order — not as a recommendation, but as a legal obligation, with deadlines and penalties. The goal: fewer incidents and greater resilience. The challenge for companies: the requirements are concrete and must be proven.",
+      "whoTitle": "Who does it apply to?",
+      "whoText": "Medium and large companies (from roughly 50 employees or EUR 10M turnover) in regulated sectors — energy, healthcare, transport, water, manufacturing, digital infrastructure, IT services and others. Even if you are not an „essential entity”, you may be an „important” one. And if you are a supplier to a covered company, compliance is required across the supply chain.",
+      "risksTitle": "What do you risk if you ignore it?",
+      "risks": [
+        {
+          "ic": "shield",
+          "t": "Significant fines",
+          "d": "Up to millions of euros or a percentage of annual turnover, depending on the entity type."
+        },
+        {
+          "ic": "key",
+          "t": "Management liability",
+          "d": "Responsibility sits with company management, not just „the IT person”. It is a business decision."
+        },
+        {
+          "ic": "eye",
+          "t": "Reporting in 24–72h",
+          "d": "Major incidents must be flagged within 24 hours and fully notified within 72 hours of detection."
+        }
+      ],
+      "checkTitle": "Free NIS2 compliance checker",
+      "checkLead": "9 questions, 2 minutes, no personal data. You get a score and the priority gaps to close.",
+      "faqTitle": "Frequently asked questions about NIS2",
+      "faq": [
+        {
+          "q": "Does NIS2 apply to small companies too?",
+          "a": "NIS2 mainly targets medium and large companies in regulated sectors. However, small companies can be caught indirectly, as suppliers to a covered company that requires supply-chain compliance. Besides, NIS2 measures are good security practice for any organization anyway."
+        },
+        {
+          "q": "What is the compliance deadline?",
+          "a": "The directive is already in force and transposed into national law. Our recommendation is to start assessment and implementation now — NIS2 compliance is not an overnight task, and requirements from partners and authorities are already appearing."
+        },
+        {
+          "q": "What happens if we don't comply?",
+          "a": "You risk significant fines (up to millions of euros or a percentage of turnover), direct management liability and the obligation to report incidents within 24–72 hours. Beyond penalties, the absence of measures means a real risk of a security incident."
+        },
+        {
+          "q": "How long does a NIS2 implementation take and what does it cost?",
+          "a": "It depends on your starting point. Typically an initial implementation runs over a few months, in stages: assessment, priority measures (MFA, backup, hardening), then maturity (segmentation, monitoring, documentation). It's best to start with an honest assessment of your current situation."
+        },
+        {
+          "q": "How can NCS help?",
+          "a": "We run the compliance assessment, implement the technical measures (Microsoft 365, Fortinet, backup, endpoint protection), prepare the required documentation and policies, and support you during audits. In practice, we take on both the technical and the „paperwork” side, end to end."
+        }
+      ],
+      "closingTitle": "Not sure where to start?",
+      "closingText": "Start with an honest assessment. Run the checker above or talk directly to an NCS specialist — no obligations.",
+      "closingCta": "Request a NIS2 assessment"
+    }
+  }
 }

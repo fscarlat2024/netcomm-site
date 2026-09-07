@@ -1,0 +1,168 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{{ '/nis2/index.html' if lang == 'ro' else '/en/nis2/index.html' }}"
+layout: base.njk
+pageId: nis2
+---
+{% from "icons.njk" import icon %}
+{% set np = site.nis2page[lang] %}
+{% set n = site.nis2[lang] %}
+{% set home = "/" if lang == "ro" else "/en/" %}
+{% set nis2cfg = { email: site.email, subject: n.emailSubject, body: n.emailBody, gapsTitle: n.gapsTitle, levels: n.levels, interest: i18n[lang].form_opts[2], tHigh: 80, tMid: 50 } %}
+
+<section class="section band-dark nis2-hero" id="top">
+  <div class="wrap nis2-hero-in reveal">
+    <span class="eyebrow eyebrow-on-dark">{{ np.eyebrow }}</span>
+    <h1>{{ np.h1 }}</h1>
+    <p class="lead">{{ np.lead }}</p>
+    <div class="hero-cta">
+      <a href="#nis2Checker" class="btn btn-primary btn-lg">{{ np.ctaPrimary }} {{ icon("arrow") }}</a>
+      <a href="{{ home }}#contact" class="btn btn-ghost btn-lg">{{ np.ctaGhost }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section band-soft" id="despre-nis2">
+  <div class="wrap nis2-textcols">
+    <div class="nis2-tcol reveal">
+      <span class="eyebrow">{{ np.whatTitle }}</span>
+      <p>{{ np.whatText }}</p>
+    </div>
+    <div class="nis2-tcol reveal">
+      <span class="eyebrow">{{ np.whoTitle }}</span>
+      <p>{{ np.whoText }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="riscuri">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>{{ np.risksTitle }}</h2>
+    </div>
+    <div class="grid-3">
+      {% for r in np.risks %}
+      <article class="card reveal">
+        <div class="card-ic">{{ icon(r.ic) }}</div>
+        <h3>{{ r.t }}</h3>
+        <p>{{ r.d }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section band-dark nis2" id="checker">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow eyebrow-on-dark">{{ np.eyebrow }}</span>
+      <h2>{{ np.checkTitle }}</h2>
+      <p class="sub">{{ np.checkLead }}</p>
+    </div>
+    <div class="nis2-card nis2-card-solo reveal" id="nis2Checker" data-cfg="{{ nis2cfg | dump | urlencode }}">
+      <div class="nis2-quiz">
+        <p class="nis2-hint">{{ n.checkIntro }}</p>
+        {% for q in site.nis2.questions %}
+        <div class="q" data-idx="{{ loop.index0 }}" data-gap="{{ q['gap_' ~ lang] }}">
+          <span class="q-txt">{{ q['q_' ~ lang] }}</span>
+          <div class="q-opts" role="group">
+            {% for opt in n.opts %}
+            <button type="button" class="q-opt" data-v="{{ 2 - loop.index0 }}">{{ opt }}</button>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+        <button type="button" class="btn btn-cyan btn-block nis2-calc" id="nis2Calc">{{ n.calcBtn }} {{ icon("arrow") }}</button>
+      </div>
+
+      <div class="nis2-result" id="nis2Result" hidden>
+        <span class="nis2-rtitle">{{ n.resultTitle }}</span>
+        <div class="nis2-gauge">
+          <div class="nis2-score" id="nis2Score">0%</div>
+          <div class="nis2-bar"><span id="nis2Fill"></span></div>
+        </div>
+        <div class="nis2-level"><b id="nis2LevelTitle"></b><p id="nis2LevelMsg"></p></div>
+        <div class="nis2-gaps" id="nis2Gaps" hidden>
+          <b id="nis2GapsTitle"></b>
+          <ul id="nis2GapsList"></ul>
+        </div>
+        <div class="nis2-cta">
+          <a class="btn btn-primary btn-block" id="nis2Cta" href="{{ home }}#contact">{{ n.cta }} {{ icon("arrow") }}</a>
+          <a class="btn btn-ghost btn-block" href="{{ home }}#contact">{{ n.ctaAlt }}</a>
+        </div>
+        <button type="button" class="nis2-redo" id="nis2Redo">&larr; {{ n.calcBtn }}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap nis2-reqs reveal">
+    <h3 class="nis2-reqs-title">{{ n.reqTitle }}</h3>
+    <div class="nis2-reqs-grid">
+      {% for r in n.reqs %}
+      <div class="rq-card">
+        <div class="rq-ic">{{ icon(r.ic) }}</div>
+        <b>{{ r.t }}</b>
+        <p>{{ r.d }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="wrap nis2-reqs nis2-reqs-2 reveal">
+    <h3 class="nis2-reqs-title">{{ n.reqTitle2 }}</h3>
+    <div class="nis2-reqs-grid">
+      {% for r in n.reqs2 %}
+      <div class="rq-card">
+        <div class="rq-ic">{{ icon(r.ic) }}</div>
+        <b>{{ r.t }}</b>
+        <p>{{ r.d }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section band-soft" id="garantie">
+  <div class="wrap nis2-guarantee-wrap reveal">
+    <div class="guarantee guarantee-page">
+      <div class="guarantee-head"><span class="g-ic">{{ icon("shield") }}</span><b>{{ n.guaranteeTitle }}</b></div>
+      <p>{{ n.guaranteeText }}</p>
+      <ul>
+        {% for gp in n.guaranteePoints %}<li>{{ icon("check") }} {{ gp }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="intrebari-nis2">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>{{ np.faqTitle }}</h2>
+    </div>
+    <div class="faq reveal">
+      {% for f in np.faq %}
+      <details class="faq-item"{% if loop.first %} open{% endif %}>
+        <summary>{{ f.q }}<span class="faq-plus">{{ icon("arrow") }}</span></summary>
+        <div class="faq-a"><p>{{ f.a }}</p></div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section band-dark contact" id="contact-nis2">
+  <div class="contact-bg" style="background-image:url('/assets/img/photos/datacenter.jpg')"></div>
+  <div class="contact-veil"></div>
+  <div class="wrap contact-in reveal">
+    <span class="eyebrow eyebrow-on-dark">{{ np.eyebrow }}</span>
+    <h2>{{ np.closingTitle }}</h2>
+    <p class="sub">{{ np.closingText }}</p>
+    <div class="hero-cta">
+      <a href="{{ home }}#contact" class="btn btn-primary btn-lg">{{ np.closingCta }} {{ icon("arrow") }}</a>
+      <a href="mailto:{{ site.email }}" class="btn btn-ghost btn-lg">{{ site.email }}</a>
+    </div>
+  </div>
+</section>
