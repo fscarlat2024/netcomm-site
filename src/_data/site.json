@@ -122,8 +122,8 @@
     "processTitle": "Un proces clar, de la prima discuție la operare",
     "processLead": "Fără surprize și fără jargon. În fiecare etapă știți exact ce facem, de ce și care este pasul următor.",
     "whyEyebrow": "De ce NCS",
-    "whyTitle": "IT ca serviciu, nu ca problemă",
-    "whyLead": "Ne ocupăm de tot ce înseamnă IT, astfel încât dumneavoastră să vă concentrați exclusiv pe business.",
+    "whyTitle": "IT-ul vostru, grija noastră.",
+    "whyLead": "În spatele fiecărei companii care funcționează fără griji e o echipă care veghează în tăcere. Aceia suntem noi — oamenii pe care îi sunați când ceva nu merge și, mai ales, cei datorită cărora rareori mai trebuie să sunați.",
     "techEyebrow": "Tehnologii",
     "techTitle": "Tehnologii enterprise, standard mondial",
     "techLead": "Lucrăm exclusiv cu tehnologii enterprise consacrate, pentru fiabilitate ridicată și suport pe termen lung.",
@@ -188,8 +188,8 @@
     "processTitle": "A clear process, from first talk to daily operations",
     "processLead": "No surprises and no jargon. At every stage you know what we're doing, why, and what comes next.",
     "whyEyebrow": "Why NCS",
-    "whyTitle": "IT as a service, not as a problem",
-    "whyLead": "We handle everything IT-related, so you can focus entirely on your business.",
+    "whyTitle": "Your IT, in good hands.",
+    "whyLead": "Behind every company that runs without worry is a team quietly keeping watch. That's us — the people you call when something breaks and, above all, the reason you rarely have to.",
     "techEyebrow": "Technologies",
     "techTitle": "Enterprise technology, to a world standard",
     "techLead": "We work exclusively with proven enterprise technologies, for high reliability and long-term support.",
@@ -608,47 +608,47 @@
   ],
   "why": [
     {
-      "icon": "flex",
+      "icon": "collab",
       "ro": {
-        "title": "Abonament lunar flexibil",
-        "desc": "Serviciile se adaptează în funcție de nevoi - plătiți exact cât consumați, fără costuri ascunse."
+        "title": "Vorbiți cu oameni, nu cu tichete",
+        "desc": "Nu ajungeți într-un call-center anonim. Cunoașteți echipa care vă gestionează IT-ul — vă știm afacerea, sistemele și numele."
       },
       "en": {
-        "title": "Flexible monthly plan",
-        "desc": "Services are tailored to your needs - you pay exactly for what you use, with no hidden costs."
-      }
-    },
-    {
-      "icon": "remote",
-      "ro": {
-        "title": "Remote + Onsite",
-        "desc": "Intervenții remote imediate sau vizite periodice la sediu - exact cât aveți nevoie."
-      },
-      "en": {
-        "title": "Remote + Onsite",
-        "desc": "Immediate remote interventions or weekly on-site visits - exactly as much as you need."
+        "title": "You talk to people, not tickets",
+        "desc": "No anonymous call-center. You know the team running your IT — we know your business, your systems and your name."
       }
     },
     {
       "icon": "shield",
       "ro": {
-        "title": "Securitate by design",
-        "desc": "Fiecare soluție este proiectată cu securitatea în centru - Fortinet + M365 Defender."
+        "title": "Suntem acolo când contează",
+        "desc": "Când pică ceva la 2 noaptea, cineva răspunde. Reacționăm rapid, remote sau la fața locului, ca problema să nu vă strice ziua — sau somnul."
       },
       "en": {
-        "title": "Security by design",
-        "desc": "Every solution is designed with security at its core - Fortinet + M365 Defender."
+        "title": "We're there when it matters",
+        "desc": "When something fails at 2 a.m., someone answers. We react fast, remote or on-site, so the problem doesn't ruin your day — or your sleep."
       }
     },
     {
       "icon": "report",
       "ro": {
-        "title": "Raportare și transparență",
-        "desc": "Rapoarte lunare de activitate, disponibilitate și securitate - știți mereu ce se întâmplă cu IT-ul dumneavoastră."
+        "title": "Ne asumăm, nu doar promitem",
+        "desc": "Ne pasă de rezultat, nu de bifat un tichet. Ce spunem că facem, dovedim — cu rapoarte clare și garanția de conformitate NIS2."
       },
       "en": {
-        "title": "Reporting & transparency",
-        "desc": "Monthly activity, availability and security reports - you always know what's happening with your IT."
+        "title": "We take ownership, not just make promises",
+        "desc": "We care about the outcome, not about closing a ticket. What we say we do, we prove — with clear reports and our NIS2 compliance guarantee."
+      }
+    },
+    {
+      "icon": "spark",
+      "ro": {
+        "title": "Creștem odată cu voi",
+        "desc": "Nu vindem un pachet și dispărem. Vă însoțim pe termen lung, adaptând serviciile cum evoluează afacerea — fără costuri ascunse."
+      },
+      "en": {
+        "title": "We grow with you",
+        "desc": "We don't sell a package and disappear. We stay with you long term, adapting services as your business evolves — with no hidden costs."
       }
     }
   ],
