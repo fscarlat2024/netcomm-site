@@ -427,6 +427,7 @@ svg{width:100%;height:100%}
 
 /* ---- Tehnologii: sigle vendor colorate in marquee ---- */
 .marquee-track .tech-logo{display:inline-flex;align-items:center;justify-content:center;height:64px;padding:0 34px;flex-shrink:0}
-.marquee-track .tech-logo img{height:30px;width:auto;max-width:150px;display:block;opacity:.92;transition:opacity .2s ease,transform .2s ease}
+.marquee-track .tech-logo img{height:32px;width:auto;max-width:130px;display:block;opacity:.92;transition:opacity .2s ease,transform .2s ease}
+.marquee-track .tech-logo--wide img{height:46px;max-width:240px}
 .marquee-track .tech-logo:hover img{opacity:1;transform:scale(1.06)}
-@media(max-width:640px){.marquee-track .tech-logo{padding:0 22px}.marquee-track .tech-logo img{height:26px}}
+@media(max-width:640px){.marquee-track .tech-logo{padding:0 20px}.marquee-track .tech-logo img{height:28px}.marquee-track .tech-logo--wide img{height:40px}}

@@ -689,11 +689,13 @@
     },
     {
       "name": "Veeam",
-      "logo": "veeam"
+      "logo": "veeam",
+      "wide": true
     },
     {
       "name": "Acronis",
-      "logo": "acronis"
+      "logo": "acronis",
+      "wide": true
     },
     {
       "name": "Ubiquiti",
@@ -701,7 +703,8 @@
     },
     {
       "name": "Lenovo",
-      "logo": "lenovo"
+      "logo": "lenovo",
+      "wide": true
     },
     {
       "name": "HP",
@@ -709,7 +712,8 @@
     },
     {
       "name": "APC",
-      "logo": "apc"
+      "logo": "apc",
+      "wide": true
     }
   ],
   "clients": [

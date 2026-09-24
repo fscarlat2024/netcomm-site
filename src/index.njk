@@ -237,8 +237,8 @@ layout: base.njk
   </div>
   <div class="marquee reveal">
     <div class="marquee-track">
-      {% for t in site.tech %}<span class="tech-logo"><img src="/assets/img/tech/{{ t.logo }}.svg" alt="{{ t.name }}" title="{{ t.name }}" loading="lazy"></span>{% endfor %}
-      {% for t in site.tech %}<span class="tech-logo" aria-hidden="true"><img src="/assets/img/tech/{{ t.logo }}.svg" alt="" loading="lazy"></span>{% endfor %}
+      {% for t in site.tech %}<span class="tech-logo{% if t.wide %} tech-logo--wide{% endif %}"><img src="/assets/img/tech/{{ t.logo }}.svg" alt="{{ t.name }}" title="{{ t.name }}" loading="lazy"></span>{% endfor %}
+      {% for t in site.tech %}<span class="tech-logo{% if t.wide %} tech-logo--wide{% endif %}" aria-hidden="true"><img src="/assets/img/tech/{{ t.logo }}.svg" alt="" loading="lazy"></span>{% endfor %}
     </div>
   </div>
 </section>
