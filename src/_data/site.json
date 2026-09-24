@@ -711,6 +711,10 @@
       "logo": "hp"
     },
     {
+      "name": "Dell",
+      "logo": "dell"
+    },
+    {
       "name": "APC",
       "logo": "apc",
       "wide": true
