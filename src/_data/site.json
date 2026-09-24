@@ -675,18 +675,42 @@
     }
   ],
   "tech": [
-    "Fortinet",
-    "Microsoft 365",
-    "Azure",
-    "Defender XDR",
-    "Intune",
-    "Entra ID",
-    "FortiGate",
-    "FortiAnalyzer",
-    "FortiEDR",
-    "Exchange Online",
-    "SharePoint",
-    "Teams"
+    {
+      "name": "Fortinet",
+      "logo": "fortinet"
+    },
+    {
+      "name": "Microsoft 365",
+      "logo": "m365"
+    },
+    {
+      "name": "Bitdefender",
+      "logo": "bitdefender"
+    },
+    {
+      "name": "Veeam",
+      "logo": "veeam"
+    },
+    {
+      "name": "Acronis",
+      "logo": "acronis"
+    },
+    {
+      "name": "Ubiquiti",
+      "logo": "ubiquiti"
+    },
+    {
+      "name": "Lenovo",
+      "logo": "lenovo"
+    },
+    {
+      "name": "HP",
+      "logo": "hp"
+    },
+    {
+      "name": "APC",
+      "logo": "apc"
+    }
   ],
   "clients": [
     {
