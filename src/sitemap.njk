@@ -28,4 +28,32 @@ eleventyExcludeFromCollections: true
     <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/nis2/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/nis2/"/>
   </url>
+  <url>
+    <loc>{{ site.url }}/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="{{ site.url }}/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/blog/"/>
+  </url>
+  <url>
+    <loc>{{ site.url }}/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="{{ site.url }}/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/blog/"/>
+  </url>
+  {% for post in collections.blogRo %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="{{ site.url }}/blog/{{ post.fileSlug }}/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/blog/{{ post.fileSlug }}/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/blog/{{ post.fileSlug }}/"/>
+  </url>
+  {% endfor %}
+  {% for post in collections.blogEn %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="{{ site.url }}/blog/{{ post.fileSlug }}/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/blog/{{ post.fileSlug }}/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/blog/{{ post.fileSlug }}/"/>
+  </url>
+  {% endfor %}
 </urlset>

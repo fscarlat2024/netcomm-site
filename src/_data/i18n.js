@@ -6,6 +6,7 @@ module.exports = {
     nav_why: "De ce NCS",
     nav_tech: "Tehnologii",
     nav_pricing: "Abonamente",
+    nav_blog: "Blog",
     nav_contact: "Contact",
     nav_cta: "Consultație gratuită",
     learn_more: "Află mai mult",
@@ -27,7 +28,17 @@ module.exports = {
     form_success_title: "Mulțumim!",
     form_success_msg: "Solicitarea dumneavoastră a fost trimisă. Vă contactăm în cel mai scurt timp.",
     form_error: "A apărut o eroare. Încercați din nou sau scrieți-ne direct la suport@netcomm.ro.",
-    form_captcha: "Vă rugăm să bifați verificarea de securitate."
+    form_captcha: "Vă rugăm să bifați verificarea de securitate.",
+    blog_eyebrow: "Blog NCS",
+    blog_title: "Articole & resurse",
+    blog_lead: "Ghiduri practice despre cybersecurity, conformitate NIS2, backup și IT gestionat — scrise pentru companiile din România.",
+    blog_empty: "În curând publicăm primele articole.",
+    blog_readmore: "Citește articolul",
+    blog_back: "← Toate articolele",
+    blog_min: "min citire",
+    blog_cta_title: "Aveți nevoie de ajutor cu acest subiect?",
+    blog_cta_text: "Echipa NCS vă poate audita, securiza și administra infrastructura IT. Prima consultație este gratuită.",
+    blog_cta_btn: "Consultație gratuită"
   },
   en: {
     nav_services: "Services",
@@ -35,6 +46,7 @@ module.exports = {
     nav_why: "Why NCS",
     nav_tech: "Technologies",
     nav_pricing: "Plans",
+    nav_blog: "Blog",
     nav_contact: "Contact",
     nav_cta: "Free consultation",
     learn_more: "Learn more",
@@ -56,6 +68,16 @@ module.exports = {
     form_success_title: "Thank you!",
     form_success_msg: "Your request has been sent. We'll get back to you shortly.",
     form_error: "Something went wrong. Please try again or email us at suport@netcomm.ro.",
-    form_captcha: "Please complete the security check."
+    form_captcha: "Please complete the security check.",
+    blog_eyebrow: "NCS Blog",
+    blog_title: "Articles & resources",
+    blog_lead: "Practical guides on cybersecurity, NIS2 compliance, backup and managed IT — written for companies in Romania.",
+    blog_empty: "First articles coming soon.",
+    blog_readmore: "Read the article",
+    blog_back: "← All articles",
+    blog_min: "min read",
+    blog_cta_title: "Need help with this topic?",
+    blog_cta_text: "The NCS team can audit, secure and manage your IT infrastructure. The first consultation is free.",
+    blog_cta_btn: "Free consultation"
   }
 };

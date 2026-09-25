@@ -1,0 +1,43 @@
+---
+layout: base.njk
+---
+{% set t = i18n[lang] %}
+{% set blogHome = "/blog/" if lang == "ro" else "/en/blog/" %}
+{% set home = "/" if lang == "ro" else "/en/" %}
+
+<article class="post">
+  <header class="post-hero{% if cover %} post-hero--img{% endif %}"{% if cover %} style="background-image:linear-gradient(180deg,rgba(11,18,32,.55),rgba(11,18,32,.82)),url('{{ cover }}')"{% endif %}>
+    <div class="wrap post-hero-in">
+      <a href="{{ blogHome }}" class="post-back">{{ t.blog_back }}</a>
+      {% if category %}<span class="post-cat">{{ category }}</span>{% endif %}
+      <h1>{{ title }}</h1>
+      <p class="post-meta">
+        <time datetime="{{ page.date | isoDate }}">{{ page.date | blogDate(lang) }}</time>
+        <span class="dot">&middot;</span>
+        <span>{{ content | readingMin }} {{ t.blog_min }}</span>
+      </p>
+    </div>
+  </header>
+
+  <div class="wrap post-layout">
+    <div class="post-body">
+      {{ content | safe }}
+    </div>
+
+    {% if tags and tags.length %}
+    <div class="post-tags">
+      {% for tag in tags %}<span class="post-tag">#{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+
+    <aside class="post-cta reveal">
+      <div>
+        <h3>{{ t.blog_cta_title }}</h3>
+        <p>{{ t.blog_cta_text }}</p>
+      </div>
+      <a href="{{ home }}#contact" class="btn btn-primary">{{ t.blog_cta_btn }}</a>
+    </aside>
+
+    <a href="{{ blogHome }}" class="post-back post-back--foot">{{ t.blog_back }}</a>
+  </div>
+</article>

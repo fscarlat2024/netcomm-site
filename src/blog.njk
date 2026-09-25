@@ -1,0 +1,51 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{{ '/blog/index.html' if lang == 'ro' else '/en/blog/index.html' }}"
+layout: base.njk
+pageId: blog
+eleventyExcludeFromCollections: true
+---
+{% set t = i18n[lang] %}
+{% set c = site[lang] %}
+{% set seoTitle = t.blog_title ~ " | " ~ site.brandName %}
+{% set seoDesc = t.blog_lead %}
+{% set blogHrefRo = "/blog/" %}
+{% set blogHrefEn = "/en/blog/" %}
+{% set posts = (collections.blogRo if lang == "ro" else collections.blogEn) | reverse %}
+
+<section class="blog-head">
+  <div class="wrap">
+    <span class="eyebrow">{{ t.blog_eyebrow }}</span>
+    <h1>{{ t.blog_title }}</h1>
+    <p class="lead">{{ t.blog_lead }}</p>
+  </div>
+</section>
+
+<section class="blog-list">
+  <div class="wrap">
+    {% if posts.length %}
+    <div class="post-grid">
+      {% for post in posts %}
+      <a class="post-card reveal" href="{{ post.url }}">
+        <div class="post-card-top{% if post.data.cover %} post-card-top--img{% endif %}"{% if post.data.cover %} style="background-image:linear-gradient(180deg,rgba(11,18,32,.35),rgba(11,18,32,.8)),url('{{ post.data.cover }}')"{% endif %}>
+          {% if post.data.category %}<span class="post-cat">{{ post.data.category }}</span>{% endif %}
+        </div>
+        <div class="post-card-body">
+          <h2>{{ post.data.title }}</h2>
+          <p>{{ post.data.description }}</p>
+          <span class="post-card-meta">
+            <time datetime="{{ post.date | isoDate }}">{{ post.date | blogDate(lang) }}</time>
+            <span class="post-readmore">{{ t.blog_readmore }} &rarr;</span>
+          </span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="blog-empty">{{ t.blog_empty }}</p>
+    {% endif %}
+  </div>
+</section>
