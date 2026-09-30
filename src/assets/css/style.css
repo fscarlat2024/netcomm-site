@@ -505,7 +505,7 @@ svg{width:100%;height:100%}
 .ncs-ic-x{display:none}
 .ncs-chat.open .ncs-ic-chat{display:none}
 .ncs-chat.open .ncs-ic-x{display:block}
-.ncs-panel{position:absolute;right:0;bottom:74px;width:370px;max-width:calc(100vw - 32px);height:min(560px,calc(100vh - 120px));background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;overflow:hidden;animation:ncsIn .22s cubic-bezier(.2,.7,.3,1)}
+.ncs-panel{position:absolute;right:0;bottom:74px;width:330px;max-width:calc(100vw - 32px);height:min(470px,calc(100vh - 130px));background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;overflow:hidden;animation:ncsIn .22s cubic-bezier(.2,.7,.3,1)}
 @keyframes ncsIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 .ncs-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;background:linear-gradient(135deg,var(--midnight),var(--dark));color:#fff}
 .ncs-head b{font-family:var(--disp);font-size:1.02rem;display:block}

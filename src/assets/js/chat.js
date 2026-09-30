@@ -8,7 +8,7 @@
     ro: {
       title: "Cyber",
       sub: "Asistentul NCS · răspunde în câteva secunde",
-      greet: "Bună ziua! Sunt Cyber, asistentul NCS. Cu ce vă pot ajuta — cybersecurity, backup, Microsoft 365, rețea sau conformitate NIS2?",
+      greet: "Bună, sunt Cyber, asistentul virtual, și vă voi răspunde în câteva secunde.",
       ph: "Scrieți un mesaj…",
       send: "Trimite",
       open: "Deschide chat",
@@ -18,7 +18,7 @@
     en: {
       title: "Cyber",
       sub: "NCS assistant · replies in seconds",
-      greet: "Hi! I'm Cyber, the NCS assistant. How can I help — cybersecurity, backup, Microsoft 365, network or NIS2 compliance?",
+      greet: "Hi, I'm Cyber, the virtual assistant, and I'll get back to you in a few seconds.",
       ph: "Type a message…",
       send: "Send",
       open: "Open chat",
