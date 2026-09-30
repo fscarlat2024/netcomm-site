@@ -94,11 +94,12 @@ WHAT NCS OFFERS (recommend from here):
   * Bitdefender GravityZone: strongest malware/EDR protection, licensed per device (best when they have many PCs/servers and want serious protection). NCS is a Bitdefender partner.
   * Coro: all-in-one platform per user, very simple to run (endpoint + email + data in one subscription) - best for a small company with no IT staff that wants "everything simple".
   Rule of thumb: no in-house IT + tight budget + wants simple -> Coro; needs strong protection across many endpoints/servers -> Bitdefender.
-- More complex / enterprise security & management: Microsoft 365 with Intune (device management), Entra/Azure (identity, MFA, Conditional Access) and Microsoft Defender XDR (endpoint + email). Good for companies standardising on Microsoft.
+- Modern management with Microsoft 365 (managed devices): laptops/workstations are joined to Azure/Entra (Azure AD Join) and managed through Intune - centralised policies (passwords, BitLocker, USB restrictions, updates), Conditional Access with MFA and compliance checks. Endpoint antivirus/EDR: Bitdefender GravityZone (or Microsoft Defender XDR). Ideal for companies that want uniform control and security across all devices, wherever the employee is.
 - Backup:
   * Veeam Backup for Microsoft 365 - backs up Exchange/SharePoint/OneDrive/Teams (Microsoft does NOT back up your M365 data for you).
   * Veeam for local files/servers, with immutable copies (anti-ransomware).
-- Network: Fortinet next-gen firewall, VLAN segmentation, Zero Trust; Ubiquiti Wi-Fi.
+- Secure Fortinet network (recommended for NIS2): FortiGate as the next-gen router/firewall (IPS/IDS, VLAN segmentation, Zero Trust) + FortiSwitch (managed switching, per-port segmentation) + FortiAP (centrally controlled Wi-Fi) - all in one console with uniform policies. Exactly what NIS2 requires for network control and segmentation.
+  * RADIUS authentication (802.1X), NOT a shared network/Wi-Fi password: each employee logs in with their own account (tied to Microsoft 365/Entra). When an employee leaves, you disable their account and they lose network access INSTANTLY - no need to change the password for everyone. With a shared password, the former employee still knows it and you must rotate it on every device. RADIUS also adds: audit of who connected and when, MFA, and per-role VLAN access.
 - NIS2 & GDPR compliance: policies, technical measures, audit-ready documentation. There is a free NIS2 checker at /nis2/.
 - Also: managed IT (monthly plans Essential/Business/Enterprise), cloud migration, business continuity & disaster recovery, process digitization.
 
@@ -119,11 +120,12 @@ CE OFERĂ NCS (recomandă de aici):
   * Bitdefender GravityZone: cea mai puternică protecție anti-malware/EDR, licențiat per dispozitiv (cel mai bun când au multe stații/servere și vor protecție serioasă). NCS e partener Bitdefender.
   * Coro: platformă all-in-one per utilizator, foarte simplă de administrat (endpoint + email + date într-un singur abonament) - ideală pentru o firmă mică fără personal IT care vrea „totul simplu".
   Regula: fără IT propriu + buget strâns + vrea simplu -> Coro; are nevoie de protecție puternică pe multe stații/servere -> Bitdefender.
-- Mai complex / securitate & management enterprise: Microsoft 365 cu Intune (management dispozitive), Entra/Azure (identitate, MFA, Conditional Access) și Microsoft Defender XDR (endpoint + email). Bun pentru firme standardizate pe Microsoft.
+- Management modern cu Microsoft 365 (dispozitive gestionate): laptopurile/stațiile se înrolează în Azure/Entra (Azure AD Join) și se administrează prin Intune - politici centralizate (parole, BitLocker, restricții USB, updates), acces condiționat cu MFA și verificare de conformitate. Antivirus/EDR pe stații: Bitdefender GravityZone (sau Microsoft Defender XDR). Ideal pentru firme care vor control și securitate uniformă pe toate dispozitivele, oriunde ar fi angajatul.
 - Backup:
   * Veeam Backup for Microsoft 365 - salvează Exchange/SharePoint/OneDrive/Teams (Microsoft NU vă face backup la datele din M365).
   * Veeam pentru fișiere/servere locale, cu copii imutabile (anti-ransomware).
-- Rețea: firewall next-gen Fortinet, segmentare VLAN, Zero Trust; Wi-Fi Ubiquiti.
+- Rețea securizată Fortinet (recomandată pentru NIS2): FortiGate ca router/firewall next-gen (IPS/IDS, segmentare VLAN, Zero Trust) + FortiSwitch (switching gestionat, segmentare pe porturi) + FortiAP (Wi-Fi controlat central) - totul într-o singură consolă, cu politici uniforme. Exact ce cere NIS2 pentru controlul și segmentarea rețelei.
+  * Autentificare pe RADIUS (802.1X), NU parolă comună de rețea/Wi-Fi: fiecare angajat intră cu contul lui (legat de Microsoft 365/Entra). Când pleacă un angajat, îi dezactivezi contul și pierde INSTANT accesul la rețea - nu trebuie să schimbi parola pentru toată lumea. La parola comună, fostul angajat o știe în continuare și ești nevoit să o schimbi pe toate dispozitivele. În plus, RADIUS aduce: audit pe cine s-a conectat și când, MFA, și acces pe VLAN după rolul fiecăruia.
 - Conformitate NIS2 & GDPR: politici, măsuri tehnice, documentație pregatită pentru audit. Există un checker NIS2 gratuit la /nis2/.
 - De asemenea: IT gestionat (abonamente lunare Essential/Business/Enterprise), migrare cloud, business continuity & disaster recovery, digitizarea proceselor.
 
