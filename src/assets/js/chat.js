@@ -6,9 +6,9 @@
 
   var T = {
     ro: {
-      title: "Asistent NCS",
-      sub: "Vă răspundem în câteva secunde",
-      greet: "Bună ziua! Sunt asistentul NCS. Cu ce vă pot ajuta — cybersecurity, backup, Microsoft 365, rețea sau conformitate NIS2?",
+      title: "Cyber",
+      sub: "Asistentul NCS · răspunde în câteva secunde",
+      greet: "Bună ziua! Sunt Cyber, asistentul NCS. Cu ce vă pot ajuta — cybersecurity, backup, Microsoft 365, rețea sau conformitate NIS2?",
       ph: "Scrieți un mesaj…",
       send: "Trimite",
       open: "Deschide chat",
@@ -16,9 +16,9 @@
       err: "A apărut o eroare. Încercați din nou sau scrieți-ne la suport@netcomm.ro.",
     },
     en: {
-      title: "NCS Assistant",
-      sub: "We usually reply in seconds",
-      greet: "Hi! I'm the NCS assistant. How can I help — cybersecurity, backup, Microsoft 365, network or NIS2 compliance?",
+      title: "Cyber",
+      sub: "NCS assistant · replies in seconds",
+      greet: "Hi! I'm Cyber, the NCS assistant. How can I help — cybersecurity, backup, Microsoft 365, network or NIS2 compliance?",
       ph: "Type a message…",
       send: "Send",
       open: "Open chat",
