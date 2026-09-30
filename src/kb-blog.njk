@@ -1,0 +1,16 @@
+---
+permalink: /kb-blog.json
+eleventyExcludeFromCollections: true
+---
+{
+  "ro": [
+    {%- for post in collections.blogRo %}
+    {"title": {{ post.data.title | dump | safe }}, "url": "{{ post.url }}", "desc": {{ post.data.description | dump | safe }}, "category": {{ post.data.category | dump | safe }}}{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ],
+  "en": [
+    {%- for post in collections.blogEn %}
+    {"title": {{ post.data.title | dump | safe }}, "url": "{{ post.url }}", "desc": {{ post.data.description | dump | safe }}, "category": {{ post.data.category | dump | safe }}}{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}

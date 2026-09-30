@@ -1,8 +1,15 @@
 {
-  // Deploy ca site static (Cloudflare Workers - static assets)
+  // Site static + Worker (chat widget /api/chat, lead /api/lead)
   "name": "netcomm",
+  "main": "worker.js",
   "compatibility_date": "2025-01-01",
   "assets": {
-    "directory": "./_site"
+    "directory": "./_site",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    // Web3Forms este o cheie publica (nu e secret) - trimite lead-ul pe email.
+    "WEB3FORMS_KEY": "459c6d34-f5f3-48db-83c6-2f9d27e26bbf"
   }
+  // Secrete (o singura data): wrangler secret put ANTHROPIC_API_KEY / TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID
 }
