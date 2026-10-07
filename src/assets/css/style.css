@@ -533,3 +533,9 @@ svg{width:100%;height:100%}
   .ncs-chat{right:14px;bottom:14px}
   .ncs-panel{bottom:70px;height:min(70vh,520px)}
 }
+
+/* Bloc resurse / linkuri interne in articol */
+.post-related{margin-top:2.4rem;padding:1.05rem 1.3rem;background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius-sm);display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.3rem}
+.post-related-label{font-family:var(--disp);font-weight:600;color:var(--ink);font-size:.9rem}
+.post-related a{color:var(--brand);font-weight:500;font-size:.95rem}
+.post-related a:hover{text-decoration:underline}

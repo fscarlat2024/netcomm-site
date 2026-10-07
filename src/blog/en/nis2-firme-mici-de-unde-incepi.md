@@ -5,7 +5,7 @@ date: 2026-09-25
 category: "NIS2 Compliance"
 tags: ["nis2", "conformitate", "risc", "politici", "imm"]
 ---
-NIS2 is often perceived as a concern for large critical infrastructure operators. In reality, the directive's scope expanded considerably compared to NIS1, and many mid-sized companies — and even small ones, in certain sectors — now fall within the categories of essential or important entities. If you are wondering where to begin, this article gives you a structure you can work through step by step, without getting stuck in legal interpretation.
+[NIS2](/en/nis2/) is often perceived as a concern for large critical infrastructure operators. In reality, the directive's scope expanded considerably compared to NIS1, and many mid-sized companies — and even small ones, in certain sectors — now fall within the categories of essential or important entities. If you are wondering where to begin, this article gives you a structure you can work through step by step, without getting stuck in legal interpretation.
 
 ## Step one: determine whether it applies to you
 

@@ -69,7 +69,7 @@ Partially deployed MFA creates a false sense of security. Watch out for:
 
 ## MFA and NIS2 compliance
 
-For entities in scope of the NIS2 Directive, multi-factor authentication is no longer an optional good practice. Article 21 lists the use of multi-factor or continuous authentication solutions among the required risk-management measures, alongside access control policies and basic cyber hygiene. If your organisation falls within scope, the absence of MFA will be visible during any assessment.
+For entities in scope of the [NIS2](/en/nis2/) Directive, multi-factor authentication is no longer an optional good practice. Article 21 lists the use of multi-factor or continuous authentication solutions among the required risk-management measures, alongside access control policies and basic cyber hygiene. If your organisation falls within scope, the absence of MFA will be visible during any assessment.
 
 ## An unbeatable cost-benefit ratio
 

@@ -38,7 +38,10 @@ module.exports = {
     blog_min: "min citire",
     blog_cta_title: "Aveți nevoie de ajutor cu acest subiect?",
     blog_cta_text: "Echipa NCS vă poate audita, securiza și administra infrastructura IT. Prima consultație este gratuită.",
-    blog_cta_btn: "Consultație gratuită"
+    blog_cta_btn: "Consultație gratuită",
+    blog_related: "Resursă utilă",
+    blog_related_nis2: "Checker NIS2 gratuit — verificați conformitatea companiei",
+    blog_related_more: "Toate articolele"
   },
   en: {
     nav_services: "Services",
@@ -78,6 +81,9 @@ module.exports = {
     blog_min: "min read",
     blog_cta_title: "Need help with this topic?",
     blog_cta_text: "The NCS team can audit, secure and manage your IT infrastructure. The first consultation is free.",
-    blog_cta_btn: "Free consultation"
+    blog_cta_btn: "Free consultation",
+    blog_related: "Useful resource",
+    blog_related_nis2: "Free NIS2 checker — assess your company's compliance",
+    blog_related_more: "All articles"
   }
 };

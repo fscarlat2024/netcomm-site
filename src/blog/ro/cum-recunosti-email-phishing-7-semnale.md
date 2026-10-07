@@ -78,6 +78,6 @@ Instruirea utilizatorilor este esențială, dar nu poate fi singura linie de ap�
 - Simulări periodice de phishing, urmate de instruire, nu de sancțiuni.
 - Backup testat, pentru scenariile în care un phishing duce la ransomware.
 
-Pentru companiile care intră sub incidența NIS2, gestionarea riscului legat de resursa umană și raportarea incidentelor nu mai sunt opționale, ci fac parte din obligațiile de securitate.
+Pentru companiile care intră sub incidența [NIS2](/nis2/), gestionarea riscului legat de resursa umană și raportarea incidentelor nu mai sunt opționale, ci fac parte din obligațiile de securitate.
 
 Phishingul evoluează constant, iar mesajele generate cu ajutorul inteligenței artificiale sunt tot mai credibile. Tocmai de aceea, combinația dintre proceduri clare, tehnologii de filtrare configurate corect și oameni instruiți face diferența. Dacă doriți o evaluare a modului în care este protejat emailul companiei dumneavoastră, o simulare de phishing sau o sesiune de instruire pentru echipă, un partener specializat vă poate ajuta să treceți de la reacție la prevenție.

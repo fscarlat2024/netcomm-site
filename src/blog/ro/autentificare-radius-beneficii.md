@@ -54,7 +54,7 @@ Politicile de acces se scriu o singură dată, pe server, și se aplică în toa
 
 ### Log-uri utile pentru audit și conformitate
 
-Componenta de accounting produce exact tipul de evidențe pe care le cere un audit: cine s-a conectat, de pe ce dispozitiv, la ce oră, cât timp. Pentru organizațiile care intră sub incidența NIS2, măsurile de control al accesului și de gestionare a identităților sunt parte din cerințele articolului 21, iar o autentificare centralizată, cu evidențe verificabile, este un argument mult mai solid decât o parolă Wi-Fi comună.
+Componenta de accounting produce exact tipul de evidențe pe care le cere un audit: cine s-a conectat, de pe ce dispozitiv, la ce oră, cât timp. Pentru organizațiile care intră sub incidența [NIS2](/nis2/), măsurile de control al accesului și de gestionare a identităților sunt parte din cerințele articolului 21, iar o autentificare centralizată, cu evidențe verificabile, este un argument mult mai solid decât o parolă Wi-Fi comună.
 
 ## Ce trebuie avut în vedere la implementare
 

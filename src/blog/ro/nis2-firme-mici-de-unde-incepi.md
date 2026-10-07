@@ -5,7 +5,7 @@ date: 2026-09-25
 category: "Conformitate NIS2"
 tags: ["nis2", "conformitate", "risc", "politici", "imm"]
 ---
-Directiva NIS2 este percepută, de multe ori, ca o problemă a marilor operatori de infrastructură critică. În realitate, sfera de aplicare s-a lărgit considerabil față de NIS1, iar multe companii de dimensiuni medii — și chiar mici, în anumite sectoare — se regăsesc astăzi în categoria entităților esențiale sau importante. Dacă vă întrebați de unde să începeți, acest articol vă oferă o structură pe care o puteți parcurge pas cu pas, fără a vă bloca în interpretări juridice.
+Directiva [NIS2](/nis2/) este percepută, de multe ori, ca o problemă a marilor operatori de infrastructură critică. În realitate, sfera de aplicare s-a lărgit considerabil față de NIS1, iar multe companii de dimensiuni medii — și chiar mici, în anumite sectoare — se regăsesc astăzi în categoria entităților esențiale sau importante. Dacă vă întrebați de unde să începeți, acest articol vă oferă o structură pe care o puteți parcurge pas cu pas, fără a vă bloca în interpretări juridice.
 
 ## Primul pas: stabiliți dacă vă aplică
 

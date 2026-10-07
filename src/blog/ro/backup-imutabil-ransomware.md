@@ -40,7 +40,7 @@ Acel „0" final este esențial și cel mai des ignorat: un backup care nu a fos
 
 ## Legătura cu NIS2
 
-Directiva **NIS2** cere explicit măsuri de continuitate a activității și gestionarea copiilor de siguranță (Art. 21). Pentru entitățile din domeniul de aplicare, un plan de backup care include imutabilitate și testarea periodică a restaurării nu mai este o bună practică opțională, ci parte din obligațiile de conformitate. Documentarea acestor măsuri contează la fel de mult ca implementarea lor.
+Directiva **[NIS2](/nis2/)** cere explicit măsuri de continuitate a activității și gestionarea copiilor de siguranță (Art. 21). Pentru entitățile din domeniul de aplicare, un plan de backup care include imutabilitate și testarea periodică a restaurării nu mai este o bună practică opțională, ci parte din obligațiile de conformitate. Documentarea acestor măsuri contează la fel de mult ca implementarea lor.
 
 ## Ce puteți face concret
 

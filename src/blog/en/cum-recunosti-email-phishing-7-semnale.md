@@ -78,6 +78,6 @@ User awareness is essential, but it can't be the only line of defence. A minimum
 - Regular phishing simulations followed by training, not punishment.
 - Tested backups, for scenarios where phishing leads to ransomware.
 
-For organisations in scope of NIS2, managing human-related risk and reporting incidents are no longer optional; they form part of your security obligations.
+For organisations in scope of [NIS2](/en/nis2/), managing human-related risk and reporting incidents are no longer optional; they form part of your security obligations.
 
 Phishing keeps evolving, and AI-assisted messages are increasingly convincing. That is precisely why the combination of clear procedures, properly configured filtering technology and trained people makes the difference. If you would like an assessment of how well your company email is protected, a phishing simulation, or a training session for your team, a specialised partner can help you move from reaction to prevention.

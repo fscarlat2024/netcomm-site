@@ -42,7 +42,7 @@ FortiSIEM poate fi implementat de la un singur nod virtual, pentru organizații 
 
 ## Cum se leagă de conformitate
 
-Directiva NIS2 cere entităților în scop măsuri de gestionare a riscurilor de securitate cibernetică, inclusiv capacități de detectare, tratare și raportare a incidentelor. Articolul 21 menționează explicit politici de analiză a riscurilor și proceduri de gestionare a incidentelor.
+Directiva [NIS2](/nis2/) cere entităților în scop măsuri de gestionare a riscurilor de securitate cibernetică, inclusiv capacități de detectare, tratare și raportare a incidentelor. Articolul 21 menționează explicit politici de analiză a riscurilor și proceduri de gestionare a incidentelor.
 
 Un SIEM nu vă face automat conformi, dar acoperă câteva cerințe practice greu de îndeplinit altfel:
 

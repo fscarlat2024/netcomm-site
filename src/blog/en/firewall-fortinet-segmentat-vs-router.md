@@ -52,7 +52,7 @@ VPN with multi-factor authentication and zone-scoped permissions replaces the ri
 
 ## The NIS2 connection
 
-For organisations in scope of the NIS2 Directive, Article 21 requires technical measures proportionate to risk: network security policies, access control, incident handling, business continuity. Segmentation isn't just good engineering practice — it's concrete evidence for an auditor that access is controlled and risk is limited by design.
+For organisations in scope of the [NIS2](/en/nis2/) Directive, Article 21 requires technical measures proportionate to risk: network security policies, access control, incident handling, business continuity. Segmentation isn't just good engineering practice — it's concrete evidence for an auditor that access is controlled and risk is limited by design.
 
 Even if your organisation isn't directly in scope, you are very likely a supplier to someone who is. Requirements propagate along the supply chain.
 

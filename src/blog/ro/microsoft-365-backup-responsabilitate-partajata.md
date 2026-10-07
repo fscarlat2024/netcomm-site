@@ -72,7 +72,7 @@ Principiul 3-2-1 rămâne valabil și pentru cloud: trei copii ale datelor, pe d
 
 ## Dimensiunea de conformitate
 
-Pentru organizațiile care intră sub incidența NIS2, articolul 21 cere măsuri privind continuitatea activității, inclusiv gestionarea copiilor de rezervă și recuperarea în caz de dezastru. Un tenant Microsoft 365 fără backup independent este greu de justificat într-un audit. Aceeași logică se aplică și pentru cerințele GDPR privind disponibilitatea și integritatea datelor cu caracter personal.
+Pentru organizațiile care intră sub incidența [NIS2](/nis2/), articolul 21 cere măsuri privind continuitatea activității, inclusiv gestionarea copiilor de rezervă și recuperarea în caz de dezastru. Un tenant Microsoft 365 fără backup independent este greu de justificat într-un audit. Aceeași logică se aplică și pentru cerințele GDPR privind disponibilitatea și integritatea datelor cu caracter personal.
 
 Dincolo de conformitate, argumentul de business este simplu: costul unei soluții de backup pentru Microsoft 365 este marginal comparativ cu costul reconstruirii — sau al imposibilității de a reconstrui — corespondența, contractele și documentația de proiect a unei companii.
 

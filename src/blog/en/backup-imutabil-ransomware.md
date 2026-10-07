@@ -40,7 +40,7 @@ That final "0" is essential and most often ignored: a backup that has never been
 
 ## The NIS2 connection
 
-The **NIS2** directive explicitly requires business continuity measures and backup management (Art. 21). For in-scope entities, a backup plan that includes immutability and regular restore testing is no longer an optional best practice — it's part of the compliance obligations. Documenting these measures matters as much as implementing them.
+The **[NIS2](/en/nis2/)** directive explicitly requires business continuity measures and backup management (Art. 21). For in-scope entities, a backup plan that includes immutability and regular restore testing is no longer an optional best practice — it's part of the compliance obligations. Documenting these measures matters as much as implementing them.
 
 ## What you can do right now
 

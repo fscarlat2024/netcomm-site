@@ -69,7 +69,7 @@ MFA activat parțial oferă o falsă senzație de siguranță. Atenție la:
 
 ## MFA și conformitatea NIS2
 
-Pentru entitățile aflate sub incidența Directivei NIS2, autentificarea multi-factor nu mai este o bună practică opțională. Articolul 21 include, între măsurile de gestionare a riscurilor, utilizarea soluțiilor de autentificare multi-factor sau de autentificare continuă, alături de politici de control al accesului și de igienă cibernetică de bază. Dacă organizația dumneavoastră intră în domeniul de aplicare, absența MFA va fi vizibilă la orice evaluare.
+Pentru entitățile aflate sub incidența Directivei [NIS2](/nis2/), autentificarea multi-factor nu mai este o bună practică opțională. Articolul 21 include, între măsurile de gestionare a riscurilor, utilizarea soluțiilor de autentificare multi-factor sau de autentificare continuă, alături de politici de control al accesului și de igienă cibernetică de bază. Dacă organizația dumneavoastră intră în domeniul de aplicare, absența MFA va fi vizibilă la orice evaluare.
 
 ## Un raport cost-beneficiu greu de egalat
 

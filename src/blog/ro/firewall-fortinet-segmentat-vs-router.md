@@ -52,7 +52,7 @@ VPN-ul cu autentificare multi-factor și acces limitat pe zone înlocuiește pra
 
 ## Legătura cu NIS2
 
-Pentru organizațiile care intră sub incidența Directivei NIS2, Articolul 21 cere măsuri tehnice proporționale cu riscul: politici de securitate a rețelelor, controlul accesului, gestionarea incidentelor, continuitatea activității. Segmentarea nu este doar o bună practică tehnică — este un argument concret în fața unui auditor că accesul este controlat și că riscul este limitat prin design.
+Pentru organizațiile care intră sub incidența Directivei [NIS2](/nis2/), Articolul 21 cere măsuri tehnice proporționale cu riscul: politici de securitate a rețelelor, controlul accesului, gestionarea incidentelor, continuitatea activității. Segmentarea nu este doar o bună practică tehnică — este un argument concret în fața unui auditor că accesul este controlat și că riscul este limitat prin design.
 
 Chiar dacă organizația dumneavoastră nu este direct vizată, foarte probabil sunteți furnizor pentru cineva care este. Cerințele se propagă pe lanțul de aprovizionare.
 

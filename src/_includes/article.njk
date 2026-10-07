@@ -30,6 +30,12 @@ layout: base.njk
     </div>
     {% endif %}
 
+    <div class="post-related">
+      <span class="post-related-label">{{ t.blog_related }}</span>
+      <a href="{{ '/nis2/' if lang == 'ro' else '/en/nis2/' }}">{{ t.blog_related_nis2 }} &rarr;</a>
+      <a href="{{ blogHome }}">{{ t.blog_related_more }} &rarr;</a>
+    </div>
+
     <aside class="post-cta reveal">
       <div>
         <h3>{{ t.blog_cta_title }}</h3>

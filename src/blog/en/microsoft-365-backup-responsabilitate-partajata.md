@@ -72,7 +72,7 @@ In practice, a mature solution should deliver:
 
 ## The compliance dimension
 
-For organisations in scope of NIS2, Article 21 requires business continuity measures, including backup management and disaster recovery. A Microsoft 365 tenant without independent backup is difficult to defend in an audit. The same logic applies to GDPR expectations around the availability and integrity of personal data.
+For organisations in scope of [NIS2](/en/nis2/), Article 21 requires business continuity measures, including backup management and disaster recovery. A Microsoft 365 tenant without independent backup is difficult to defend in an audit. The same logic applies to GDPR expectations around the availability and integrity of personal data.
 
 Beyond compliance, the business case is straightforward: the cost of a Microsoft 365 backup solution is marginal compared with the cost of rebuilding — or being unable to rebuild — a company's correspondence, contracts and project documentation.
 

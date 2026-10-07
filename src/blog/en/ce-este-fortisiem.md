@@ -42,7 +42,7 @@ FortiSIEM can be deployed as a single virtual appliance for smaller organisation
 
 ## How it supports compliance
 
-The NIS2 Directive requires in-scope entities to implement cybersecurity risk management measures, including incident detection, handling and reporting capabilities. Article 21 explicitly mentions risk analysis policies and incident handling procedures.
+The [NIS2](/en/nis2/) Directive requires in-scope entities to implement cybersecurity risk management measures, including incident detection, handling and reporting capabilities. Article 21 explicitly mentions risk analysis policies and incident handling procedures.
 
 A SIEM doesn't make you compliant by itself, but it covers several practical requirements that are hard to meet otherwise:
 

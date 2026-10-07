@@ -54,7 +54,7 @@ Access policies are written once, on the server, and enforced across all sites a
 
 ### Audit-ready logs
 
-The accounting component produces exactly the kind of evidence an audit asks for: who connected, from which device, at what time, for how long. For organizations in scope of NIS2, access control and identity management measures are part of the Article 21 requirements, and centralized authentication with verifiable records is a far stronger argument than a shared Wi-Fi password.
+The accounting component produces exactly the kind of evidence an audit asks for: who connected, from which device, at what time, for how long. For organizations in scope of [NIS2](/en/nis2/), access control and identity management measures are part of the Article 21 requirements, and centralized authentication with verifiable records is a far stronger argument than a shared Wi-Fi password.
 
 ## What to plan for during implementation
 
