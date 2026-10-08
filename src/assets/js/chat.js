@@ -13,6 +13,7 @@
       send: "Trimite",
       open: "Deschide chat",
       hide: "Ascunde",
+      teaser: "Bună, sunt Cyber 👋 Cu ce vă ajut?",
       close: "Închide",
       err: "A apărut o eroare. Încercați din nou sau scrieți-ne la suport@netcomm.ro.",
     },
@@ -24,6 +25,7 @@
       send: "Send",
       open: "Open chat",
       hide: "Hide",
+      teaser: "Hi, I'm Cyber 👋 How can I help?",
       close: "Close",
       err: "Something went wrong. Please try again or email us at suport@netcomm.ro.",
     },
@@ -42,6 +44,7 @@
       '<svg class="ncs-ic-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>' +
       '<svg class="ncs-ic-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>' +
     '</button>' +
+    '<button class="ncs-teaser" type="button">' + T.teaser + '</button>' +
     '<div class="ncs-panel" role="dialog" aria-label="' + T.title + '" hidden>' +
       '<div class="ncs-head"><div><b>' + T.title + '</b><span>' + T.sub + '</span></div>' +
         '<div class="ncs-hbtns"><button class="ncs-hide" type="button">' + T.hide + '</button>' +
@@ -118,12 +121,21 @@
     try { on ? sessionStorage.setItem(MINI, "1") : sessionStorage.removeItem(MINI); } catch (e) {}
   }
   try { if (sessionStorage.getItem(MINI)) root.classList.add("mini"); } catch (e) {}
+  var teaser = root.querySelector(".ncs-teaser");
+  var SEEN = "ncs-chat-seen";
+  var seen = false;
+  try { seen = !!sessionStorage.getItem(SEEN); } catch (e) {}
+  function markSeen() { root.classList.remove("tease"); try { sessionStorage.setItem(SEEN, "1"); } catch (e) {} }
+  if (!seen && !history.length) setTimeout(function () { if (!opened) root.classList.add("tease"); }, 1800);
+  teaser.addEventListener("click", function () { markSeen(); if (!opened) toggle(); });
   root.querySelector(".ncs-hide").addEventListener("click", function () {
     if (opened) toggle();
+    markSeen();
     setMini(true);
   });
   bubble.addEventListener("click", function () {
     if (root.classList.contains("mini")) setMini(false);
+    markSeen();
     toggle();
   });
   root.querySelector(".ncs-close").addEventListener("click", toggle);

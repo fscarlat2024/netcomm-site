@@ -516,6 +516,9 @@ svg{width:100%;height:100%}
 .ncs-hbtns{display:flex;align-items:center;gap:2px;flex-shrink:0}
 .ncs-hide{background:rgba(255,255,255,.12);border:none;color:#fff;font-size:.74rem;font-family:var(--sans);padding:.3rem .6rem;border-radius:8px;cursor:pointer;opacity:.85;margin-right:4px}
 .ncs-hide:hover{opacity:1;background:rgba(255,255,255,.2)}
+.ncs-teaser{display:none;position:absolute;right:72px;bottom:12px;white-space:nowrap;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:.55rem .95rem;font:500 .9rem/1.2 var(--sans);box-shadow:var(--shadow-lg);cursor:pointer;animation:ncsIn .3s ease}
+.ncs-teaser:hover{border-color:var(--brand2);color:var(--brand)}
+.ncs-chat.tease:not(.open):not(.mini) .ncs-teaser{display:block}
 .ncs-chat.mini{right:0}
 .ncs-chat.mini .ncs-bubble{width:30px;height:44px;border-radius:12px 0 0 12px;opacity:.55;box-shadow:none}
 .ncs-chat.mini .ncs-bubble svg{width:16px;height:16px}
@@ -551,6 +554,7 @@ svg{width:100%;height:100%}
   .ncs-form{padding:8px;gap:6px}
   .ncs-in{font-size:16px;padding:.45rem .65rem}
   .ncs-send{width:38px}
+  .ncs-teaser{right:58px;bottom:8px;font-size:.82rem;padding:.45rem .8rem}
 }
 
 /* Bloc resurse / linkuri interne in articol */
