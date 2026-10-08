@@ -12,6 +12,7 @@
       ph: "Scrieți un mesaj…",
       send: "Trimite",
       open: "Deschide chat",
+      hide: "Ascunde",
       close: "Închide",
       err: "A apărut o eroare. Încercați din nou sau scrieți-ne la suport@netcomm.ro.",
     },
@@ -22,6 +23,7 @@
       ph: "Type a message…",
       send: "Send",
       open: "Open chat",
+      hide: "Hide",
       close: "Close",
       err: "Something went wrong. Please try again or email us at suport@netcomm.ro.",
     },
@@ -42,7 +44,8 @@
     '</button>' +
     '<div class="ncs-panel" role="dialog" aria-label="' + T.title + '" hidden>' +
       '<div class="ncs-head"><div><b>' + T.title + '</b><span>' + T.sub + '</span></div>' +
-        '<button class="ncs-close" type="button" aria-label="' + T.close + '">&times;</button></div>' +
+        '<div class="ncs-hbtns"><button class="ncs-hide" type="button">' + T.hide + '</button>' +
+        '<button class="ncs-close" type="button" aria-label="' + T.close + '">&times;</button></div></div>' +
       '<div class="ncs-msgs" aria-live="polite"></div>' +
       '<form class="ncs-form"><input class="ncs-in" type="text" autocomplete="off" placeholder="' + T.ph + '" aria-label="' + T.ph + '">' +
         '<button class="ncs-send" type="submit" aria-label="' + T.send + '">' +
@@ -109,7 +112,20 @@
       if (!window.matchMedia("(max-width:640px)").matches) setTimeout(function () { input.focus(); }, 60);
     }
   }
-  bubble.addEventListener("click", toggle);
+  var MINI = "ncs-chat-mini";
+  function setMini(on) {
+    root.classList.toggle("mini", on);
+    try { on ? sessionStorage.setItem(MINI, "1") : sessionStorage.removeItem(MINI); } catch (e) {}
+  }
+  try { if (sessionStorage.getItem(MINI)) root.classList.add("mini"); } catch (e) {}
+  root.querySelector(".ncs-hide").addEventListener("click", function () {
+    if (opened) toggle();
+    setMini(true);
+  });
+  bubble.addEventListener("click", function () {
+    if (root.classList.contains("mini")) setMini(false);
+    toggle();
+  });
   root.querySelector(".ncs-close").addEventListener("click", toggle);
 
   form.addEventListener("submit", function (e) {
