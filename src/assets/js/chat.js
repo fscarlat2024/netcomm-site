@@ -106,7 +106,7 @@
     bubble.setAttribute("aria-label", opened ? T.close : T.open);
     if (opened) {
       if (!msgs.childElementCount) paint();
-      setTimeout(function () { input.focus(); }, 60);
+      if (!window.matchMedia("(max-width:640px)").matches) setTimeout(function () { input.focus(); }, 60);
     }
   }
   bubble.addEventListener("click", toggle);
