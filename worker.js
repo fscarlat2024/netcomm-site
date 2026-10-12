@@ -31,6 +31,10 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    // Redirecturi 301 de pe URL-urile vechi (site Laravel) catre cele noi
+    const redir = oldUrlRedirect(url.pathname);
+    if (redir) return Response.redirect(url.origin + redir, 301);
+
     if (url.pathname === "/api/chat" && request.method === "POST") {
       return guard(request, () => handleChat(request, env));
     }
@@ -54,6 +58,21 @@ function guard(request, fn) {
     }
   }
   return fn();
+}
+
+// Mapare URL-uri vechi -> noi (pentru 301). Returneaza destinatia sau null.
+function oldUrlRedirect(pathname) {
+  const p = pathname.replace(/\/+$/, "") || "/"; // fara slash final
+  const MAP = {
+    "/articole": "/blog/",
+    "/despre-noi": "/#de-ce",
+    "/contact": "/#contact",
+    "/preturi": "/#abonamente",
+    "/abonamente": "/#abonamente",
+  };
+  if (MAP[p]) return MAP[p];
+  if (p === "/servicii" || p.startsWith("/servicii/")) return "/#servicii";
+  return null;
 }
 
 function json(obj, status = 200) {
