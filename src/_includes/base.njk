@@ -166,6 +166,16 @@
         <a href="tel:{{ site.phoneRaw }}">{{ site.phone }}</a>
         <span>{{ site.address }}</span>
       </div>
+      <div class="foot-col foot-app">
+        <h4>{{ t.app_title }}</h4>
+        <span class="foot-app-sub">{{ t.app_sub }}</span>
+        <a class="store-badge" href="https://apps.apple.com/app/ncs/id6824426137" target="_blank" rel="noopener" aria-label="App Store">
+          <img src="/assets/img/brand/appstore.svg" alt="{{ 'Descarcă din App Store' if lang == 'ro' else 'Download on the App Store' }}" width="135" height="40" loading="lazy">
+        </a>
+        <a class="store-badge" href="https://play.google.com/store/apps/details?id=ro.netcomm.inventar" target="_blank" rel="noopener" aria-label="Google Play">
+          <img src="/assets/img/brand/googleplay.svg" alt="{{ 'Disponibil pe Google Play' if lang == 'ro' else 'Get it on Google Play' }}" width="135" height="40" loading="lazy">
+        </a>
+      </div>
     </div>
     <div class="wrap foot-bottom">
       <span>&copy; {{ '2026' }} {{ site.brandName }}. {{ c.rights }}</span>

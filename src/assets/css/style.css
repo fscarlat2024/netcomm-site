@@ -171,7 +171,11 @@ svg{width:100%;height:100%}
 
 /* ===== Footer ===== */
 .footer{background:var(--dark2);color:var(--dark-muted);padding:64px 0 28px}
-.foot-in{display:grid;grid-template-columns:2fr 1fr 1fr;gap:42px;padding-bottom:42px;border-bottom:1px solid var(--dark-line)}
+.foot-in{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:42px;padding-bottom:42px;border-bottom:1px solid var(--dark-line)}
+.foot-app-sub{display:block;font-size:.92rem;color:var(--dark-muted);margin-bottom:14px}
+.store-badge{display:inline-block;margin:0 0 10px;line-height:0}
+.store-badge img{display:block;height:40px;width:auto;border-radius:7px;transition:opacity .2s}
+.store-badge:hover img{opacity:.82}
 .foot-logo{height:34px;margin-bottom:18px}
 .foot-brand p{font-size:.92rem;max-width:360px}
 .foot-col h4{color:#fff;font-size:.92rem;margin-bottom:16px;letter-spacing:.03em}
