@@ -11,6 +11,7 @@
  */
 
 import { handleOfertaChat } from "./oferta-execedu.js";
+import { handleOfertaAppChat } from "./oferta-execedu-app.js";
 
 const ALLOWED_HOSTS = new Set([
   "netcomm.ro",
@@ -42,6 +43,9 @@ export default {
     }
     if (url.pathname === "/api/oferta-chat" && request.method === "POST") {
       return guard(request, () => handleOfertaChat(request, env, ctx));
+    }
+    if (url.pathname === "/api/oferta-app-chat" && request.method === "POST") {
+      return guard(request, () => handleOfertaAppChat(request, env, ctx));
     }
     if (url.pathname === "/api/lead" && request.method === "POST") {
       return guard(request, () => handleLead(request, env));
