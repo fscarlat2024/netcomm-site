@@ -10,6 +10,8 @@
  * Vars (wrangler.jsonc): WEB3FORMS_KEY
  */
 
+import { handleOfertaChat } from "./oferta-execedu.js";
+
 const ALLOWED_HOSTS = new Set([
   "netcomm.ro",
   "www.netcomm.ro",
@@ -28,7 +30,7 @@ const MAX_CHARS = 1200;       // caractere per mesaj
 const MAX_TOKENS = 700;       // output per raspuns
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
     // Redirecturi 301 de pe URL-urile vechi (site Laravel) catre cele noi
@@ -37,6 +39,9 @@ export default {
 
     if (url.pathname === "/api/chat" && request.method === "POST") {
       return guard(request, () => handleChat(request, env));
+    }
+    if (url.pathname === "/api/oferta-chat" && request.method === "POST") {
+      return guard(request, () => handleOfertaChat(request, env, ctx));
     }
     if (url.pathname === "/api/lead" && request.method === "POST") {
       return guard(request, () => handleLead(request, env));

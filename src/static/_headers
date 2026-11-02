@@ -18,3 +18,7 @@
 
 /assets/fonts/*
   Cache-Control: public, max-age=31536000, immutable
+
+/oferte/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
