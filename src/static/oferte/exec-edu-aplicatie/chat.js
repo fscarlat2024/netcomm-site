@@ -1,5 +1,9 @@
 // Pilot, asistentul ofertei pentru aplicatia EXEC-EDU (POST /api/oferta-app-chat): raspunde si noteaza cererile noi.
 (function () {
+  // butonul apare doar cand asistentul e pornit (OFERTA_APP_CHAT=on in wrangler.jsonc)
+  fetch("/api/oferta-app-chat", { cache: "no-store" }).then(function (r) { return r.json(); })
+    .then(function (s) { if (s && s.on) start(); }).catch(function () {});
+  function start() {
   var KEY = "oa-execedu-app-v1";
   var GREET = "Bună ziua! Sunt Pilot, asistentul acestei oferte. Vă răspund la întrebări despre această ofertă. Dacă vă doriți ceva în plus sau altfel, spuneți-mi și transmit cererea lui Florin Scarlat.";
   var SUGG = [
@@ -84,4 +88,5 @@
   close.onclick = function () { panel.hidden = true; btn.hidden = false; };
   form.onsubmit = function (e) { e.preventDefault(); var t = ta.value; ta.value = ""; ask(t); };
   ta.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.onsubmit(e); } });
+  }
 })();
