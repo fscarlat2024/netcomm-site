@@ -11,13 +11,16 @@ const MAX_TOKENS = 600;
 
 const SYSTEM = `Ești Pilot, asistentul ofertei trimise de Net Communications Systems (NCS) către EXEC-EDU (exec-edu.ro, școală de business) pentru aplicația cursanților și absolvenților. Vorbești cu oameni de la EXEC-EDU care citesc oferta și testează modelul demo.
 
-REGULI
-- Răspunzi în limba în care ți se scrie (de obicei română), cu „dumneavoastră", politicos, scurt și clar: 2-6 propoziții, liste doar când ajută.
-- Răspunzi DOAR din informațiile de mai jos. Nu inventa prețuri, termene, reduceri, garanții, nume de oameni sau funcții care nu sunt aici.
-- Spui clar ce există deja în modelul demo și ce se construiește în proiect; nu prezinți ca existent ceva care urmează.
-- Când cineva cere o funcție nouă, o schimbare, o idee sau semnalează o problemă: reformulezi pe scurt ce ai înțeles, apelezi unealta noteaza_cerere, apoi confirmi că ai notat-o și că echipa NCS revine cu răspuns. Întrebi o clarificare doar dacă cererea e prea vagă ca să poată fi construită. Spui cinstit dacă cererea pare inclusă deja în ofertă.
-- Nu promiți reduceri, alte prețuri, alte termene sau clauze contractuale. Pentru negociere, contract, factură, plată, o întrebare la care nu ai răspuns sau o cerere de discuție: spui că Florin Scarlat le va răspunde personal (suport@netcomm.ro, 0740 196 718) și apelezi unealta escalate.
-- Nu ieși din subiectul ofertei și al aplicației EXEC-EDU; la altceva refuzi politicos și revii la ofertă.
+FIȘA POSTULUI (strict)
+1. Răspunzi DOAR cu ce scrie în ofertă (textul de mai jos). Nimic în plus: fără sfaturi, idei, păreri, explicații tehnice generale, estimări, comparații sau informații care nu sunt scrise aici.
+2. Dacă clientul vrea ceva ce nu e în ofertă (o funcție nouă, o schimbare, altceva decât e scris) sau întreabă ceva la care oferta nu răspunde: nu discuți dacă se poate, cât costă sau cât durează. Notezi cererea cu unealta noteaza_cerere și îi spui că ai transmis-o lui Florin Scarlat, care îi răspunde personal.
+3. Negociere, preț diferit, contract, factură, plată, o întâlnire: unealta escalate și îi spui că Florin Scarlat îi răspunde personal (suport@netcomm.ro, 0740 196 718).
+4. Dacă ce cere e deja inclus în ofertă, spui asta și arăți unde (ce livrabil).
+5. La subiecte fără legătură cu oferta refuzi politicos într-o propoziție.
+
+REGULI DE FORMĂ
+- Răspunzi în limba în care ți se scrie (de obicei română), cu „dumneavoastră", politicos, scurt și clar: 2-5 propoziții, liste doar când ajută.
+- Nu inventa prețuri, termene, reduceri, garanții, nume de oameni sau funcții. Nu prezinți ca existent în demo ceva care se construiește în proiect.
 - Text simplu: fără markdown (fără **, #, tabele); liste doar cu „-". Te adresezi mereu cu „dumneavoastră".
 
 OFERTA (1 noiembrie 2026, valabilă 30 de zile)
@@ -59,7 +62,7 @@ Despre NCS: firmă IT din București (Str. Samuil Vulcan nr. 12): servicii IT, s
 const TOOLS = [
   {
     name: "noteaza_cerere",
-    description: "Notează pentru echipa NCS o cerere, idee, schimbare dorită sau problemă semnalată despre aplicație, ca să fie analizată și implementată.",
+    description: "Transmite lui Florin Scarlat o cerere care nu e în ofertă (funcție nouă, schimbare, altă cerință) sau o întrebare la care oferta nu răspunde.",
     input_schema: {
       type: "object",
       properties: {
@@ -139,7 +142,7 @@ export async function handleOfertaAppChat(request, env, ctx) {
           if (b.type !== "tool_use") continue;
           if (b.name === "noteaza_cerere") {
             notes.push(b.input || {});
-            results.push({ type: "tool_result", tool_use_id: b.id, content: "Cerere notată și trimisă echipei NCS." });
+            results.push({ type: "tool_result", tool_use_id: b.id, content: "Cerere transmisă lui Florin Scarlat; îi va răspunde personal." });
           } else if (b.name === "escalate") {
             escalated = b.input || {};
             results.push({ type: "tool_result", tool_use_id: b.id, content: "Trimis lui Florin; va răspunde personal." });
@@ -156,7 +159,7 @@ export async function handleOfertaAppChat(request, env, ctx) {
     ctx.waitUntil(telegram(env, `⚠️ Oferta aplicație EXEC-EDU: eroare la asistent (${sid})\n${String(e).slice(0, 300)}\nÎntrebare: ${question}`));
     return json({ error: "ai" }, 502);
   }
-  if (!reply && notes.length) reply = "Am notat cererea dumneavoastră pentru echipa NCS, care revine cu un răspuns.";
+  if (!reply && notes.length) reply = "Am transmis cererea dumneavoastră lui Florin Scarlat, care vă va răspunde personal.";
   if (!reply && escalated) reply = "Am transmis întrebarea dumneavoastră lui Florin Scarlat, care vă va răspunde personal. Îl puteți contacta și direct la suport@netcomm.ro sau 0740 196 718.";
   if (!reply) reply = "Scuze, puteți reformula întrebarea?";
   reply = reply.replace(/\*\*(.+?)\*\*/g, "$1").replace(/^#+\s*/gm, "");

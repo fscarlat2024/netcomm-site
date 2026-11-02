@@ -1,7 +1,7 @@
 // Pilot, asistentul ofertei pentru aplicatia EXEC-EDU (POST /api/oferta-app-chat): raspunde si noteaza cererile noi.
 (function () {
   var KEY = "oa-execedu-app-v1";
-  var GREET = "Bună ziua! Sunt Pilot, asistentul acestei oferte. Vă răspund despre aplicație, ce vedeți deja în demo, termene și prețuri. Dacă vă doriți ceva în plus sau altfel, spuneți-mi și notez cererea pentru echipa NCS.";
+  var GREET = "Bună ziua! Sunt Pilot, asistentul acestei oferte. Vă răspund la întrebări despre această ofertă. Dacă vă doriți ceva în plus sau altfel, spuneți-mi și transmit cererea lui Florin Scarlat.";
   var SUGG = [
     "Ce include prețul de 4.000 EUR?",
     "Ce pot vedea deja în demo?",
@@ -44,7 +44,7 @@
   var send = el("button", null, "Trimite");
   send.type = "submit";
   form.appendChild(ta); form.appendChild(send);
-  var note = el("div", "oa-note", "Asistent AI · cererile ajung la echipa NCS; pentru contract vă răspunde Florin Scarlat");
+  var note = el("div", "oa-note", "Asistent AI · răspunde doar despre ofertă; restul îl transmite lui Florin Scarlat");
   panel.appendChild(head); panel.appendChild(log); panel.appendChild(form); panel.appendChild(note);
   document.body.appendChild(btn); document.body.appendChild(panel);
 
@@ -74,7 +74,7 @@
     }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
       .then(function (res) {
         var reply = res.ok && res.j.reply ? res.j.reply : "Nu am putut răspunde acum. Ne puteți scrie la suport@netcomm.ro sau suna la 0740 196 718.";
-        msgs.push({ role: "assistant", content: reply + (res.ok && res.j.noted ? "\n\n✓ Cerere notată pentru echipa NCS" : "") }); save();
+        msgs.push({ role: "assistant", content: reply + (res.ok && res.j.noted ? "\n\n✓ Cerere transmisă lui Florin Scarlat" : "") }); save();
       })
       .catch(function () { msgs.push({ role: "assistant", content: "Conexiunea a căzut. Încercați din nou sau scrieți-ne la suport@netcomm.ro." }); save(); })
       .then(function () { busy = false; send.disabled = false; render(); ta.focus(); });
