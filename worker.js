@@ -41,8 +41,22 @@ export default {
     if (url.pathname === "/api/chat" && request.method === "POST") {
       return guard(request, () => handleChat(request, env));
     }
+    // Asistentul ofertei EXEC-EDU: pornit/oprit din wrangler.jsonc (OFERTA_CHAT "on" | "off")
+    if (url.pathname === "/api/oferta-chat" && request.method === "GET") {
+      return json({ on: env.OFERTA_CHAT === "on" });
+    }
+    if (url.pathname === "/api/oferta-chat" && env.OFERTA_CHAT !== "on") {
+      return json({ error: "off" }, 503);
+    }
     if (url.pathname === "/api/oferta-chat" && request.method === "POST") {
       return guard(request, () => handleOfertaChat(request, env, ctx));
+    }
+    // Pilot, asistentul ofertei pentru aplicatia EXEC-EDU: pornit/oprit din wrangler.jsonc (OFERTA_APP_CHAT "on" | "off")
+    if (url.pathname === "/api/oferta-app-chat" && request.method === "GET") {
+      return json({ on: env.OFERTA_APP_CHAT === "on" });
+    }
+    if (url.pathname === "/api/oferta-app-chat" && env.OFERTA_APP_CHAT !== "on") {
+      return json({ error: "off" }, 503);
     }
     if (url.pathname === "/api/oferta-app-chat" && request.method === "POST") {
       return guard(request, () => handleOfertaAppChat(request, env, ctx));

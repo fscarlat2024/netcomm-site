@@ -1,5 +1,9 @@
 // Asistentul ofertei SEO EXEC-EDU: raspunde la intrebari despre oferta (POST /api/oferta-chat).
 (function () {
+  // butonul apare doar cand asistentul e pornit (OFERTA_CHAT=on in wrangler.jsonc)
+  fetch("/api/oferta-chat", { cache: "no-store" }).then(function (r) { return r.json(); })
+    .then(function (s) { if (s && s.on) start(); }).catch(function () {});
+  function start() {
   var KEY = "oa-execedu-v1";
   var GREET = "Bună ziua! Sunt asistentul acestei oferte. Vă pot răspunde la orice întrebare despre ce include, cum lucrăm, termene și prețuri. Ce ați dori să aflați?";
   var SUGG = [
@@ -84,4 +88,5 @@
   close.onclick = function () { panel.hidden = true; btn.hidden = false; };
   form.onsubmit = function (e) { e.preventDefault(); var t = ta.value; ta.value = ""; ask(t); };
   ta.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.onsubmit(e); } });
+  }
 })();

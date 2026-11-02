@@ -9,7 +9,11 @@
   },
   "vars": {
     // Web3Forms este o cheie publica (nu e secret) - trimite lead-ul pe email.
-    "WEB3FORMS_KEY": "459c6d34-f5f3-48db-83c6-2f9d27e26bbf"
+    "WEB3FORMS_KEY": "459c6d34-f5f3-48db-83c6-2f9d27e26bbf",
+    // Asistentul de pe /oferte/exec-edu/: "on" il porneste, orice altceva il opreste (butonul de chat dispare)
+    "OFERTA_CHAT": "off",
+    // Pilot, asistentul de pe /oferte/exec-edu-aplicatie/: "on" il porneste, orice altceva il opreste
+    "OFERTA_APP_CHAT": "off"
   }
   // Secrete (o singura data): wrangler secret put ANTHROPIC_API_KEY / TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID
 }
