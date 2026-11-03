@@ -169,5 +169,23 @@ export async function handleOfertaAppChat(request, env, ctx) {
   }
   if (escalated) tg = `🔴 DE RĂSPUNS PERSONAL\n${escalated.intrebare || question}${escalated.contact ? "\nContact: " + escalated.contact : ""}\n\n` + tg;
   ctx.waitUntil(telegram(env, tg));
+  // pastram cererile si intrebarile trimise lui Florin, ca NCS sa le poata evalua pe /oferte/cereri/
+  const rows = notes.map((n) => [n.tip || "", n.rezumat || "", n.detalii || "", n.contact || ""]);
+  if (escalated) rows.push(["de răspuns personal", escalated.intrebare || question, "", escalated.contact || ""]);
+  if (env.DB_OFERTE && rows.length) {
+    const now = new Date().toISOString();
+    ctx.waitUntil(env.DB_OFERTE.batch(rows.map((r) => env.DB_OFERTE.prepare(
+      "INSERT INTO cereri(created_at,oferta,sid,tip,rezumat,detalii,contact,intrebare,raspuns) VALUES(?,?,?,?,?,?,?,?,?)"
+    ).bind(now, "aplicatie-execedu", sid, ...r.map((x) => String(x).slice(0, 3000)), question.slice(0, 2000), reply.slice(0, 3000)))).catch(() => {}));
+  }
   return json({ reply, noted: notes.length });
+}
+
+// lista cererilor, pentru pagina /oferte/cereri/ (cheia vine in header, setata ca secret OFERTE_KEY)
+export async function handleCereriList(request, env) {
+  const key = request.headers.get("x-key") || "";
+  if (!env.OFERTE_KEY || key !== String(env.OFERTE_KEY).trim()) return json({ error: "acces" }, 403);
+  const { results } = await env.DB_OFERTE.prepare(
+    "SELECT id,created_at,oferta,tip,rezumat,detalii,contact,intrebare,raspuns FROM cereri ORDER BY id DESC LIMIT 300").all();
+  return json(results);
 }

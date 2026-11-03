@@ -11,7 +11,7 @@
  */
 
 import { handleOfertaChat } from "./oferta-execedu.js";
-import { handleOfertaAppChat } from "./oferta-execedu-app.js";
+import { handleOfertaAppChat, handleCereriList } from "./oferta-execedu-app.js";
 
 const ALLOWED_HOSTS = new Set([
   "netcomm.ro",
@@ -52,6 +52,9 @@ export default {
       return guard(request, () => handleOfertaChat(request, env, ctx));
     }
     // Pilot, asistentul ofertei pentru aplicatia EXEC-EDU: pornit/oprit din wrangler.jsonc (OFERTA_APP_CHAT "on" | "off")
+    if (url.pathname === "/api/oferte-cereri" && request.method === "GET") {
+      return handleCereriList(request, env);
+    }
     if (url.pathname === "/api/oferta-app-chat" && request.method === "GET") {
       return json({ on: env.OFERTA_APP_CHAT === "on" });
     }

@@ -7,13 +7,17 @@
     "directory": "./_site",
     "binding": "ASSETS"
   },
+  // cererile notate de asistentii de oferta (citite din /oferte/cereri/)
+  "d1_databases": [
+    { "binding": "DB_OFERTE", "database_name": "netcomm-oferte", "database_id": "17fbf73c-03e6-4ce8-9123-3c7a8b36fd9a" }
+  ],
   "vars": {
     // Web3Forms este o cheie publica (nu e secret) - trimite lead-ul pe email.
     "WEB3FORMS_KEY": "459c6d34-f5f3-48db-83c6-2f9d27e26bbf",
     // Asistentul de pe /oferte/exec-edu/: "on" il porneste, orice altceva il opreste (butonul de chat dispare)
     "OFERTA_CHAT": "off",
     // Pilot, asistentul de pe /oferte/exec-edu-aplicatie/: "on" il porneste, orice altceva il opreste
-    "OFERTA_APP_CHAT": "off"
+    "OFERTA_APP_CHAT": "on"
   }
   // Secrete (o singura data): wrangler secret put ANTHROPIC_API_KEY / TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID
 }
