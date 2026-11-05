@@ -7,7 +7,7 @@
   var KEY = "oa-execedu-app-v1";
   var GREET = "Bună ziua! Sunt Pilot, asistentul acestei oferte. Vă răspund la întrebări despre această ofertă. Dacă vă doriți ceva în plus sau altfel, spuneți-mi și transmit cererea lui Florin Scarlat.";
   var SUGG = [
-    "Ce include prețul de 4.000 EUR?",
+    "Ce include prețul de 3.900 EUR?",
     "Ce pot vedea deja în demo?",
     "Cum funcționează notificările pe iPhone?",
     "Aș vrea o funcție în plus"
