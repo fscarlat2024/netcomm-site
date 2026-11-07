@@ -352,6 +352,12 @@ svg{width:100%;height:100%}
 .nis2-app>p{font-size:.9rem;color:var(--body);margin-bottom:14px}
 .nis2-app-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
 .nis2-app-badges .store-badge{margin:0}
+.nis2-app-card{margin-top:18px;background:rgba(143,184,230,.08);border:1px solid rgba(143,184,230,.22);border-radius:14px;padding:20px 24px}
+.nis2-app-card>b{font-family:var(--disp);color:#fff;font-size:1.06rem;display:block;margin-bottom:6px}
+.nis2-app-card>p{color:var(--dark-muted);font-size:.95rem;line-height:1.55;margin-bottom:14px}
+.nis2-app-card .nis2-app-badges{justify-content:flex-start}
+.nis2-hero-in .nis2-app-card{margin:34px auto 0;max-width:560px}
+.nis2-hero-in .nis2-app-card .nis2-app-badges{justify-content:center}
 .nis2-redo{margin-top:16px;background:none;border:0;color:var(--muted);font-family:var(--disp);font-weight:600;font-size:.85rem;cursor:pointer}
 .nis2-redo:hover{color:var(--brand)}
 
