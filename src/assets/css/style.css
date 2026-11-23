@@ -508,6 +508,7 @@ svg{width:100%;height:100%}
 .post-body table{width:100%;border-collapse:collapse;font-size:.95rem}
 .post-body th,.post-body td{border:1px solid var(--line);padding:.6em .8em;text-align:left}
 .post-body th{background:var(--bg-soft);font-family:var(--disp)}
+@media(max-width:640px){.post-body table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}}
 .post-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2.4rem}
 .post-tag{font-size:.82rem;color:var(--muted);background:var(--bg-soft);border:1px solid var(--line);padding:.3em .7em;border-radius:999px}
 .post-cta{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;flex-wrap:wrap;margin-top:2.6rem;padding:1.8rem 2rem;background:linear-gradient(135deg,var(--brand),var(--midnight));border-radius:var(--radius);color:#fff}
