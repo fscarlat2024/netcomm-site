@@ -1,0 +1,13 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{{ '/servicii/externalizare-it/index.html' if lang == 'ro' else '/en/servicii/externalizare-it/index.html' }}"
+layout: base.njk
+pageId: service
+serviceKey: outsourcing
+serviceHrefRo: "/servicii/externalizare-it/"
+serviceHrefEn: "/en/servicii/externalizare-it/"
+---
+{% include "service-page.njk" %}

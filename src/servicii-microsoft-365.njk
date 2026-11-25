@@ -1,0 +1,13 @@
+---
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{{ '/servicii/microsoft-365/index.html' if lang == 'ro' else '/en/servicii/microsoft-365/index.html' }}"
+layout: base.njk
+pageId: service
+serviceKey: m365
+serviceHrefRo: "/servicii/microsoft-365/"
+serviceHrefEn: "/en/servicii/microsoft-365/"
+---
+{% include "service-page.njk" %}

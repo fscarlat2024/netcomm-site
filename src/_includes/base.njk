@@ -13,6 +13,13 @@
   {% set hrefRo = "/nis2/" %}
   {% set hrefEn = "/en/nis2/" %}
 {% endif %}
+{% if pageId == "service" %}
+  {% set sv = services[serviceKey][lang] %}
+  {% set metaTitle = sv.metaTitle %}
+  {% set metaDesc = sv.metaDesc %}
+  {% set hrefRo = serviceHrefRo %}
+  {% set hrefEn = serviceHrefEn %}
+{% endif %}
 {% if seoTitle %}{% set metaTitle = seoTitle %}{% endif %}
 {% if seoDesc %}{% set metaDesc = seoDesc %}{% endif %}
 {% if blogHrefRo %}{% set hrefRo = blogHrefRo %}{% endif %}
@@ -102,6 +109,28 @@
     "url": "{{ site.url }}{{ page.url }}"
   }
   </script>
+  {% elif pageId == "service" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for f in sv.faq %}{ "@type": "Question", "name": {{ f.q | dump | safe }}, "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | dump | safe }} } }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "provider": { "@type": "Organization", "name": {{ site.brandName | dump | safe }}, "url": "{{ site.url }}" },
+    "areaServed": "RO",
+    "name": {{ metaTitle | dump | safe }},
+    "description": {{ metaDesc | dump | safe }},
+    "url": "{{ site.url }}{{ page.url }}"
+  }
+  </script>
   {% elif pageId == "blog" %}
   {% else %}
   <script type="application/ld+json">
@@ -126,9 +155,10 @@
       </a>
       <nav class="nav-links" id="navlinks">
         <a href="{{ home }}#servicii">{{ t.nav_services }}</a>
-        <a href="{{ home }}#securitate">{{ t.nav_security }}</a>
+        <a href="{{ '/servicii/microsoft-365/' if lang == 'ro' else '/en/servicii/microsoft-365/' }}">Microsoft 365</a>
+        <a href="{{ '/servicii/externalizare-it/' if lang == 'ro' else '/en/servicii/externalizare-it/' }}" class="hide-md">{{ 'Externalizare IT' if lang == 'ro' else 'IT Outsourcing' }}</a>
+        <a href="{{ home }}#securitate" class="hide-md">{{ t.nav_security }}</a>
         <a href="{{ '/nis2/' if lang == 'ro' else '/en/nis2/' }}" class="nav-nis2">NIS2</a>
-        <a href="{{ home }}#tehnologii" class="hide-md">{{ t.nav_tech }}</a>
         <a href="{{ home }}#abonamente">{{ t.nav_pricing }}</a>
         <a href="{{ home }}#de-ce" class="hide-md">{{ t.nav_why }}</a>
         <span class="lang-switch">
@@ -155,8 +185,10 @@
       </div>
       <div class="foot-col">
         <h4>{{ t.nav_services }}</h4>
-        <a href="{{ home }}#servicii">{{ t.nav_services }}</a>
+        <a href="{{ '/servicii/microsoft-365/' if lang == 'ro' else '/en/servicii/microsoft-365/' }}">Microsoft 365</a>
+        <a href="{{ '/servicii/externalizare-it/' if lang == 'ro' else '/en/servicii/externalizare-it/' }}">{{ 'Externalizare IT' if lang == 'ro' else 'IT Outsourcing' }}</a>
         <a href="{{ home }}#securitate">{{ t.nav_security }}</a>
+        <a href="{{ '/nis2/' if lang == 'ro' else '/en/nis2/' }}">NIS2</a>
         <a href="{{ home }}#abonamente">{{ t.nav_pricing }}</a>
         <a href="{{ '/blog/' if lang == 'ro' else '/en/blog/' }}">{{ t.nav_blog }}</a>
       </div>

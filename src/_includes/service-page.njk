@@ -1,0 +1,118 @@
+{% from "icons.njk" import icon %}
+{% set s = services[serviceKey][lang] %}
+{% set home = "/" if lang == "ro" else "/en/" %}
+
+<section class="section band-dark nis2-hero svc-hero" id="top">
+  <div class="wrap nis2-hero-in reveal">
+    <span class="eyebrow eyebrow-on-dark">{{ s.eyebrow }}</span>
+    <h1>{{ s.h1 }}</h1>
+    <p class="lead">{{ s.lead }}</p>
+    <div class="hero-cta">
+      <a href="{{ home }}#contact" class="btn btn-primary btn-lg">{{ s.ctaPrimary }} {{ icon("arrow") }}</a>
+      <a href="{{ home }}#contact" class="btn btn-ghost btn-lg">{{ s.ctaGhost }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section band-soft" id="despre">
+  <div class="wrap svc-intro reveal">
+    <span class="eyebrow">{{ s.introTitle }}</span>
+    <p class="svc-intro-text">{{ s.introText }}</p>
+  </div>
+</section>
+
+<section class="section" id="include">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>{{ s.includesTitle }}</h2>
+      <p class="sub">{{ s.includesLead }}</p>
+    </div>
+    <div class="grid-3">
+      {% for it in s.includes %}
+      <article class="card reveal">
+        <div class="card-ic">{{ icon(it.ic) }}</div>
+        <h3>{{ it.t }}</h3>
+        <p>{{ it.d }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section band-dark" id="proces">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow eyebrow-on-dark">{{ s.eyebrow }}</span>
+      <h2>{{ s.processTitle }}</h2>
+      <p class="sub">{{ s.processLead }}</p>
+    </div>
+    <div class="grid-4 svc-steps">
+      {% for p in s.process %}
+      <article class="step reveal">
+        <b class="step-t">{{ p.t }}</b>
+        <p>{{ p.d }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    {% if s.sla %}
+    <div class="wrap svc-sla reveal">
+      <h3 class="svc-sla-title">{{ s.slaTitle }}</h3>
+      <div class="svc-sla-grid">
+        {% for l in s.sla %}
+        <div class="sla-card">
+          <b class="sla-t">{{ l.t }}</b>
+          <p>{{ l.d }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section band-soft" id="de-ce">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>{{ s.whyTitle }}</h2>
+    </div>
+    <div class="grid-4">
+      {% for w in s.why %}
+      <article class="why reveal">
+        <div class="why-ic">{{ icon("check") }}</div>
+        <b>{{ w.t }}</b>
+        <p>{{ w.d }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="intrebari">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>{{ s.faqTitle }}</h2>
+    </div>
+    <div class="faq reveal">
+      {% for f in s.faq %}
+      <details class="faq-item"{% if loop.first %} open{% endif %}>
+        <summary>{{ f.q }}<span class="faq-plus">{{ icon("arrow") }}</span></summary>
+        <div class="faq-a"><p>{{ f.a }}</p></div>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section band-dark contact" id="contact-svc">
+  <div class="contact-bg" style="background-image:url('/assets/img/photos/datacenter.jpg')"></div>
+  <div class="contact-veil"></div>
+  <div class="wrap contact-in reveal">
+    <span class="eyebrow eyebrow-on-dark">{{ s.eyebrow }}</span>
+    <h2>{{ s.closingTitle }}</h2>
+    <p class="sub">{{ s.closingText }}</p>
+    <div class="hero-cta">
+      <a href="{{ home }}#contact" class="btn btn-primary btn-lg">{{ s.closingCta }} {{ icon("arrow") }}</a>
+      <a href="mailto:{{ site.email }}" class="btn btn-ghost btn-lg">{{ site.email }}</a>
+    </div>
+  </div>
+</section>
